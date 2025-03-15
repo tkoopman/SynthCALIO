@@ -4,7 +4,7 @@ SynthCALIO can create new LeveledItem and Outfit records, and assign them to NPC
 SynthCALIO keeps track of IDs assigned in previous runs to make sure the same FormID is used each time, even if you add/remove configurations.
 
 ## Links
-[Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/144763)
+[Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/144763)  
 [Examples](./Examples/)
 
 ## Prerequisites
