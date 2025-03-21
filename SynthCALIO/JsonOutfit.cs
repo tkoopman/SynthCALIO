@@ -11,6 +11,8 @@ namespace SynthCALIO
     [JsonObject(MemberSerialization.OptIn)]
     public class JsonOutfit (string editorID)
     {
+        public const char OptionalPrefix = Program.OptionalPrefix;
+
         public List<string[]> AllItems { get; set; } = [];
 
         /// <summary>
@@ -31,6 +33,7 @@ namespace SynthCALIO
         ///     list then will never skip.
         ///     - 0: Never Skip
         ///     - -1: Skip only if all items are missing
+        ///     NOTE: Optional items are not counted in this check.
         /// </summary>
         [JsonProperty]
         public int SkipIfMissing { get; set; } = SynthCALIO.SkipIfMissing.Any;
@@ -55,6 +58,12 @@ namespace SynthCALIO
 
         internal string? FromFile { get; } = JsonConfig.CurrentFile;
 
+        /// <summary>
+        ///     Just an alias for Items.
+        /// </summary>
+        [JsonProperty]
+        private string[] Entries { set => AllItems.Add(value); }
+
         [JsonProperty]
         private string[] Items { set => AllItems.Add(value); }
 
@@ -71,7 +80,7 @@ namespace SynthCALIO
             {
                 foreach (string item in group)
                 {
-                    if (SynthCommon.TryConvertToSkyrimID(item, out _, out _) == SkyrimIDType.Invalid)
+                    if (SynthCommon.TryConvertToSkyrimID(item, [OptionalPrefix], out _, out _, out _) == SkyrimIDType.Invalid)
                         throw new InvalidDataException($"Outfit {EditorID} from {FromFile}, contains invalid item: {item}");
                 }
             }
@@ -100,6 +109,8 @@ namespace SynthCALIO
                 EditorID = EditorID,
             };
             bool first = true;
+            int mandatoryAdded = 0;
+
             foreach (string[] group in AllItems)
             {
                 if (!first)
@@ -109,12 +120,16 @@ namespace SynthCALIO
 
                 outfit.Items ??= [];
                 int skipped = 0;
+                mandatoryAdded = 0;
 
                 foreach (string item in group)
                 {
-                    if (!Program.TryGetRecord<IOutfitTargetGetter>(item, out var record))
+                    bool optional = item[0] == OptionalPrefix;
+                    string itemID = optional ? item[1..] : item;
+
+                    if (!Program.TryGetRecord<IOutfitTargetGetter>(itemID, out var record))
                     {
-                        if (++skipped == SkipIfMissing)
+                        if (!optional && ++skipped == SkipIfMissing)
                         {
                             Console.WriteLine($"Skipping adding {item} to Outfit: {EditorID}. Record not found. Config file: {FromFile}.");
                             outfit.Items = null;
@@ -128,14 +143,16 @@ namespace SynthCALIO
                     else
                     {
                         outfit.Items.Add(record.ToLinkGetter());
+                        if (!optional)
+                            mandatoryAdded++;
                     }
                 }
 
-                if (outfit.Items is not null && (SkipIfMissing == SynthCALIO.SkipIfMissing.Never || outfit.Items.Count != 0))
+                if (outfit.Items is not null && (SkipIfMissing == SynthCALIO.SkipIfMissing.Never || mandatoryAdded != 0))
                     break;
             }
 
-            if (outfit.Items is null || (SkipIfMissing != SynthCALIO.SkipIfMissing.Never && outfit.Items.Count == 0))
+            if (outfit.Items is null || (SkipIfMissing != SynthCALIO.SkipIfMissing.Never && mandatoryAdded == 0))
             {
                 Console.WriteLine($"Skipping Outfit: {EditorID}. No valid items found. Config file: {FromFile}.");
                 return null;

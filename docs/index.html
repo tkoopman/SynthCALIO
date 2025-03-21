@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="./include/main.css" rel="stylesheet" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SynthCALIO</title>
+</head>
+<body>
+    <div class="box">
+        <header>
+            <h2>SynthCALIO</h2>
+        </header>
+        <nav class="menu">
+            <a class="active" style="margin-left:auto;" href="./index.html">About</a>
+            <a href="./config.html">Config</a>
+            <a href="https://www.nexusmods.com/skyrimspecialedition/mods/144763" target="_blank">Nexus Link</a>
+        </nav>
+        <div class="main">
+            <h1>About</h1>
+            <p>
+                SynthCALIO can create new LeveledItem and Outfit records, and assign them to NPC's Default or Sleeping outfits, and/or add to Spell Perk Item Distributor (SPID) file.<br />
+                SynthCALIO keeps track of IDs assigned in previous runs to make sure the same FormID is used each time, even if you add/remove/re-add configurations.
+            </p>
+
+            <h2>Prerequisites</h2>
+
+            This of course requires <a href="https://github.com/Mutagen-Modding/Synthesis" target="_blank">Synthesis</a><br />
+            Also requires <a href="https://www.nexusmods.com/skyrimspecialedition/mods/36869">Spell Perk Item Distributor (SPID)</a> if any SPID entries included in the configuration files to work.<br />
+
+            <h2>How SynthCALIO maintains FormID's</h2>
+
+            <p>
+                There are 2 methods used.<br />
+                First, at the end of each run it will save a file formIDCache.txt to the Synthesis data folder. This contains a mapping of each known FormID to EditorID.
+                This is then loaded at the start of every run. As this file will not remove entries just because they may not of been exported this run (maybe you removed a JSON config file),
+                it will keep those IDs available unless you manually clear the file. You may delete this cache if you need to reset it, but if next method is enabled it will be repopulated with
+                any entries that exist in the current version. So disable it as well to fully reset FormIDs.
+            </p>
+            <p>
+                Then optionally it will also read the current SynthCALIO's mod for all IDs to EditorID mappings it contains and update/add to the entries loaded from formIDCache.txt.
+                In most situations this should never be required as the cache file should contain everything, but this is here as backup. You can disable this in the Synthesis SynthCALIO Settings, but is enabled by default.
+            </p>
+            <p>
+                <strong>NOTES:</strong>
+                <ul>
+                    <li>This does mean that if you rename an entry in a JSON config file, it will get a new FormID as the EditorID has changed.</li>
+                    <li>To fully reset you must delete the formIDCache.txt AND disable the "UpdateCache" option in SynthCALIO's settings page.</li>
+                </ul>
+            </p>
+
+            <h2>Bugs, Requests and Contributions</h2>
+
+            Please log any bugs or requests you may have via <a href="https://github.com/tkoopman/SynthCALIO/issues">GitHub Issues</a> or over on the <a href="https://www.nexusmods.com/skyrimspecialedition/mods/144763?tab=bugs">Nexus bug page</a>.<br />
+            While I make no guarantee to fixing or implementing new requests due to other commitments, I will try, especially fixing bugs.<br />
+            Also if you want to contribute please do, even if you don't known how to program, just improving my awful documentation would help others.<br />
+
+            <h2>Configuration</h2>
+
+            <p>
+                Config files are to be located in a sub-folder of the game's Data folder, called "SynthCALIO". This directory can be changed in settings.
+                x:\SteamLibrary\steamapps\common\Skyrim Special Edition\Data\SynthCALIO\
+            </p>
+
+            <p>If using MO2 or other mod manager this means you can install your configurations as a normal mod.</p>
+
+            Configuration files in this directory must end in .json with the correct format. See <a href="https://github.com/tkoopman/SynthCALIO/tree/master/Examples" target="_blank">examples</a> directory for real world examples.
+        </div>
+    </div>
+</body>
+</html>

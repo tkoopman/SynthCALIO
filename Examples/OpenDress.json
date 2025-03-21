@@ -11,10 +11,7 @@
       "Name": "contentcatOpenDressLPAll",
       "Flags": "UseAll",
       "Entries": [
-        "CT77LeatherPanty",
-        "contentcatOpenDressLP"
-      ],
-      "Entries": [
+        "?CT77LeatherPanty",
         "contentcatOpenDressLP"
       ]
     },
@@ -22,10 +19,7 @@
       "Name": "contentcatOpenDressNPAll",
       "Flags": "UseAll",
       "Entries": [
-        "CT77NativePanty",
-        "contentcatOpenDressNP"
-      ],
-      "Entries": [
+        "?CT77NativePanty",
         "contentcatOpenDressNP"
       ]
     },
@@ -33,16 +27,13 @@
       "Name": "contentcatOpenDressDPPAll",
       "Flags": "UseAll",
       "Entries": [
-        "CT77DragonbonePanty",
-        "80D:OpenDress.esp"
-      ],
-      "Entries": [
+        "?CT77DragonbonePanty",
         "80D:OpenDress.esp"
       ]
     },
     {
       "Name": "contentcatOpenDressLP",
-      "Flags": [ "CalculateFromAllLevelsLessThanOrEqualPlayer", "CalculateForEachItemInCount" ],
+      "Flags": "CalculateFromAllLevelsLessThanOrEqualPlayer, CalculateForEachItemInCount",
       "Entries": [
         "DEMOpenDressChainmail",
         "DEMOpenDressLeather",
@@ -51,7 +42,7 @@
     },
     {
       "Name": "contentcatOpenDressNP",
-      "Flags": [ "CalculateFromAllLevelsLessThanOrEqualPlayer", "CalculateForEachItemInCount" ],
+      "Flags": "CalculateFromAllLevelsLessThanOrEqualPlayer, CalculateForEachItemInCount",
       "Entries": [
         "DEMOpenDressDragon",
         "DEMOpenDressWolf"
@@ -59,7 +50,7 @@
     },
     {
       "Name": "contentcatOpenDressAll",
-      "Flags": [ "CalculateFromAllLevelsLessThanOrEqualPlayer", "CalculateForEachItemInCount" ],
+      "Flags": "CalculateFromAllLevelsLessThanOrEqualPlayer, CalculateForEachItemInCount",
       "Entries": [
         "contentcatOpenDressLPAll",
         "contentcatOpenDressNPAll",

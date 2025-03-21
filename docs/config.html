@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="./include/main.css" rel="stylesheet" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SynthCALIO</title>
+</head>
+<body>
+    <div class="box">
+        <header>
+            <h2>SynthCALIO</h2>
+        </header>
+        <nav class="menu">
+            <a style="margin-left:auto;" href="./index.html">About</a>
+            <a class="active" href="./config.html">Config</a>
+            <a href="https://www.nexusmods.com/skyrimspecialedition/mods/144763" target="_blank">Nexus Link</a>
+        </nav>
+        <nav class="menu submenu">
+            <a href="#common">Common</a>
+            <a href="#leveledItems">Leveled Item Lists</a>
+            <a href="#outfits">Outfits</a>
+            <a href="#example">Example</a>
+        </nav>
+        <div class="main" id="main">
+            Configuration is done in JSON files. Below is a guide to the JSON format used by the SynthCALIO.<br />
+            While configuration can be split over multiple files, they are all read in at once, so you can reference other records created in other files.<br />
+            It will also automatically add the leveled item lists in an order that will not cause any missing entries, when referenced by another leveled item list.<br />
+            You will get an error if circular references are detected.<br />
+            <section id="common">
+                <h1>Common</h1>
+
+                <p>Both Leveled Item Lists and Outfits contain the following.</p>
+
+                <div class="setting">
+                    <div class="label">NOTE</div>
+                    <div>
+                        Whenever entering a FormID in SynthCALIO, use the following format.<br />
+                        <div style="padding-left: 2em">
+                            "ID:ModName.esp"<br />
+                            ID is the six hexadecimal digits, ID of the record. Do not include 0x. Leading 0s can be removed<br />
+                            ModName.esp is the name of the mod file include extension.<br />
+                            <br />
+                            Valid examples:<br />
+                            <ul>
+                                <li>"0001B3:Some Mod.esp"</li>
+                                <li>"1B3:Mod.esp"</li>
+                                <li>"A1E:Skyrim.esm"</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="setting">
+                    <div class="label">Name:</div>
+                    <div>
+                        Mandatory. This will be the EditorID of the record created. EditorIDs should be unique across all of Skyrim's mods, so keep this in mind when naming them.<br />
+                        Should only contain letters and numbers. No spaces or special characters.
+                    </div>
+                </div>
+                <div class="setting">
+                    <div class="label">SkipIfMissing:</div>
+                    <div>
+                        Optional. Number of items listed, that are missing from your load order, that will cause this entry to be skipped. Default is 1 (Any).<br />
+                        This will exclude any that you have listed as Optional. <br />
+                        If set to 0, then it will never skip and could create an empty Leveled Item List / Outfit. <br />
+                        If set to -1, then will only skip if no non-optional entries are added to the list.
+                    </div>
+                </div>
+                <div class="setting">
+                    <div class="label">SPID:</div>
+                    <div>
+                        Optional. List of <a href="https://www.nexusmods.com/skyrimspecialedition/mods/36869" target="_blank">SPID</a> entries to add to INI file if this entry is added. There are 2 valid formats for this<br />
+                        Both formats exclude the <strong>FormOrEditorID</strong> which will be automatically filled in by the patcher, to the assigned FormID in the correct SPID format.<br />
+                        Refer to the SPID article <a href="https://www.nexusmods.com/skyrimspecialedition/articles/6617" target="_blank">SPID: The Complete Reference</a> for more information.<br />
+                        <br />
+                        <strong>Excluding FormType</strong><br />
+                        Should look like "StringFilters|FormFilters|LevelFilters|TraitFilters|CountOrPackageIndex|Chance"<br />
+                        FormType will be either, "Item" or "Outfit" depending on if SPID added to Leveled Item List or Outfit.<br />
+                        <br />
+                        <strong>Including FormType</strong><br />
+                        Should look like "FormType=|StringFilters|FormFilters|LevelFilters|TraitFilters|CountOrPackageIndex|Chance"<br />
+                        Use this if you do not want the default FormType used.
+                    </div>
+                </div>
+            </section>
+            <section id="leveledItems">
+                <h2>Leveled Item Lists</h2>
+
+                <div class="setting">
+                    <div class="label">Flags:</div>
+                    <div>
+                        Optional. Valid values are "CalculateFromAllLevelsLessThanOrEqualPlayer", "CalculateForEachItemInCount", "UseAll", "SpecialLoot".<br />
+                        Multiple values can be used, separated by a comma. Example: "Flags": "CalculateFromAllLevelsLessThanOrEqualPlayer, CalculateForEachItemInCount"<br />
+                    </div>
+                </div>
+
+                <div class="setting">
+                    <div class="label">ChanceNone:</div>
+                    <div>
+                        Optional. Sets the ChanceNone value on the created record. Default is 0.<br />
+                        Can be either a number between 0 and 1 (0.5 = 50%) or a string like "50%".
+                    </div>
+                </div>
+
+                <div class="setting">
+                    <div class="label">Entries:</div>
+                    <div>
+                        List of entries to add to this leveled item list.<br />
+                        <br />
+                        <string>Format</string><br />
+                        {?}{[Lv#]} {#x} FormIDorEditorID<br />
+                        Parts surrounded by {} are optional. Do not include the {}.<br />
+                        <ul>
+                            <li>{?} - Optional. If present, then this entry is optional and will not be counted towards the SkipIfMissing count.</li>
+                            <li>{[Lv#]} - Optional. If present, then this will set the Level value to # for this entry. Default: [Lv1]</li>
+                            <li>{#x} - Optional. If present, then this will set the Count value to # for this entry. Default: 1x</li>
+                            <li>FormIDorEditorID - Mandatory. This is the FormID or EditorID of the item to add to the list. If referencing another Leveled Item List created by SynthCALIO you must use the Name you assigned on that Leveled Item List as the EditorID</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            <section id="outfits">
+                <h1>Outfits</h1>
+
+                <div class="setting">
+                    <div class="label">Items:</div>
+                    <div>
+                        List of items to add to this leveled item list as either FormID or EditorID.<br />
+                        If referencing a Leveled Item List created by SynthCALIO you must use the Name you assigned on that Leveled Item List as the EditorID
+                    </div>
+                </div>
+
+                <div class="setting">
+                    <div class="label">DefaultOutfit:</div>
+                    <div>
+                        Optional. If this outfit is added, will update the NPC's Default Outfit to this one. This will actually update the record, so good for setting default outfit for unique NPCs.<br />
+                        For others where you may want to only assign the outfit to some non-unique NPCs, I recommend using SPID instead as it has the simple chance option.
+                    </div>
+                </div>
+
+                <div class="setting">
+                    <div class="label">SleepingOutfit:</div>
+                    <div>
+                        Optional. If this outfit is added, will update the NPC's Sleeping Outfit to this one. This will actually update the record, so good for setting default outfit for unique NPCs.<br />
+                        For others where you may want to only assign the outfit to some non-unique NPCs, I recommend using SPID instead as it has the simple chance option.<br />
+                        As Outfit default FormType for SPID you would need to use the following SPID format:<br />
+                        "SleepOutfit=|StringFilters|FormFilters|LevelFilters|TraitFilters|CountOrPackageIndex|Chance"
+                    </div>
+                </div>
+            </section>
+            <section id="example">
+                <h1>Generic Example</h1>
+                <pre>
+{
+  "LeveledItems": [
+    {
+      "Name": "EditorID4LeveledItem1",
+      "Flags": "UseAll",
+      "ChanceNone": "10%",
+      "SkipIfMissing": 1,
+      "Entries": [
+        "123456:FormKey.esp", // Comments are allowed
+        "EditorID"
+      ]
+    },
+    {
+      "Name": "EditorID4LeveledItem2",
+      "Flags": "UseAll",
+      "ChanceNone": 0.1,
+      "Entries": [
+        "[Lv5] 1x 123456:FormKey.esp", // Can include Level and Count information in this format.
+        "[Lv5] EditorID" // Can exclude Level or Count if you want the default value of 1.
+      ]
+    },
+    {
+      "Name": "EditorID4LeveledItemAll",
+      "Flags": "CalculateFromAllLevelsLessThanOrEqualPlayer, CalculateForEachItemInCount",
+      "Entries": [
+        "EditorID4LeveledItem1", // Must use EditorID when referencing other records created by SynthCALIO
+        "?EditorID4LeveledItem2" // This entry is optional.
+      ],
+      "SPID": [ "StringFilters|FormFilters|LevelFilters|TraitFilters|CountOrPackageIndex|Chance" ] // SPID entry to add to INI, unless skipped. Excludes the starting Item=FormOrEditorID| part as that is automatically added.
+    }
+  ],
+  "Outfits": [
+    {
+      "Name": "EditorID4Outfit",
+      "Items": [ "EditorID4LeveledItemAll" ],
+      "SkipIfMissing": 1,
+      "DefaultOutfit": [
+        "ABC123:Dragonborn.esm" // Can have comments
+      ],
+      "SleepingOutfit": [
+        "NPCEditorID" // Can use EditorID or FormID
+      ],
+      "SPID": [
+        "StringFilters|FormFilters|LevelFilters|TraitFilters|CountOrPackageIndex|Chance", // SPID entry to add to INI, unless skipped. Excludes the starting Outfit=FormOrEditorID| part as that is automatically added.
+        "SleepOutfit = |StringFilters|FormFilters|LevelFilters|TraitFilters|CountOrPackageIndex|Chance" // Can include FormType if you don't want Outfit, but FormOrEditorID must still be empty, so first | should be straight after =.
+      ]
+    }
+  ]
+}
+</pre>
+            </section>
+        </div>
+        <br />
+    </div>
+    <script>
+        const sections = document.querySelectorAll("section");
+        const navLi = document.querySelectorAll(".submenu a");
+        const pageOffset = document.getElementById("main").offsetTop;
+
+        function onMainScroll() {
+            var current = "";
+            var currentScrollPos = document.getElementById("main").scrollTop;
+
+            sections.forEach((section) => {
+                const sectionTop = section.offsetTop - pageOffset - 150;
+                if (currentScrollPos >= sectionTop) {
+                    current = section.getAttribute("id");
+                }
+            });
+
+            navLi.forEach((li) => {
+                if (li.href.toString().endsWith("#" + current)) {
+                    li.classList.add("active");
+                } else {
+                    li.classList.remove("active");
+                }
+            });
+        }
+
+        document.getElementById("main").onscroll = onMainScroll;
+        onMainScroll();
+    </script>
+</body>
+</html>

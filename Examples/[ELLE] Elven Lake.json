@@ -49,7 +49,7 @@
     },
     {
       "Name": "ELLEElvenLakeLLAll",
-      "Flags": [ "CalculateFromAllLevelsLessThanOrEqualPlayer", "CalculateForEachItemInCount" ],
+      "Flags": "CalculateFromAllLevelsLessThanOrEqualPlayer, CalculateForEachItemInCount",
       "Entries": [
         "ELLEElvenLakeLLDefault",
         "ELLEElvenLakeLLBlack",

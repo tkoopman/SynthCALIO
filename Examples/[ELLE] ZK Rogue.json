@@ -31,7 +31,7 @@
     },
     {
       "Name": "ELLEZKRogueLLAll",
-      "Flags": [ "CalculateFromAllLevelsLessThanOrEqualPlayer", "CalculateForEachItemInCount" ],
+      "Flags": "CalculateFromAllLevelsLessThanOrEqualPlayer, CalculateForEachItemInCount",
       "Entries": [
         "ELLEZKRogueLLDefault",
         "ELLEZKRogueLLCream"

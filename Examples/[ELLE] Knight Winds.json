@@ -35,7 +35,7 @@
     },
     {
       "Name": "ELLEKnightWindsLLAll",
-      "Flags": [ "CalculateFromAllLevelsLessThanOrEqualPlayer", "CalculateForEachItemInCount" ],
+      "Flags": "CalculateFromAllLevelsLessThanOrEqualPlayer, CalculateForEachItemInCount",
       "Entries": [
         "ELLEKnightWindsLLBlack",
         "ELLEKnightWindsLLBrown",

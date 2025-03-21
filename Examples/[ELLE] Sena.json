@@ -105,7 +105,7 @@
     },
     {
       "Name": "ELLESenaLLAll",
-      "Flags": [ "CalculateFromAllLevelsLessThanOrEqualPlayer", "CalculateForEachItemInCount" ],
+      "Flags": "CalculateFromAllLevelsLessThanOrEqualPlayer, CalculateForEachItemInCount",
       "Entries": [
         "ELLESenaLL1",
         "ELLESenaLL2",
@@ -116,7 +116,7 @@
     },
     {
       "Name": "ELLESenaBowAll",
-      "Flags": [ "CalculateFromAllLevelsLessThanOrEqualPlayer", "CalculateForEachItemInCount" ],
+      "Flags": "CalculateFromAllLevelsLessThanOrEqualPlayer, CalculateForEachItemInCount",
       "Entries": [
         "937:[ELLE] Sena.esp",
         "93C:[ELLE] Sena.esp",

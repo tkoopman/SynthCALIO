@@ -53,7 +53,7 @@
     },
     {
       "Name": "ELLELovePotionLLAll",
-      "Flags": [ "CalculateFromAllLevelsLessThanOrEqualPlayer", "CalculateForEachItemInCount" ],
+      "Flags": "CalculateFromAllLevelsLessThanOrEqualPlayer, CalculateForEachItemInCount",
       "Entries": [
         "ELLELovePotionLLBlack",
         "ELLELovePotionLLBlue",

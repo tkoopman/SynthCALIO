@@ -245,7 +245,7 @@
     },
     {
       "Name": "ELLEDarkRebelLLAllBodySuits",
-      "Flags": [ "CalculateFromAllLevelsLessThanOrEqualPlayer", "CalculateForEachItemInCount" ],
+      "Flags": "CalculateFromAllLevelsLessThanOrEqualPlayer, CalculateForEachItemInCount",
       "Entries": [
         "ELLEDarkRebelLLBodysuitBlack",
         "ELLEDarkRebelLLBodysuitBlackMaroon",
@@ -263,7 +263,7 @@
     },
     {
       "Name": "ELLEDarkRebelLLAllDresses",
-      "Flags": [ "CalculateFromAllLevelsLessThanOrEqualPlayer", "CalculateForEachItemInCount" ],
+      "Flags": "CalculateFromAllLevelsLessThanOrEqualPlayer, CalculateForEachItemInCount",
       "Entries": [
         "ELLEDarkRebelLLDressBlack",
         "ELLEDarkRebelLLDressGreen",
@@ -275,7 +275,7 @@
     },
     {
       "Name": "ELLEDarkRebelLLAll",
-      "Flags": [ "CalculateFromAllLevelsLessThanOrEqualPlayer", "CalculateForEachItemInCount" ],
+      "Flags": "CalculateFromAllLevelsLessThanOrEqualPlayer, CalculateForEachItemInCount",
       "Entries": [
         "ELLEDarkRebelLLAllBodySuits",
         "ELLEDarkRebelLLAllDresses"

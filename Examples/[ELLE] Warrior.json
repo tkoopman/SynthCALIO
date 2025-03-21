@@ -95,7 +95,7 @@
     },
     {
       "Name": "ELLEWarriorLLAll",
-      "Flags": [ "CalculateFromAllLevelsLessThanOrEqualPlayer", "CalculateForEachItemInCount" ],
+      "Flags": "CalculateFromAllLevelsLessThanOrEqualPlayer, CalculateForEachItemInCount",
       "Entries": [
         "ELLEWarriorLL1",
         "ELLEWarriorLL2",

@@ -53,7 +53,7 @@
     },
     {
       "Name": "ELLEDominiqueLLAll",
-      "Flags": [ "CalculateFromAllLevelsLessThanOrEqualPlayer", "CalculateForEachItemInCount" ],
+      "Flags": "CalculateFromAllLevelsLessThanOrEqualPlayer, CalculateForEachItemInCount",
       "Entries": [
         "ELLEDominiqueLLDefault",
         "ELLEDominiqueLLFishnets",

@@ -41,7 +41,7 @@
     },
     {
       "Name": "ELLESherwoodHuntressLLAll",
-      "Flags": [ "CalculateFromAllLevelsLessThanOrEqualPlayer", "CalculateForEachItemInCount" ],
+      "Flags": "CalculateFromAllLevelsLessThanOrEqualPlayer, CalculateForEachItemInCount",
       "Entries": [
         "ELLESherwoodHuntressLLDefault",
         "ELLESherwoodHuntressLLBrown",

@@ -25,7 +25,7 @@
     },
     {
       "Name": "ELLEDevilParadeLLAll",
-      "Flags": [ "CalculateFromAllLevelsLessThanOrEqualPlayer", "CalculateForEachItemInCount" ],
+      "Flags": "CalculateFromAllLevelsLessThanOrEqualPlayer, CalculateForEachItemInCount",
       "Entries": [
         "ELLEDevilParadeLLGold",
         "ELLEDevilParadeLLSilver"

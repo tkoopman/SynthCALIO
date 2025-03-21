@@ -75,7 +75,7 @@
     },
     {
       "Name": "ELLETavernMaidLLAll",
-      "Flags": [ "CalculateFromAllLevelsLessThanOrEqualPlayer", "CalculateForEachItemInCount" ],
+      "Flags": "CalculateFromAllLevelsLessThanOrEqualPlayer, CalculateForEachItemInCount",
       "Entries": [
         "ELLETavernMaidLL1",
         "ELLETavernMaidLL2",

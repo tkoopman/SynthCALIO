@@ -41,7 +41,7 @@
     },
     {
       "Name": "ELLEBioSpikeLLAll",
-      "Flags": [ "CalculateFromAllLevelsLessThanOrEqualPlayer", "CalculateForEachItemInCount" ],
+      "Flags": "CalculateFromAllLevelsLessThanOrEqualPlayer, CalculateForEachItemInCount",
       "Entries": [
         "ELLEBioSpikeLL1",
         "ELLEBioSpikeLL2",

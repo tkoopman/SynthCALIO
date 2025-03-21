@@ -113,7 +113,7 @@
     },
     {
       "Name": "ELLEAbyssLLAll",
-      "Flags": [ "CalculateFromAllLevelsLessThanOrEqualPlayer", "CalculateForEachItemInCount" ],
+      "Flags": "CalculateFromAllLevelsLessThanOrEqualPlayer, CalculateForEachItemInCount",
       "Entries": [
         "ELLEAbyssLLBlackApocrypha",
         "ELLEAbyssLLBlackGold",
