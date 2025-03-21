@@ -34,7 +34,7 @@ namespace SynthCALIO.JsonConverters
 
         public override void WriteJson (JsonWriter writer, object? value, JsonSerializer serializer) => throw new NotImplementedException();
 
-        [GeneratedRegex(@"^(?:\[(?:[Ll][vV])?(?'Level'\d+)\]\s?)?(?:(?'Count'\d+)x\s?)?(?'ID'.+)$")]
+        [GeneratedRegex(@"^(?'Optional'\?)?(?:\[(?:[Ll][vV])?(?'Level'\d+)\]\s?)?(?:(?'Count'\d+)x\s?)?(?'ID'.+)$")]
         private static partial Regex RegexLeveledItemEntry ();
 
         private static bool tryParseLeveledItemEntry (string entry, [MaybeNullWhen(false)] out JsonLeveledItemEntry data)
@@ -47,10 +47,13 @@ namespace SynthCALIO.JsonConverters
 
             short count = m.Groups.TryGetValue("Count", out var c) && !string.IsNullOrWhiteSpace(c.Value) ? short.Parse(c.Value) : (short)1;
             short level = m.Groups.TryGetValue("Level", out var l) && !string.IsNullOrWhiteSpace(l.Value) ? short.Parse(l.Value) : (short)1;
+            bool optional = m.Groups.TryGetValue("Optional", out var o) && !string.IsNullOrWhiteSpace(o.Value) && o.Value[0] == JsonLeveledItem.OptionalPrefix;
+
             data = new()
             {
                 Level = level,
                 Count = count,
+                Optional = optional,
                 ID = m.Groups["ID"].Value
             };
 
