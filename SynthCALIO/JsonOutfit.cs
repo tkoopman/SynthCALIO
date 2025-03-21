@@ -11,6 +11,8 @@ namespace SynthCALIO
     [JsonObject(MemberSerialization.OptIn)]
     public class JsonOutfit (string editorID)
     {
+        public List<string[]> AllItems { get; set; } = [];
+
         /// <summary>
         ///     List of NPC records to update the DefaultOutfit for if outfit added. List by FormID
         ///     or EditorID.
@@ -20,9 +22,6 @@ namespace SynthCALIO
 
         [JsonProperty(propertyName: "Name", Required = Required.Always)]
         public string EditorID { get; } = editorID.IsValidEditorID() ? editorID : throw new ArgumentException($"Invalid EditorID: {editorID}", nameof(EditorID));
-
-        [JsonProperty]
-        public List<string> Items { get; set; } = [];
 
         /// <summary>
         ///     Number of items, that should be added, but are missing, that will cause Outfit to be
@@ -56,19 +55,25 @@ namespace SynthCALIO
 
         internal string? FromFile { get; } = JsonConfig.CurrentFile;
 
+        [JsonProperty]
+        private string[] Items { set => AllItems.Add(value); }
+
         /// <summary>
         ///     Basic checks to ensure the outfit record looks valid. Doesn't actually check if
         ///     items referenced are valid, just that they have a valid FormID or EditorID format.
         /// </summary>
         public void BasicChecks ()
         {
-            if (Items.Count == 0 && SkipIfMissing != SynthCALIO.SkipIfMissing.Never)
+            if (AllItems.Count == 0 && SkipIfMissing != SynthCALIO.SkipIfMissing.Never)
                 throw new InvalidDataException($"Outfit {EditorID} from {FromFile}, contains no items");
 
-            foreach (string item in Items)
+            foreach (string[] group in AllItems)
             {
-                if (SynthCommon.TryConvertToSkyrimID(item, out _, out _) == SkyrimIDType.Invalid)
-                    throw new InvalidDataException($"Outfit {EditorID} from {FromFile}, contains invalid item: {item}");
+                foreach (string item in group)
+                {
+                    if (SynthCommon.TryConvertToSkyrimID(item, out _, out _) == SkyrimIDType.Invalid)
+                        throw new InvalidDataException($"Outfit {EditorID} from {FromFile}, contains invalid item: {item}");
+                }
             }
 
             foreach (string outfit in DefaultOutfit)
@@ -94,31 +99,43 @@ namespace SynthCALIO
             {
                 EditorID = EditorID,
             };
-
-            outfit.Items ??= [];
-            int skipped = 0;
-
-            foreach (string item in Items)
+            bool first = true;
+            foreach (string[] group in AllItems)
             {
-                if (!Program.TryGetRecord<IOutfitTargetGetter>(item, out var record))
+                if (!first)
+                    Console.WriteLine($"Previous item group skipped, processing next item group for {outfit.EditorID}");
+                else
+                    first = false;
+
+                outfit.Items ??= [];
+                int skipped = 0;
+
+                foreach (string item in group)
                 {
-                    if (++skipped == SkipIfMissing)
+                    if (!Program.TryGetRecord<IOutfitTargetGetter>(item, out var record))
                     {
-                        Console.WriteLine($"Skipping Outfit: {EditorID}. Record not found: {item}. Config file: {FromFile}.");
-                        return null;
+                        if (++skipped == SkipIfMissing)
+                        {
+                            Console.WriteLine($"Skipping adding {item} to Outfit: {EditorID}. Record not found. Config file: {FromFile}.");
+                            outfit.Items = null;
+                            break;
+                        }
+                        else
+                        {
+                            Console.WriteLine($"Skipping adding {item} to Outfit: {EditorID}. Record not found. Config file: {FromFile}.");
+                        }
                     }
                     else
                     {
-                        Console.WriteLine($"Skipping adding {item} to Outfit: {EditorID}. Record not found. Config file: {FromFile}.");
+                        outfit.Items.Add(record.ToLinkGetter());
                     }
                 }
-                else
-                {
-                    outfit.Items.Add(record.ToLinkGetter());
-                }
+
+                if (outfit.Items is not null && (SkipIfMissing == SynthCALIO.SkipIfMissing.Never || outfit.Items.Count != 0))
+                    break;
             }
 
-            if (SkipIfMissing == SynthCALIO.SkipIfMissing.Any && outfit.Items.Count == 0)
+            if (outfit.Items is null || (SkipIfMissing != SynthCALIO.SkipIfMissing.Never && outfit.Items.Count == 0))
             {
                 Console.WriteLine($"Skipping Outfit: {EditorID}. No valid items found. Config file: {FromFile}.");
                 return null;

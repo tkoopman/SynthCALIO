@@ -122,7 +122,7 @@ namespace SynthCALIO
             while (linked.Count != 0)
             {
                 var referenced = linked
-                    .SelectMany(x => x.Entries) // Return all entries from all LeveledItems
+                    .SelectMany(x => x.AllEntries.SelectMany(y => y)) // Return all entries from all LeveledItems
                     .Select(x => x.ID) // Just need ID from each entry
                     .Where(x => !x.Contains(':')) // Exclude FormKey entries
                     .ToHashSet(StringComparer.OrdinalIgnoreCase); // Only unique

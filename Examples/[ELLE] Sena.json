@@ -125,7 +125,7 @@
       ],
       "SPID": [
         "|0xCAB2F", // Angi
-        "0x73FBE|Hunter|HunterFaction||-C/-U||5" // Any Hunter 5%
+        "Hunter|HunterFaction||-C/-U||5" // Any Hunter 5%
       ]
     }
   ],

@@ -1,0 +1,92 @@
+// SynthCALIO version of "ELLE's Armor Mods - SPID Addons" by SauteedPanda
+// https://www.nexusmods.com/skyrimspecialedition/mods/139703
+
+{
+  "LeveledItems": [
+    {
+      "Name": "ELLENecromantLL1",
+      "Flags": "UseAll",
+      "Entries": [
+        "00EL_NecromantMask1",
+        "00EL_NecromantHelmetHair1",
+        "00EL_NecromantBoots1",
+        "00EL_NecromantChestplate1",
+        "00EL_NecromantBracers1",
+        "00EL_NecromantBelt1",
+        "00EL_NecromantBodysuit1",
+        "00EL_NecromantClaws1",
+        "00EL_NecromantCuisses1",
+        "00EL_NecromantPauldrons1"
+      ]
+    },
+    {
+      "Name": "ELLENecromantLL2",
+      "Flags": "UseAll",
+      "Entries": [
+        "00EL_NecromantMask2",
+        "00EL_NecromantHelmetHair2",
+        "00EL_NecromantBoots2",
+        "00EL_NecromantChestplate2",
+        "00EL_NecromantBracers2",
+        "00EL_NecromantBelt2",
+        "00EL_NecromantBodysuit2",
+        "00EL_NecromantClaws2",
+        "00EL_NecromantCuisses2",
+        "00EL_NecromantPauldrons2"
+      ]
+    },
+    {
+      "Name": "ELLENecromantLL3",
+      "Flags": "UseAll",
+      "Entries": [
+        "00EL_NecromantMask3",
+        "00EL_NecromantHelmetHair3",
+        "00EL_NecromantBoots3",
+        "00EL_NecromantChestplate3",
+        "00EL_NecromantBracers3",
+        "00EL_NecromantBelt3",
+        "00EL_NecromantBodysuit3",
+        "00EL_NecromantClaws3",
+        "00EL_NecromantCuisses3",
+        "00EL_NecromantPauldrons3"
+      ]
+    },
+    {
+      "Name": "ELLENecromantLLAll",
+      "Flags": [ "CalculateFromAllLevelsLessThanOrEqualPlayer", "CalculateForEachItemInCount" ],
+      "Entries": [
+        "ELLENecromantLL1",
+        "ELLENecromantLL2",
+        "ELLENecromantLL3"
+      ]
+    }
+  ],
+  "Outfits": [
+    {
+      "Name": "ELLENecromantOutfit1",
+      "Items": [ "ELLENecromantLL1" ],
+      "DefaultOutfit": [],
+      "SPID": []
+    },
+    {
+      "Name": "ELLENecromantOutfit2",
+      "Items": [ "ELLENecromantLL2" ],
+      "DefaultOutfit": [],
+      "SPID": []
+    },
+    {
+      "Name": "ELLENecromantOutfit3",
+      "Items": [ "ELLENecromantLL3" ],
+      "DefaultOutfit": [],
+      "SPID": []
+    },
+    {
+      "Name": "ELLENecromantAllOutfits",
+      "Items": [ "ELLENecromantLLAll" ],
+      "DefaultOutfit": [],
+      "SPID": [
+        "Ascendant Necromancer,Master Necromancer,Arch Necromancer|||F/-C/-U||20" // Female Necromancers 20%
+      ]
+    }
+  ]
+}

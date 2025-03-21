@@ -13,6 +13,7 @@ using SynthCALIO.JsonConverters;
 
 namespace SynthCALIO
 {
+    [System.Diagnostics.CodeAnalysis.SuppressMessage("Usage", "CA2231:Overload operator equals on overriding value type Equals", Justification = "<Pending>")]
     public struct JsonLeveledItemEntry : IEquatable<JsonLeveledItemEntry>
     {
         public short Count { get; set; }
@@ -29,29 +30,14 @@ namespace SynthCALIO
     [JsonObject(MemberSerialization.OptIn)]
     public partial class JsonLeveledItem (string editorID)
     {
+        public List<JsonLeveledItemEntry[]> AllEntries { get; set; } = [];
+
         [JsonProperty]
         [JsonConverter(typeof(PercentConverter))]
         public Percent ChanceNone { get; set; }
 
         [JsonProperty(propertyName: "Name", Required = Required.Always)]
         public string EditorID { get; } = editorID.IsValidEditorID() ? editorID : throw new ArgumentException($"Invalid EditorID: {editorID}", nameof(EditorID));
-
-        /// <summary>
-        ///     List of items to add to the leveled list.
-        ///
-        ///     Format: [Lv{Level}] {count}x {FormID or EditorID}
-        ///     - Only the FormID or EditorID is required.
-        ///     - 1 is default for both Level and count.
-        ///     - Lv is optional. Just included to make same as format seen in xEdit.
-        ///     - Spaces are optional.
-        ///
-        ///     Both the below examples are valid and equal to each other.
-        ///     - Example 1: [Lv1] 1x LItemEnchIronSword
-        ///     - Example 2: LItemEnchIronSword
-        /// </summary>
-        [JsonProperty]
-        [JsonConverter(typeof(JsonLeveledItemEntriesConverter))]
-        public List<JsonLeveledItemEntry> Entries { get; set; } = [];
 
         [JsonProperty]
         [JsonConverter(typeof(FlagConverter))]
@@ -86,18 +72,38 @@ namespace SynthCALIO
         internal string? FromFile { get; } = JsonConfig.CurrentFile;
 
         /// <summary>
+        ///     List of items to add to the leveled list.
+        ///
+        ///     Format: [Lv{Level}] {count}x {FormID or EditorID}
+        ///     - Only the FormID or EditorID is required.
+        ///     - 1 is default for both Level and count.
+        ///     - Lv is optional. Just included to make same as format seen in xEdit.
+        ///     - Spaces are optional.
+        ///
+        ///     Both the below examples are valid and equal to each other.
+        ///     - Example 1: [Lv1] 1x LItemEnchIronSword
+        ///     - Example 2: LItemEnchIronSword
+        /// </summary>
+        [JsonProperty]
+        [JsonConverter(typeof(JsonLeveledItemEntriesConverter))]
+        private JsonLeveledItemEntry[] Entries { set => AllEntries.Add(value); }
+
+        /// <summary>
         ///     Basic checks to ensure the outfit record looks valid. Doesn't actually check if
         ///     items referenced are valid, just that they have a valid FormID or EditorID format.
         /// </summary>
         public void BasicChecks ()
         {
-            if (Entries.Count == 0 && SkipIfMissing != SynthCALIO.SkipIfMissing.Never)
+            if (AllEntries.Count == 0 && SkipIfMissing != SynthCALIO.SkipIfMissing.Never)
                 throw new InvalidDataException($"LeveledItem {EditorID} from {FromFile}, contains no entries");
 
-            foreach (var entry in Entries)
+            foreach (var group in AllEntries)
             {
-                if (SynthCommon.TryConvertToSkyrimID(entry.ID, out _, out _) == SkyrimIDType.Invalid)
-                    throw new InvalidDataException($"LeveledItem {EditorID} from {FromFile}, contains invalid FormKey or EditorID: {entry.ID}");
+                foreach (var entry in group)
+                {
+                    if (SynthCommon.TryConvertToSkyrimID(entry.ID, out _, out _) == SkyrimIDType.Invalid)
+                        throw new InvalidDataException($"LeveledItem {EditorID} from {FromFile}, contains invalid FormKey or EditorID: {entry.ID}");
+                }
             }
 
             foreach (string item in SPID)
@@ -113,35 +119,49 @@ namespace SynthCALIO
                 ChanceNone = ChanceNone,
             };
 
-            leveledItem.Entries ??= [];
-            int skipped = 0;
-            foreach (var data in Entries)
+            bool first = true;
+            foreach (var group in AllEntries)
             {
-                var entry = new LeveledItemEntry();
-                entry.Data ??= new LeveledItemEntryData();
-                entry.Data.Count = data.Count;
-                entry.Data.Level = data.Level;
+                if (!first)
+                    Console.WriteLine($"Previous entries group skipped, processing next entries group for {leveledItem.EditorID}");
+                else
+                    first = false;
 
-                if (!Program.TryGetRecord<IItemGetter>(data.ID, out var record))
+                leveledItem.Entries ??= [];
+                int skipped = 0;
+
+                foreach (var data in group)
                 {
-                    if (++skipped == SkipIfMissing)
+                    var entry = new LeveledItemEntry();
+                    entry.Data ??= new LeveledItemEntryData();
+                    entry.Data.Count = data.Count;
+                    entry.Data.Level = data.Level;
+
+                    if (!Program.TryGetRecord<IItemGetter>(data.ID, out var record))
                     {
-                        Console.WriteLine($"Skipping LeveledItem: {EditorID}. Record not found: {data.ID}. Config file: {FromFile}.");
-                        return null;
+                        if (++skipped == SkipIfMissing)
+                        {
+                            Console.WriteLine($"Skipping LeveledItem: {EditorID}. Record not found: {data.ID}. Config file: {FromFile}.");
+                            leveledItem.Entries = null;
+                            break;
+                        }
+                        else
+                        {
+                            Console.WriteLine($"Skipping adding {data.ID} to LeveledItem: {EditorID}. Record not found. Config file: {FromFile}.");
+                        }
                     }
                     else
                     {
-                        Console.WriteLine($"Skipping adding {data.ID} to LeveledItem: {EditorID}. Record not found. Config file: {FromFile}.");
+                        entry.Data.Reference = record.ToLink();
+                        leveledItem.Entries.Add(entry);
                     }
                 }
-                else
-                {
-                    entry.Data.Reference = record.ToLink();
-                    leveledItem.Entries.Add(entry);
-                }
+
+                if (leveledItem.Entries is not null && (SkipIfMissing == SynthCALIO.SkipIfMissing.Never || leveledItem.Entries.Count != 0))
+                    break;
             }
 
-            if (SkipIfMissing == SynthCALIO.SkipIfMissing.All && leveledItem.Entries.Count == 0)
+            if (leveledItem.Entries is null || (SkipIfMissing != SynthCALIO.SkipIfMissing.Never && leveledItem.Entries.Count == 0))
             {
                 Console.WriteLine($"Skipping LeveledItem: {EditorID}. No valid entries found. Config file: {FromFile}.");
                 return null;

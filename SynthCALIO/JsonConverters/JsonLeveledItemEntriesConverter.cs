@@ -29,7 +29,7 @@ namespace SynthCALIO.JsonConverters
                 entries.Add(item);
             }
 
-            return entries;
+            return entries.ToArray();
         }
 
         public override void WriteJson (JsonWriter writer, object? value, JsonSerializer serializer) => throw new NotImplementedException();
