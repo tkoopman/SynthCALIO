@@ -83,7 +83,7 @@
     },
     {
       "Name": "ELLEOctoberSeerLLAll",
-      "Flags": [ "CalculateFromAllLevelsLessThanOrEqualPlayer", "CalculateForEachItemInCount" ],
+      "Flags": "CalculateFromAllLevelsLessThanOrEqualPlayer, CalculateForEachItemInCount",
       "Entries": [
         "ELLEOctoberSeerLL1",
         "ELLEOctoberSeerLL2",

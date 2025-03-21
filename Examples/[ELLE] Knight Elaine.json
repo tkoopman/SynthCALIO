@@ -185,7 +185,7 @@
     },
     {
       "Name": "ELLEKnightElaineLLAllDefault",
-      "Flags": [ "CalculateFromAllLevelsLessThanOrEqualPlayer", "CalculateForEachItemInCount" ],
+      "Flags": "CalculateFromAllLevelsLessThanOrEqualPlayer, CalculateForEachItemInCount",
       "Entries": [
         "ELLEKnightElaineLL1",
         "ELLEKnightElaineLL2",
@@ -196,7 +196,7 @@
     },
     {
       "Name": "ELLEKnightElaineLLAllLonger",
-      "Flags": [ "CalculateFromAllLevelsLessThanOrEqualPlayer", "CalculateForEachItemInCount" ],
+      "Flags": "CalculateFromAllLevelsLessThanOrEqualPlayer, CalculateForEachItemInCount",
       "Entries": [
         "ELLEKnightElaineLLLonger1",
         "ELLEKnightElaineLLLonger2",
@@ -207,7 +207,7 @@
     },
     {
       "Name": "ELLEKnightElaineLLAll",
-      "Flags": [ "CalculateFromAllLevelsLessThanOrEqualPlayer", "CalculateForEachItemInCount" ],
+      "Flags": "CalculateFromAllLevelsLessThanOrEqualPlayer, CalculateForEachItemInCount",
       "Entries": [
         "ELLEKnightElaineLLAllDefault",
         "ELLEKnightElaineLLAllLonger"

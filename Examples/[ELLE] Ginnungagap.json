@@ -5,7 +5,7 @@
   "LeveledItems": [
     {
       "Name": "ELLEGinnungagapLLAll",
-      "Flags": [ "CalculateFromAllLevelsLessThanOrEqualPlayer", "CalculateForEachItemInCount" ],
+      "Flags": "CalculateFromAllLevelsLessThanOrEqualPlayer, CalculateForEachItemInCount",
       "Entries": [
         "00EL_GinnungagapMain",
         "00EL_GinnungagapMainBlu",

@@ -50,7 +50,7 @@
     },
     {
       "Name": "ELLETribalScoutLLAll",
-      "Flags": [ "CalculateFromAllLevelsLessThanOrEqualPlayer", "CalculateForEachItemInCount" ],
+      "Flags": "CalculateFromAllLevelsLessThanOrEqualPlayer, CalculateForEachItemInCount",
       "Entries": [
         "ELLETribalScoutLLDefault",
         "ELLETribalScoutLLGlowingBlue",

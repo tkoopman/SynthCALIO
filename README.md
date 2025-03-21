@@ -5,6 +5,7 @@ SynthCALIO keeps track of IDs assigned in previous runs to make sure the same Fo
 
 ## Links
 [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/144763)  
+[Documentation](https://tkoopman.github.io/SynthCALIO/)  
 [Examples](./Examples/)
 
 ## Prerequisites
@@ -36,59 +37,7 @@ This does mean that if you rename an entry in a JSON config file, it will get a 
 
 ## Configuration file format
 
-By default SynthCALIO will look for a sub-folder called SynthCALIO in the Skyrim Data folder for all JSON files to load.
-Each JSON configuration file has the following structure:
-```json
-{
-  "LeveledItems": [
-    {
-      "Name": "EditorID4LeveledItem1", // Mandatory - Must be valid EditorID and unique across all JSON config files
-      "Flags": "UseAll", // Valid values are "CalculateFromAllLevelsLessThanOrEqualPlayer, "CalculateForEachItemInCount", "UseAll", "SpecialLoot"
-      "ChanceNone": "10%", // Can be a percent form like this. Default: 0%
-      "SkipIfMissing": 1, // Number of entries that are unable to be found, before it will skip adding this LeveledItem. Default 1 (Any), 0 = Never Skip, -1 = Skip if all missing
-      "Entries": [  // List of leveled item entries - can be FormKey or EditorID
-        "123456:FormKey.esp",
-        "EditorID"
-      ]
-    },
-    {
-      "Name": "EditorID4LeveledItem2",
-      "Flags": "UseAll",
-      "ChanceNone": 0.1,  // Can be a decimal like this. This is equivalent to 10%
-      "Entries": [
-        "[Lv5] 1x 123456:FormKey.esp", // Can include Level and Count information in this format.
-        "[Lv5] EditorID" // Can exclude Level or Count if you want the default value of 1.
-      ]
-    },
-    {
-      "Name": "EditorID4LeveledItemAll",
-      "Flags": [ "CalculateFromAllLevelsLessThanOrEqualPlayer", "CalculateForEachItemInCount" ], // Can have multiple flags
-      "Entries": [
-        "EditorID4LeveledItem1", // Must use EditorID when referencing other records created by SynthCALIO
-        "EditorID4LeveledItem2"
-      ],
-      "SPID": [ "StringFilters|FormFilters|LevelFilters|TraitFilters|CountOrPackageIndex|Chance" ] // SPID entry to add to INI, unless skipped. Excludes the starting Item=FormOrEditorID| part as that is automatically added.
-    }
-  ],
-  "Outfits": [
-    {
-      "Name": "EditorID4Outfit",
-      "Items": [ "EditorID4LeveledItemAll" ], // List of items to include in the outfit. Can be FormKey or EditorID but if referencing a LeveledItem created by SynthCALIO, it must be the EditorID
-      "SkipIfMissing": 1, // Number of items that are unable to be found, before it will skip adding this Outfit. Default 1 (Any), 0 = Never Skip, -1 = Skip if all missing
-      "DefaultOutfit": [ // List of NPC records to update the Default Outfit on to point to this outfit if created.
-        "ABC123:Dragonborn.esm" // Can have comments
-      ],
-      "SleepingOutfit": [ // List of NPC records to update the Sleeping Outfit on to point to this outfit if created.
-        "NPCEditorID" // Can use EditorID
-      ],
-      "SPID": [ 
-        "StringFilters|FormFilters|LevelFilters|TraitFilters|CountOrPackageIndex|Chance", // SPID entry to add to INI, unless skipped. Excludes the starting Outfit=FormOrEditorID| part as that is automatically added.
-        "SleepOutfit = |StringFilters|FormFilters|LevelFilters|TraitFilters|CountOrPackageIndex|Chance" // Can include FormType if you don't want Outfit, but FormOrEditorID must still be empty, so first | should be straight after =.
-      ]
-    }
-  ]
-}
-```
+Please see [documentation](https://tkoopman.github.io/SynthCALIO/) for details on how to create the JSON configuration files.
 
 ## Bugs, Requests and Contributions
 

@@ -57,7 +57,7 @@
     },
     {
       "Name": "ELLEXmasSpecialLLAll",
-      "Flags": [ "CalculateFromAllLevelsLessThanOrEqualPlayer", "CalculateForEachItemInCount" ],
+      "Flags": "CalculateFromAllLevelsLessThanOrEqualPlayer, CalculateForEachItemInCount",
       "Entries": [
         "ELLEXmasSpecialLLRed",
         "ELLEXmasSpecialLLRedGold",

@@ -59,7 +59,7 @@
     },
     {
       "Name": "ELLEWickedCorruptionLLAll",
-      "Flags": [ "CalculateFromAllLevelsLessThanOrEqualPlayer", "CalculateForEachItemInCount" ],
+      "Flags": "CalculateFromAllLevelsLessThanOrEqualPlayer, CalculateForEachItemInCount",
       "Entries": [
         "ELLEWickedCorruptionLL1",
         "ELLEWickedCorruptionLL2",

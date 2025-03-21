@@ -60,7 +60,7 @@
     },
     {
       "Name": "ELLERocaLLAll",
-      "Flags": [ "CalculateFromAllLevelsLessThanOrEqualPlayer", "CalculateForEachItemInCount" ],
+      "Flags": "CalculateFromAllLevelsLessThanOrEqualPlayer, CalculateForEachItemInCount",
       "Entries": [
         "ELLERocaLL1",
         "ELLERocaLL2",

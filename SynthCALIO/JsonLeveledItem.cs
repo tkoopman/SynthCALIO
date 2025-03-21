@@ -30,6 +30,8 @@ namespace SynthCALIO
     [JsonObject(MemberSerialization.OptIn)]
     public partial class JsonLeveledItem (string editorID)
     {
+        public const char OptionalPrefix = Program.OptionalPrefix;
+
         public List<JsonLeveledItemEntry[]> AllEntries { get; set; } = [];
 
         [JsonProperty]
@@ -51,6 +53,7 @@ namespace SynthCALIO
         ///     list then will never skip.
         ///     - 0: Never Skip
         ///     - -1: Skip only if all entries are missing
+        ///     NOTE: Optional entries are not counted in this check.
         /// </summary>
         [JsonProperty]
         public int SkipIfMissing { get; set; } = SynthCALIO.SkipIfMissing.Any;
@@ -89,6 +92,12 @@ namespace SynthCALIO
         private JsonLeveledItemEntry[] Entries { set => AllEntries.Add(value); }
 
         /// <summary>
+        ///     Just an alias for Entries.
+        /// </summary>
+        [JsonProperty]
+        private JsonLeveledItemEntry[] Items { set => AllEntries.Add(value); }
+
+        /// <summary>
         ///     Basic checks to ensure the outfit record looks valid. Doesn't actually check if
         ///     items referenced are valid, just that they have a valid FormID or EditorID format.
         /// </summary>
@@ -101,7 +110,7 @@ namespace SynthCALIO
             {
                 foreach (var entry in group)
                 {
-                    if (SynthCommon.TryConvertToSkyrimID(entry.ID, out _, out _) == SkyrimIDType.Invalid)
+                    if (SynthCommon.TryConvertToSkyrimID(entry.ID, [OptionalPrefix], out _, out _, out _) == SkyrimIDType.Invalid)
                         throw new InvalidDataException($"LeveledItem {EditorID} from {FromFile}, contains invalid FormKey or EditorID: {entry.ID}");
                 }
             }
@@ -120,6 +129,8 @@ namespace SynthCALIO
             };
 
             bool first = true;
+            int mandatoryAdded = 0;
+
             foreach (var group in AllEntries)
             {
                 if (!first)
@@ -129,17 +140,21 @@ namespace SynthCALIO
 
                 leveledItem.Entries ??= [];
                 int skipped = 0;
+                mandatoryAdded = 0;
 
                 foreach (var data in group)
                 {
+                    bool optional = data.ID[0] == OptionalPrefix;
+                    string entryID = optional ? data.ID[1..] : data.ID;
+
                     var entry = new LeveledItemEntry();
                     entry.Data ??= new LeveledItemEntryData();
                     entry.Data.Count = data.Count;
                     entry.Data.Level = data.Level;
 
-                    if (!Program.TryGetRecord<IItemGetter>(data.ID, out var record))
+                    if (!Program.TryGetRecord<IItemGetter>(entryID, out var record))
                     {
-                        if (++skipped == SkipIfMissing)
+                        if (!optional && ++skipped == SkipIfMissing)
                         {
                             Console.WriteLine($"Skipping LeveledItem: {EditorID}. Record not found: {data.ID}. Config file: {FromFile}.");
                             leveledItem.Entries = null;
@@ -154,14 +169,16 @@ namespace SynthCALIO
                     {
                         entry.Data.Reference = record.ToLink();
                         leveledItem.Entries.Add(entry);
+                        if (!optional)
+                            mandatoryAdded++;
                     }
                 }
 
-                if (leveledItem.Entries is not null && (SkipIfMissing == SynthCALIO.SkipIfMissing.Never || leveledItem.Entries.Count != 0))
+                if (leveledItem.Entries is not null && (SkipIfMissing == SynthCALIO.SkipIfMissing.Never || mandatoryAdded != 0))
                     break;
             }
 
-            if (leveledItem.Entries is null || (SkipIfMissing != SynthCALIO.SkipIfMissing.Never && leveledItem.Entries.Count == 0))
+            if (leveledItem.Entries is null || (SkipIfMissing != SynthCALIO.SkipIfMissing.Never && mandatoryAdded == 0))
             {
                 Console.WriteLine($"Skipping LeveledItem: {EditorID}. No valid entries found. Config file: {FromFile}.");
                 return null;

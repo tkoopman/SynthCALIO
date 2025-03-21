@@ -80,7 +80,7 @@
     },
     {
       "Name": "ELLEChaosrunnerLLAll",
-      "Flags": [ "CalculateFromAllLevelsLessThanOrEqualPlayer", "CalculateForEachItemInCount" ],
+      "Flags": "CalculateFromAllLevelsLessThanOrEqualPlayer, CalculateForEachItemInCount",
       "Entries": [
         "ELLEChaosrunnerLL1",
         "ELLEChaosrunnerLL2",

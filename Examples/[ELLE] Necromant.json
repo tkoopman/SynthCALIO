@@ -53,7 +53,7 @@
     },
     {
       "Name": "ELLENecromantLLAll",
-      "Flags": [ "CalculateFromAllLevelsLessThanOrEqualPlayer", "CalculateForEachItemInCount" ],
+      "Flags": "CalculateFromAllLevelsLessThanOrEqualPlayer, CalculateForEachItemInCount",
       "Entries": [
         "ELLENecromantLL1",
         "ELLENecromantLL2",

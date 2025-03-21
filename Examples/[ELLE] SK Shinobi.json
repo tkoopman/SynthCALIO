@@ -73,7 +73,7 @@
     },
     {
       "Name": "ELLESKShinobiLLAll",
-      "Flags": [ "CalculateFromAllLevelsLessThanOrEqualPlayer", "CalculateForEachItemInCount" ],
+      "Flags": "CalculateFromAllLevelsLessThanOrEqualPlayer, CalculateForEachItemInCount",
       "Entries": [
         "ELLESKShinobiLL1",
         "ELLESKShinobiLL2",

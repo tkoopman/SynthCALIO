@@ -71,7 +71,7 @@
     },
     {
       "Name": "ELLEElvenAssassinLLAll",
-      "Flags": [ "CalculateFromAllLevelsLessThanOrEqualPlayer", "CalculateForEachItemInCount" ],
+      "Flags": "CalculateFromAllLevelsLessThanOrEqualPlayer, CalculateForEachItemInCount",
       "Entries": [
         "ELLEElvenAssassinLL1",
         "ELLEElvenAssassinLL2",

@@ -18,6 +18,8 @@ namespace SynthCALIO
 {
     public partial class Program
     {
+        public const char OptionalPrefix = '?';
+
         internal static Lazy<Settings> Settings = null!;
         internal static IPatcherState<ISkyrimMod, ISkyrimModGetter> State = null!;
 

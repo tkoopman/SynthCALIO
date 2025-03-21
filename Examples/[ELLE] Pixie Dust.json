@@ -5,7 +5,7 @@
   "LeveledItems": [
     {
       "Name": "ELLEPixieDustLLAll",
-      "Flags": [ "CalculateFromAllLevelsLessThanOrEqualPlayer", "CalculateForEachItemInCount" ],
+      "Flags": "CalculateFromAllLevelsLessThanOrEqualPlayer, CalculateForEachItemInCount",
       "Entries": [
         "00EL_PixieG",
         "00EL_PixieP"
