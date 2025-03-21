@@ -19,6 +19,7 @@ namespace SynthCALIO
         public short Count { get; set; }
         public string ID { get; set; }
         public short Level { get; set; }
+        public bool Optional { get; set; }
 
         public override readonly bool Equals (object? obj) => obj is JsonLeveledItemEntry entry && Equals(entry);
 
@@ -144,17 +145,14 @@ namespace SynthCALIO
 
                 foreach (var data in group)
                 {
-                    bool optional = data.ID[0] == OptionalPrefix;
-                    string entryID = optional ? data.ID[1..] : data.ID;
-
                     var entry = new LeveledItemEntry();
                     entry.Data ??= new LeveledItemEntryData();
                     entry.Data.Count = data.Count;
                     entry.Data.Level = data.Level;
 
-                    if (!Program.TryGetRecord<IItemGetter>(entryID, out var record))
+                    if (!Program.TryGetRecord<IItemGetter>(data.ID, out var record))
                     {
-                        if (!optional && ++skipped == SkipIfMissing)
+                        if (!data.Optional && ++skipped == SkipIfMissing)
                         {
                             Console.WriteLine($"Skipping LeveledItem: {EditorID}. Record not found: {data.ID}. Config file: {FromFile}.");
                             leveledItem.Entries = null;
@@ -169,7 +167,7 @@ namespace SynthCALIO
                     {
                         entry.Data.Reference = record.ToLink();
                         leveledItem.Entries.Add(entry);
-                        if (!optional)
+                        if (!data.Optional)
                             mandatoryAdded++;
                     }
                 }

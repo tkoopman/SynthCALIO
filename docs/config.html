@@ -111,7 +111,7 @@
                         {?}{[Lv#]} {#x} FormIDorEditorID<br />
                         Parts surrounded by {} are optional. Do not include the {}.<br />
                         <ul>
-                            <li>{?} - Optional. If present, then this entry is optional and will not be counted towards the SkipIfMissing count.</li>
+                            <li>{?} - Optional. If present, then this entry is optional and will not be counted towards the SkipIfMissing count. No spaces between ? and [Lv#].</li>
                             <li>{[Lv#]} - Optional. If present, then this will set the Level value to # for this entry. Default: [Lv1]</li>
                             <li>{#x} - Optional. If present, then this will set the Count value to # for this entry. Default: 1x</li>
                             <li>FormIDorEditorID - Mandatory. This is the FormID or EditorID of the item to add to the list. If referencing another Leveled Item List created by SynthCALIO you must use the Name you assigned on that Leveled Item List as the EditorID</li>
@@ -126,7 +126,8 @@
                     <div class="label">Items:</div>
                     <div>
                         List of items to add to this leveled item list as either FormID or EditorID.<br />
-                        If referencing a Leveled Item List created by SynthCALIO you must use the Name you assigned on that Leveled Item List as the EditorID
+                        If referencing a Leveled Item List created by SynthCALIO you must use the Name you assigned on that Leveled Item List as the EditorID<br />
+                        Can add ? prefix to make the entry optional. This will not count towards the SkipIfMissing count. No spaces between ? and FormIDorEditorID.
                     </div>
                 </div>
 
