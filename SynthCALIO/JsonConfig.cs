@@ -2,6 +2,8 @@
 
 using Newtonsoft.Json;
 
+using Noggog;
+
 namespace SynthCALIO
 {
     [JsonObject(MemberSerialization.OptIn)]
@@ -15,14 +17,10 @@ namespace SynthCALIO
 
         internal static string? CurrentFile { get; set; }
 
-        public void LoadConfigurationFiles (IRunnabilityState state)
+        public void LoadConfigurationFiles (IRunnabilityState state, DirectoryPath dataFolder)
         {
-            string dataFolder = Program.Settings.Value.Folder;
-            dataFolder = dataFolder.Replace("{SkyrimData}", state.DataFolderPath);
-            dataFolder = dataFolder.Replace("{SynthesisData}", state.ExtraSettingsDataPath);
-
-            if (!Directory.Exists(dataFolder))
-                throw new DirectoryNotFoundException($"Could not find data folder: {dataFolder}");
+            if (!Program.DataFolder.Exists)
+                throw new DirectoryNotFoundException($"Could not find data folder: {Program.DataFolder}");
 
             var files = Directory.GetFiles(dataFolder).Where(x => x.EndsWith(".json", StringComparison.OrdinalIgnoreCase));
             foreach (string file in files)

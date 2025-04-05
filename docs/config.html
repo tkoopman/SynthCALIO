@@ -19,6 +19,7 @@
             <a href="#common">Common</a>
             <a href="#leveledItems">Leveled Item Lists</a>
             <a href="#outfits">Outfits</a>
+            <a href="#outputs">Outputs</a>
             <a href="#example">Example</a>
         </nav>
         <div class="main" id="main">
@@ -146,6 +147,146 @@
                         For others where you may want to only assign the outfit to some non-unique NPCs, I recommend using SPID instead as it has the simple chance option.<br />
                         As Outfit default FormType for SPID you would need to use the following SPID format:<br />
                         "SleepOutfit=|StringFilters|FormFilters|LevelFilters|TraitFilters|CountOrPackageIndex|Chance"
+                    </div>
+                </div>
+            </section>
+            <section id="outputs">
+                While the above configurations can be used to create SPID text configuration files, as of v1.3 SynthCALIO can also be used to create any other text based configuration files that need to contain the Form ID of records created by SynthCALIO.<br />
+                This is done by adding a "Outputs" folder under the SynthCALIO configuration folder, which would be by default Skyrim/Data/SynthCALIO/Outputs/.<br />
+                Any files added to this folder including in subdirectories will be checked and if matches defined configured outputs will be processed, and matching files created in the same relative location under Skyrim/Data/ (Still in the defined Output folder defined in Synthesis settings).
+                <h1>Defined outputs</h1>
+                <p>
+                    By default there are 2 defined outputs configured for SPID and SkyPatcher. These are configured in outputs.ini file in the SynthCALIO configuration folder. This file will be created if it doesn't already exists with these defaults.<br />
+                    If there are other commonly used frameworks that would benefit from this please let me know and I can add them to the default outputs.ini file.
+                </p>
+                <p>
+                    You can also add outputs configurations into your actual text based files. This is done by adding a comment as the very first line in the file.<br />
+                    Line should start with any of the following supported comment prefixes based on what your file normally would use for comments. Currently supported are //, # and ;<br />
+                    After that it should say "SynthCALIO - " followed by key=value pairs separated by semi-colons (;).<br />
+                    All must be on the single first line of the file.<br />
+                    Example: "; SynthCALIO - RemoveHeader=yes;FormID={id}:{mod};"<br />
+                </p>
+                <p>
+                    For a file located in the Outputs folder to be processed, a valid configuration for the file must be present either in the outputs.ini file or in the first line of the file itself.<br />
+                    Also that configuration must at least include a valid FormID settings else it will be skipped.
+                </p>
+                <p>
+                    Configurations are combined from the outputs.ini file and the first line of the file itself. So if you have a configuration in both, the one in the file will override the one in the outputs.ini file, but only for settings you defined.
+                    Other settings can come from other matching configurations for that file of defaults if none defined. For configurations in the outputs.ini file, they are processed top to bottom, so the last matched value for any setting will be used, if not overridden by in-file configuration.<br />
+                    Higher priority configurations (lower in output.ini or in-line) will only replace the settings defined in the higher priority configuration. If you don't define one then setting from lower priority is used, but if you define one but leave it blank then it will override.
+                    So defining a blank FormID in a higher priority configuration will make that file be skipped as FormID is mandatory in the final configuration used.<br />
+                </p>
+                <h3>Outputs Settings</h3>
+
+                <div class="setting">
+                    <div class="label">[Section Name]</div>
+                    <div>
+                        Mandatory in outputs.ini.
+                        INI files are broken up into sections. The section name is used to match the file name relative to the Outputs folder.
+                        Wildcards are supported, so * can be used to match any number of characters. However * won't match multiple directories,
+                        unless you use */ or some/parent/dir/*/filename.ext<br />
+                        * can match nothing, so */ file won't exclude matching files in the root of the Outputs folder.<br />
+                        Filename is relative to the Outputs folder, so you must not start it with a / else it won't match anything.
+                    </div>
+                </div>
+
+                <div class="setting">
+                    <div class="label">FormID</div>
+                    <div>
+                        Mandatory in final combined configuration. Default is empty.
+                        If empty after applying matching config entries, file is skipped.
+                        Must include at least one pair of FormID variables else value is invalid and file will be skipped.
+                        {mod} or {mod.esp} and {id} or {0id}
+                    </div>
+                </div>
+
+                <div class="setting">
+                    <div class="label">Rename</div>
+                    <div>
+                        Default is empty. Useful if file name must include the SynthCALIO patch file name.
+                        Should include at least 1 file variable, else just name the config file this already.
+                        If multiple files renamed to same they will all be combined into the single file. This includes if you using SPID via the JSON config files and here, it will combine the results just fine.
+                        Due to this best not to rename too conflicting file names if text file has structure, like XML based files.
+                        For SPID and SkyPatcher however it will work fine.<br />
+                        As long as Rename is just a file name, the resulting file will still exist in the same sub-folder as the original file.<br />
+                        NOTE: I have no intension of removing SPID from the JSON files, as I think it works well there, but wasn't going to work as well for SkyPatcher and possibly others, so added this option.<br />
+                    </div>
+                </div>
+
+                <div class="setting">
+                    <div class="label">OnIncomplete</div>
+                    <div>
+                        Default is RemoveLine. Valid values:
+                        <ul>
+                            <li>
+                                RemoveLine: Will just remove any line from the file that contains variables that were not replaced.
+                                Unless nothing was replaced, in which case the whole file is skipped. So won't create output file just full of comments.
+                            </li>
+                            <li>SkipFile: If any variable was not replaced, file is skipped.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="setting">
+                    <div class="label">KeepHeader</div>
+                    <div>
+                        Default is True. Valid values:
+                        <ul>
+                            <li>False: If one liner SynthCALIO header exists, it's settings are still used, but header is removed from resulting output file.</li>
+                            <li>True: If one liner SynthCALIO header exists, it's settings are still used, and the header will remain in the resulting output file.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="setting">
+                    <div class="label">Regex</div>
+                    <div>
+                        Default is empty. Not available in header of output files.
+                        If defined uses supplied Regular Expression to match output file names, instead of the wildcard supplied in the section name.
+                        Unlike other settings this is not inherited for other matching sections.
+                        When using Regex, the section name is ignored, just give it a descriptive unique name.
+                    </div>
+                </div>
+                <h3>Variables</h3>
+                Variables can be used in FormID and Rename settings, as well as in the source output files. They are always wrapped in curly brackets {}.
+
+                <div class="setting">
+                    <div class="label">{mod}</div>
+                    <div>
+                        Usable in all locations that variables can be used.
+                        Will be replaced with the SynthCALIO plug-in file name excluding file extension
+                    </div>
+                </div>
+
+                <div class="setting">
+                    <div class="label">{mod.esp}</div>
+                    <div>
+                        Usable in all locations that variables can be used.
+                        Will be replaced with the SynthCALIO plug-in file name including file extension
+                    </div>
+                </div>
+
+                <div class="setting">
+                    <div class="label">{id}</div>
+                    <div>
+                        Usable only in FormID setting.
+                        Will replace with the FormID excluding any leading 0s
+                    </div>
+                </div>
+
+                <div class="setting">
+                    <div class="label">{0id}</div>
+                    <div>
+                        Usable only in FormID setting.
+                        Will replace with the FormID including any leading 0s
+                    </div>
+                </div>
+
+                <div class="setting">
+                    <div class="label">{EditorID}</div>
+                    <div>
+                        Usable only in source output files. EditorID should be replaced with the EditorID used in SynthCALIO, for the FormID you want.
+                        Will replace with FormID in the format listed in FormID setting. At least 1 of these must be found and replaced in the file else file will be skipped.
                     </div>
                 </div>
             </section>
