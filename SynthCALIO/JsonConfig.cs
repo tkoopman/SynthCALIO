@@ -19,8 +19,8 @@ namespace SynthCALIO
 
         public void LoadConfigurationFiles (IRunnabilityState state, DirectoryPath dataFolder)
         {
-            if (!Program.DataFolder.Exists)
-                throw new DirectoryNotFoundException($"Could not find data folder: {Program.DataFolder}");
+            if (!dataFolder.Exists)
+                throw new DirectoryNotFoundException($"Could not find data folder: {dataFolder}");
 
             var files = Directory.GetFiles(dataFolder).Where(x => x.EndsWith(".json", StringComparison.OrdinalIgnoreCase));
             foreach (string file in files)
