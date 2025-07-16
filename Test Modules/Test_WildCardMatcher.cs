@@ -1,6 +1,6 @@
 using SynthCALIO.Matcher;
 
-namespace TestModules
+namespace Test_Modules
 {
     public class Test_WildCardMatcher
     {
