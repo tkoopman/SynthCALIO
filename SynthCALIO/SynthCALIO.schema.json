@@ -1,5 +1,5 @@
 {
-  "$schema": "http://json-schema.org/draft-04/schema#",
+  "$schema": "https://json-schema.org/draft/2019-09/schema",
   "$id": "https://raw.githubusercontent.com/tkoopman/SynthCALIO/refs/heads/master/SynthCALIO/SynthCALIO.schema.json",
   "type": "object",
   "properties": {
@@ -97,10 +97,11 @@
     },
     "LeveledItemEntry": {
       "type": "string",
-      "pattern": "^(?'Optional'\\?)?(?:\\[(?:[Ll][vV])?(?'Level'\\d+)\\]\\s?)?(?:(?'Count'\\d+)x\\s?)?(?'ID'.+)$"
+      "pattern": "^\\??(\\[([Ll][vV])?\\d+\\]\\s?)?((\\d+)x\\s?)?([0-9A-Fa-f]{1,6}:[^<>:;,?\"*|\\/\\\\]+|[a-zA-Z0-9_ ]+)$"
     },
     "Flags": {
       "title": "Flags to set on the Leveled Item List",
+      "type": [ "array", "string" ],
       "anyOf": [
         {
           "type": "array",
