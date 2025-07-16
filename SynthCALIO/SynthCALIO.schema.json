@@ -1,5 +1,6 @@
 {
   "$schema": "http://json-schema.org/draft-04/schema#",
+  "$id": "https://raw.githubusercontent.com/tkoopman/SynthCALIO/refs/heads/master/SynthCALIO/SynthCALIO.schema.json",
   "type": "object",
   "properties": {
     "LeveledItems": {
@@ -102,17 +103,19 @@
       "title": "Flags to set on the Leveled Item List",
       "anyOf": [
         {
-          "description": "Should be comma separated list of valid flags (CalculateForEachItemInCount, CalculateFromAllLevelsLessThanOrEqualPlayer, SpecialLoot, UseAll)",
-          "type": "string"
+          "type": "array",
+          "items": {
+            "enum": [
+              "CalculateForEachItemInCount",
+              "CalculateFromAllLevelsLessThanOrEqualPlayer",
+              "SpecialLoot",
+              "UseAll"
+            ]
+          }
         },
         {
-          "type": "array",
-          "enum": [
-            "CalculateForEachItemInCount",
-            "CalculateFromAllLevelsLessThanOrEqualPlayer",
-            "SpecialLoot",
-            "UseAll"
-          ]
+          "description": "Should be comma separated list of valid flags (CalculateForEachItemInCount, CalculateFromAllLevelsLessThanOrEqualPlayer, SpecialLoot, UseAll)",
+          "type": "string"
         }
       ]
     },

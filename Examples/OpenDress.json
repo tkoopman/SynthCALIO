@@ -6,6 +6,7 @@
 // https://www.nexusmods.com/skyrimspecialedition/mods/22168
 
 {
+  "$schema": "https://raw.githubusercontent.com/tkoopman/SynthCALIO/refs/heads/master/SynthCALIO/SynthCALIO.schema.json",
   "LeveledItems": [
     {
       "Name": "contentcatOpenDressLPAll",

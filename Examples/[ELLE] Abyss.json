@@ -2,10 +2,11 @@
 // https://www.nexusmods.com/skyrimspecialedition/mods/139703
 
 {
+  "$schema": "https://raw.githubusercontent.com/tkoopman/SynthCALIO/refs/heads/master/SynthCALIO/SynthCALIO.schema.json",
   "LeveledItems": [
     {
       "Name": "ELLEAbyssLLBlackApocrypha",
-      "Flags": "UseAll",
+      "Flags": [ "UseAll" ],
       "Entries": [
         "00EL_AbyssArmletApocrypha",
         "00EL_AbyssShoesApocrypha",
