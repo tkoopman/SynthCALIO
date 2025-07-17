@@ -3,6 +3,9 @@
   "$id": "https://raw.githubusercontent.com/tkoopman/SynthCALIO/refs/heads/master/SynthCALIO/SynthCALIO.schema.json",
   "type": "object",
   "properties": {
+    "$schema": {
+      "const": "https://raw.githubusercontent.com/tkoopman/SynthCALIO/refs/heads/master/SynthCALIO/SynthCALIO.schema.json"
+    },
     "leveledItems": {
       "description": "List of Leveled Item Lists SynthCALIO should attempt to create.",
       "type": "array",
