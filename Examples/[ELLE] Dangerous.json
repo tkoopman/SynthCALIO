@@ -1,11 +1,11 @@
-// SynthCALIO version of "ELLE's Armor Mods - SPID Addons" by SauteedPanda
+// SynthCALIO version of "ELLE's Armor Mods - spid Addons" by SauteedPanda
 // https://www.nexusmods.com/skyrimspecialedition/mods/139703
 
 {
-  "Outfits": [
+  "outfits": [
     {
-      "Name": "ELLEDangerousOutfit",
-      "Items": [
+      "name": "ELLEDangerousOutfit",
+      "items": [
         "803:[ELLE] Dangerous.esp",
         "804:[ELLE] Dangerous.esp",
         "805:[ELLE] Dangerous.esp",
@@ -15,8 +15,8 @@
         "809:[ELLE] Dangerous.esp",
         "80A:[ELLE] Dangerous.esp"
       ],
-      "DefaultOutfit": [],
-      "SPID": [
+      "defaultOutfit": [],
+      "spid": [
         "*Bandit|BanditFaction||F/-C/-U||5" // Any Female Bandit 5%
       ]
     }

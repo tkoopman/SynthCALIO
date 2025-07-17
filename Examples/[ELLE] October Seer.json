@@ -1,12 +1,12 @@
-// SynthCALIO version of "ELLE's Armor Mods - SPID Addons" by SauteedPanda
+// SynthCALIO version of "ELLE's Armor Mods - spid Addons" by SauteedPanda
 // https://www.nexusmods.com/skyrimspecialedition/mods/139703
 
 {
-  "LeveledItems": [
+  "leveledItems": [
     {
-      "Name": "ELLEOctoberSeerLL1",
-      "Flags": "UseAll",
-      "Entries": [
+      "name": "ELLEOctoberSeerLL1",
+      "flags": "UseAll",
+      "entries": [
         "ClothesWarlockBoots",
         "00EL_OctoberBelt1",
         "00EL_OctoberArms1",
@@ -17,9 +17,9 @@
       ]
     },
     {
-      "Name": "ELLEOctoberSeerLL2",
-      "Flags": "UseAll",
-      "Entries": [
+      "name": "ELLEOctoberSeerLL2",
+      "flags": "UseAll",
+      "entries": [
         "ClothesWarlockBoots",
         "00EL_OctoberBelt2",
         "00EL_OctoberArms2",
@@ -30,9 +30,9 @@
       ]
     },
     {
-      "Name": "ELLEOctoberSeerLL3",
-      "Flags": "UseAll",
-      "Entries": [
+      "name": "ELLEOctoberSeerLL3",
+      "flags": "UseAll",
+      "entries": [
         "ClothesWarlockBoots",
         "00EL_OctoberBelt3",
         "00EL_OctoberArms3",
@@ -43,9 +43,9 @@
       ]
     },
     {
-      "Name": "ELLEOctoberSeerLL4",
-      "Flags": "UseAll",
-      "Entries": [
+      "name": "ELLEOctoberSeerLL4",
+      "flags": "UseAll",
+      "entries": [
         "ClothesWarlockBoots",
         "00EL_OctoberBelt4",
         "00EL_OctoberArms4",
@@ -56,9 +56,9 @@
       ]
     },
     {
-      "Name": "ELLEOctoberSeerLL5",
-      "Flags": "UseAll",
-      "Entries": [
+      "name": "ELLEOctoberSeerLL5",
+      "flags": "UseAll",
+      "entries": [
         "ClothesWarlockBoots",
         "00EL_OctoberBelt5",
         "00EL_OctoberArms5",
@@ -69,9 +69,9 @@
       ]
     },
     {
-      "Name": "ELLEOctoberSeerLL6",
-      "Flags": "UseAll",
-      "Entries": [
+      "name": "ELLEOctoberSeerLL6",
+      "flags": "UseAll",
+      "entries": [
         "ClothesWarlockBoots",
         "00EL_OctoberBelt6",
         "00EL_OctoberArms6",
@@ -82,9 +82,9 @@
       ]
     },
     {
-      "Name": "ELLEOctoberSeerLLAll",
-      "Flags": "CalculateFromAllLevelsLessThanOrEqualPlayer, CalculateForEachItemInCount",
-      "Entries": [
+      "name": "ELLEOctoberSeerLLAll",
+      "flags": "CalculateFromAllLevelsLessThanOrEqualPlayer, CalculateForEachItemInCount",
+      "entries": [
         "ELLEOctoberSeerLL1",
         "ELLEOctoberSeerLL2",
         "ELLEOctoberSeerLL3",
@@ -94,48 +94,48 @@
       ]
     }
   ],
-  "Outfits": [
+  "outfits": [
     {
-      "Name": "ELLEOctoberSeerOutfit1",
-      "Items": [ "ELLEOctoberSeerLL1" ],
-      "DefaultOutfit": [],
-      "SPID": []
+      "name": "ELLEOctoberSeerOutfit1",
+      "items": [ "ELLEOctoberSeerLL1" ],
+      "defaultOutfit": [],
+      "spid": []
     },
     {
-      "Name": "ELLEOctoberSeerOutfit2",
-      "Items": [ "ELLEOctoberSeerLL2" ],
-      "DefaultOutfit": [],
-      "SPID": []
+      "name": "ELLEOctoberSeerOutfit2",
+      "items": [ "ELLEOctoberSeerLL2" ],
+      "defaultOutfit": [],
+      "spid": []
     },
     {
-      "Name": "ELLEOctoberSeerOutfit3",
-      "Items": [ "ELLEOctoberSeerLL3" ],
-      "DefaultOutfit": [],
-      "SPID": []
+      "name": "ELLEOctoberSeerOutfit3",
+      "items": [ "ELLEOctoberSeerLL3" ],
+      "defaultOutfit": [],
+      "spid": []
     },
     {
-      "Name": "ELLEOctoberSeerOutfit4",
-      "Items": [ "ELLEOctoberSeerLL4" ],
-      "DefaultOutfit": [],
-      "SPID": []
+      "name": "ELLEOctoberSeerOutfit4",
+      "items": [ "ELLEOctoberSeerLL4" ],
+      "defaultOutfit": [],
+      "spid": []
     },
     {
-      "Name": "ELLEOctoberSeerOutfit5",
-      "Items": [ "ELLEOctoberSeerLL5" ],
-      "DefaultOutfit": [],
-      "SPID": []
+      "name": "ELLEOctoberSeerOutfit5",
+      "items": [ "ELLEOctoberSeerLL5" ],
+      "defaultOutfit": [],
+      "spid": []
     },
     {
-      "Name": "ELLEOctoberSeerOutfit6",
-      "Items": [ "ELLEOctoberSeerLL6" ],
-      "DefaultOutfit": [],
-      "SPID": []
+      "name": "ELLEOctoberSeerOutfit6",
+      "items": [ "ELLEOctoberSeerLL6" ],
+      "defaultOutfit": [],
+      "spid": []
     },
     {
-      "Name": "ELLEOctoberSeerAllOutfits",
-      "Items": [ "ELLEOctoberSeerLLAll" ],
-      "DefaultOutfit": [],
-      "SPID": [
+      "name": "ELLEOctoberSeerAllOutfits",
+      "items": [ "ELLEOctoberSeerLLAll" ],
+      "defaultOutfit": [],
+      "spid": [
         "*Necromancer|NecromancerFaction||F/-C/-U||20" // Any Female Necromancer 20%
       ]
     }

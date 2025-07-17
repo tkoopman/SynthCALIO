@@ -1,121 +1,121 @@
-// SynthCALIO version of "ELLE's Armor Mods - SPID Addons" by SauteedPanda
+// SynthCALIO version of "ELLE's Armor Mods - spid Addons" by SauteedPanda
 // https://www.nexusmods.com/skyrimspecialedition/mods/139703
 
 {
   "$schema": "https://raw.githubusercontent.com/tkoopman/SynthCALIO/refs/heads/master/SynthCALIO/SynthCALIO.schema.json",
-  "LeveledItems": [
+  "leveledItems": [
     {
-      "Name": "ELLEAbyssLLBlackApocrypha",
-      "Flags": [ "UseAll" ],
-      "Entries": [
+      "name": "ELLEAbyssLLBlackApocrypha",
+      "flags": [ "UseAll" ],
+      "entries": [
         "00EL_AbyssArmletApocrypha",
         "00EL_AbyssShoesApocrypha",
         "00EL_AbyssDressBlackApocrypha"
       ]
     },
     {
-      "Name": "ELLEAbyssLLBlackGold",
-      "Flags": "UseAll",
-      "Entries": [
+      "name": "ELLEAbyssLLBlackGold",
+      "flags": "UseAll",
+      "entries": [
         "00EL_AbyssDressBlackGold",
         "00EL_AbyssShoesGold",
         "00EL_AbyssArmletGold"
       ]
     },
     {
-      "Name": "ELLEAbyssLLBlackSilver",
-      "Flags": "UseAll",
-      "Entries": [
+      "name": "ELLEAbyssLLBlackSilver",
+      "flags": "UseAll",
+      "entries": [
         "00EL_AbyssArmletSilver",
         "00EL_AbyssShoesSilver",
         "00EL_AbyssDressBlackSilver"
       ]
     },
     {
-      "Name": "ELLEAbyssLLBlueApocrypha",
-      "Flags": "UseAll",
-      "Entries": [
+      "name": "ELLEAbyssLLBlueApocrypha",
+      "flags": "UseAll",
+      "entries": [
         "00EL_AbyssArmletApocrypha",
         "00EL_AbyssShoesApocrypha",
         "00EL_AbyssDressBlueApocrypha"
       ]
     },
     {
-      "Name": "ELLEAbyssLLBlueGold",
-      "Flags": "UseAll",
-      "Entries": [
+      "name": "ELLEAbyssLLBlueGold",
+      "flags": "UseAll",
+      "entries": [
         "00EL_AbyssDressBlueGold",
         "00EL_AbyssShoesGold",
         "00EL_AbyssArmletGold"
       ]
     },
     {
-      "Name": "ELLEAbyssLLBlueSilver",
-      "Flags": "UseAll",
-      "Entries": [
+      "name": "ELLEAbyssLLBlueSilver",
+      "flags": "UseAll",
+      "entries": [
         "00EL_AbyssArmletSilver",
         "00EL_AbyssShoesSilver",
         "00EL_AbyssDressBlueSliver"
       ]
     },
     {
-      "Name": "ELLEAbyssLLRedApocrypha",
-      "Flags": "UseAll",
-      "Entries": [
+      "name": "ELLEAbyssLLRedApocrypha",
+      "flags": "UseAll",
+      "entries": [
         "00EL_AbyssArmletApocrypha",
         "00EL_AbyssShoesApocrypha",
         "00EL_AbyssDressRedApocrypha"
       ]
     },
     {
-      "Name": "ELLEAbyssLLRedGold",
-      "Flags": "UseAll",
-      "Entries": [
+      "name": "ELLEAbyssLLRedGold",
+      "flags": "UseAll",
+      "entries": [
         "00EL_AbyssDressRedGold",
         "00EL_AbyssShoesGold",
         "00EL_AbyssArmletGold"
       ]
     },
     {
-      "Name": "ELLEAbyssLLRedSilver",
-      "Flags": "UseAll",
-      "Entries": [
+      "name": "ELLEAbyssLLRedSilver",
+      "flags": "UseAll",
+      "entries": [
         "00EL_AbyssArmletSilver",
         "00EL_AbyssShoesSilver",
         "00EL_AbyssDressRedSilver"
       ]
     },
     {
-      "Name": "ELLEAbyssLLWhiteApocrypha",
-      "Flags": "UseAll",
-      "Entries": [
+      "name": "ELLEAbyssLLWhiteApocrypha",
+      "flags": "UseAll",
+      "entries": [
         "00EL_AbyssArmletApocrypha",
         "00EL_AbyssShoesApocrypha",
         "00EL_AbyssDressWhiteApocrypha"
       ]
     },
     {
-      "Name": "ELLEAbyssLLWhiteGold",
-      "Flags": "UseAll",
-      "Entries": [
+      "name": "ELLEAbyssLLWhiteGold",
+      "flags": "UseAll",
+      "entries": [
         "00EL_AbyssDressWhiteGold",
         "00EL_AbyssShoesGold",
         "00EL_AbyssArmletGold"
       ]
     },
     {
-      "Name": "ELLEAbyssLLWhiteSilver",
-      "Flags": "UseAll",
-      "Entries": [
+      "name": "ELLEAbyssLLWhiteSilver",
+      "flags": "UseAll",
+      "entries": [
         "00EL_AbyssArmletSilver",
         "00EL_AbyssShoesSilver",
         "00EL_AbyssDressWhiteSilver"
       ]
     },
     {
-      "Name": "ELLEAbyssLLAll",
-      "Flags": "CalculateFromAllLevelsLessThanOrEqualPlayer, CalculateForEachItemInCount",
-      "Entries": [
+      "name": "ELLEAbyssLLAll",
+      "flags": "CalculateFromAllLevelsLessThanOrEqualPlayer, CalculateForEachItemInCount",
+      "entries": [
         "ELLEAbyssLLBlackApocrypha",
         "ELLEAbyssLLBlackGold",
         "ELLEAbyssLLBlackSilver",
@@ -131,88 +131,88 @@
       ]
     }
   ],
-  "Outfits": [
+  "outfits": [
     {
-      "Name": "ELLEAbyssOutfitBlackApocrypha",
-      "Items": [ "ELLEAbyssLLBlackApocrypha" ],
-      "DefaultOutfit": [
+      "name": "ELLEAbyssOutfitBlackApocrypha",
+      "items": [ "ELLEAbyssLLBlackApocrypha" ],
+      "defaultOutfit": [
         "182A1:Dragonborn.esm" // Milore Ienth
       ],
-      "SPID": []
+      "spid": []
     },
     {
-      "Name": "ELLEAbyssOutfitBlackGold",
-      "Items": [ "ELLEAbyssLLBlackGold" ],
-      "DefaultOutfit": [],
-      "SPID": []
+      "name": "ELLEAbyssOutfitBlackGold",
+      "items": [ "ELLEAbyssLLBlackGold" ],
+      "defaultOutfit": [],
+      "spid": []
     },
     {
-      "Name": "ELLEAbyssOutfitBlackSilver",
-      "Items": [ "ELLEAbyssLLBlackSilver" ],
-      "DefaultOutfit": [],
-      "SPID": []
+      "name": "ELLEAbyssOutfitBlackSilver",
+      "items": [ "ELLEAbyssLLBlackSilver" ],
+      "defaultOutfit": [],
+      "spid": []
     },
     {
-      "Name": "ELLEAbyssOutfitBlueApocrypha",
-      "Items": [ "ELLEAbyssLLBlueApocrypha" ],
-      "DefaultOutfit": [],
-      "SPID": []
+      "name": "ELLEAbyssOutfitBlueApocrypha",
+      "items": [ "ELLEAbyssLLBlueApocrypha" ],
+      "defaultOutfit": [],
+      "spid": []
     },
     {
-      "Name": "ELLEAbyssOutfitBlueGold",
-      "Items": [ "ELLEAbyssLLBlueGold" ],
-      "DefaultOutfit": [],
-      "SPID": []
+      "name": "ELLEAbyssOutfitBlueGold",
+      "items": [ "ELLEAbyssLLBlueGold" ],
+      "defaultOutfit": [],
+      "spid": []
     },
     {
-      "Name": "ELLEAbyssOutfitBlueSilver",
-      "Items": [ "ELLEAbyssLLBlueSilver" ],
-      "DefaultOutfit": [],
-      "SPID": []
+      "name": "ELLEAbyssOutfitBlueSilver",
+      "items": [ "ELLEAbyssLLBlueSilver" ],
+      "defaultOutfit": [],
+      "spid": []
     },
     {
-      "Name": "ELLEAbyssOutfitRedApocrypha",
-      "Items": [ "ELLEAbyssLLRedApocrypha" ],
-      "DefaultOutfit": [],
-      "SPID": []
+      "name": "ELLEAbyssOutfitRedApocrypha",
+      "items": [ "ELLEAbyssLLRedApocrypha" ],
+      "defaultOutfit": [],
+      "spid": []
     },
     {
-      "Name": "ELLEAbyssOutfitRedGold",
-      "Items": [ "ELLEAbyssLLRedGold" ],
-      "DefaultOutfit": [],
-      "SPID": []
+      "name": "ELLEAbyssOutfitRedGold",
+      "items": [ "ELLEAbyssLLRedGold" ],
+      "defaultOutfit": [],
+      "spid": []
     },
     {
-      "Name": "ELLEAbyssOutfitRedSilver",
-      "Items": [ "ELLEAbyssLLRedSilver" ],
-      "DefaultOutfit": [],
-      "SPID": []
+      "name": "ELLEAbyssOutfitRedSilver",
+      "items": [ "ELLEAbyssLLRedSilver" ],
+      "defaultOutfit": [],
+      "spid": []
     },
     {
-      "Name": "ELLEAbyssOutfitWhiteApocrypha",
-      "Items": [ "ELLEAbyssLLWhiteApocrypha" ],
-      "DefaultOutfit": [],
-      "SPID": []
+      "name": "ELLEAbyssOutfitWhiteApocrypha",
+      "items": [ "ELLEAbyssLLWhiteApocrypha" ],
+      "defaultOutfit": [],
+      "spid": []
     },
     {
-      "Name": "ELLEAbyssOutfitWhiteGold",
-      "Items": [ "ELLEAbyssLLWhiteGold" ],
-      "DefaultOutfit": [
+      "name": "ELLEAbyssOutfitWhiteGold",
+      "items": [ "ELLEAbyssLLWhiteGold" ],
+      "defaultOutfit": [
         "13BA5:Skyrim.esm" // Danica Pure-Spring
       ],
-      "SPID": []
+      "spid": []
     },
     {
-      "Name": "ELLEAbyssOutfitWhiteSilver",
-      "Items": [ "ELLEAbyssLLWhiteSilver" ],
-      "DefaultOutfit": [],
-      "SPID": []
+      "name": "ELLEAbyssOutfitWhiteSilver",
+      "items": [ "ELLEAbyssLLWhiteSilver" ],
+      "defaultOutfit": [],
+      "spid": []
     },
     {
-      "Name": "ELLEAbyssAllOutfits",
-      "Items": [ "ELLEAbyssLLAll" ],
-      "DefaultOutfit": [],
-      "SPID": []
+      "name": "ELLEAbyssAllOutfits",
+      "items": [ "ELLEAbyssLLAll" ],
+      "defaultOutfit": [],
+      "spid": []
     }
   ]
 }

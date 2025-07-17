@@ -1,37 +1,37 @@
-// SynthCALIO version of "ELLE's Armor Mods - SPID Addons" by SauteedPanda
+// SynthCALIO version of "ELLE's Armor Mods - spid Addons" by SauteedPanda
 // https://www.nexusmods.com/skyrimspecialedition/mods/139703
 
 {
-  "LeveledItems": [
+  "leveledItems": [
     {
-      "Name": "ELLEPixieDustLLAll",
-      "Flags": "CalculateFromAllLevelsLessThanOrEqualPlayer, CalculateForEachItemInCount",
-      "Entries": [
+      "name": "ELLEPixieDustLLAll",
+      "flags": "CalculateFromAllLevelsLessThanOrEqualPlayer, CalculateForEachItemInCount",
+      "entries": [
         "00EL_PixieG",
         "00EL_PixieP"
       ]
     }
   ],
-  "Outfits": [
+  "outfits": [
     {
-      "Name": "ELLEPixieDustAllOutfits",
-      "Items": [ "ELLEPixieDustLLAll" ],
-      "DefaultOutfit": [],
-      "SPID": [
+      "name": "ELLEPixieDustAllOutfits",
+      "items": [ "ELLEPixieDustLLAll" ],
+      "defaultOutfit": [],
+      "spid": [
         "*Forsworn|||F/-C/-U||15" // Any Female Forsworn 15%
       ]
     },
     {
-      "Name": "ELLEPixieDustOutfitGreen",
-      "Items": [ "00EL_PixieG" ],
-      "DefaultOutfit": [],
-      "SPID": []
+      "name": "ELLEPixieDustOutfitGreen",
+      "items": [ "00EL_PixieG" ],
+      "defaultOutfit": [],
+      "spid": []
     },
     {
-      "Name": "ELLEPixieDustOutfitPink",
-      "Items": [ "00EL_PixieP" ],
-      "DefaultOutfit": [],
-      "SPID": []
+      "name": "ELLEPixieDustOutfitPink",
+      "items": [ "00EL_PixieP" ],
+      "defaultOutfit": [],
+      "spid": []
     }
   ]
 }

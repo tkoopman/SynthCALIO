@@ -1,12 +1,12 @@
-// SynthCALIO version of "ELLE's Armor Mods - SPID Addons" by SauteedPanda
+// SynthCALIO version of "ELLE's Armor Mods - spid Addons" by SauteedPanda
 // https://www.nexusmods.com/skyrimspecialedition/mods/139703
 
 {
-  "LeveledItems": [
+  "leveledItems": [
     {
-      "Name": "ELLENecromantLL1",
-      "Flags": "UseAll",
-      "Entries": [
+      "name": "ELLENecromantLL1",
+      "flags": "UseAll",
+      "entries": [
         "00EL_NecromantMask1",
         "00EL_NecromantHelmetHair1",
         "00EL_NecromantBoots1",
@@ -20,9 +20,9 @@
       ]
     },
     {
-      "Name": "ELLENecromantLL2",
-      "Flags": "UseAll",
-      "Entries": [
+      "name": "ELLENecromantLL2",
+      "flags": "UseAll",
+      "entries": [
         "00EL_NecromantMask2",
         "00EL_NecromantHelmetHair2",
         "00EL_NecromantBoots2",
@@ -36,9 +36,9 @@
       ]
     },
     {
-      "Name": "ELLENecromantLL3",
-      "Flags": "UseAll",
-      "Entries": [
+      "name": "ELLENecromantLL3",
+      "flags": "UseAll",
+      "entries": [
         "00EL_NecromantMask3",
         "00EL_NecromantHelmetHair3",
         "00EL_NecromantBoots3",
@@ -52,39 +52,39 @@
       ]
     },
     {
-      "Name": "ELLENecromantLLAll",
-      "Flags": "CalculateFromAllLevelsLessThanOrEqualPlayer, CalculateForEachItemInCount",
-      "Entries": [
+      "name": "ELLENecromantLLAll",
+      "flags": "CalculateFromAllLevelsLessThanOrEqualPlayer, CalculateForEachItemInCount",
+      "entries": [
         "ELLENecromantLL1",
         "ELLENecromantLL2",
         "ELLENecromantLL3"
       ]
     }
   ],
-  "Outfits": [
+  "outfits": [
     {
-      "Name": "ELLENecromantOutfit1",
-      "Items": [ "ELLENecromantLL1" ],
-      "DefaultOutfit": [],
-      "SPID": []
+      "name": "ELLENecromantOutfit1",
+      "items": [ "ELLENecromantLL1" ],
+      "defaultOutfit": [],
+      "spid": []
     },
     {
-      "Name": "ELLENecromantOutfit2",
-      "Items": [ "ELLENecromantLL2" ],
-      "DefaultOutfit": [],
-      "SPID": []
+      "name": "ELLENecromantOutfit2",
+      "items": [ "ELLENecromantLL2" ],
+      "defaultOutfit": [],
+      "spid": []
     },
     {
-      "Name": "ELLENecromantOutfit3",
-      "Items": [ "ELLENecromantLL3" ],
-      "DefaultOutfit": [],
-      "SPID": []
+      "name": "ELLENecromantOutfit3",
+      "items": [ "ELLENecromantLL3" ],
+      "defaultOutfit": [],
+      "spid": []
     },
     {
-      "Name": "ELLENecromantAllOutfits",
-      "Items": [ "ELLENecromantLLAll" ],
-      "DefaultOutfit": [],
-      "SPID": [
+      "name": "ELLENecromantAllOutfits",
+      "items": [ "ELLENecromantLLAll" ],
+      "defaultOutfit": [],
+      "spid": [
         "Ascendant Necromancer,Master Necromancer,Arch Necromancer|||F/-C/-U||20" // Female Necromancers 20%
       ]
     }

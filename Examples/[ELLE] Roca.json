@@ -1,12 +1,12 @@
-// SynthCALIO version of "ELLE's Armor Mods - SPID Addons" by SauteedPanda
+// SynthCALIO version of "ELLE's Armor Mods - spid Addons" by SauteedPanda
 // https://www.nexusmods.com/skyrimspecialedition/mods/139703
 
 {
-  "LeveledItems": [
+  "leveledItems": [
     {
-      "Name": "ELLERocaLL1",
-      "Flags": "UseAll",
-      "Entries": [
+      "name": "ELLERocaLL1",
+      "flags": "UseAll",
+      "entries": [
         "00EL_ARocaShoes1",
         "00EL_ARocaTop1",
         "00EL_ARocaGloves1",
@@ -15,9 +15,9 @@
       ]
     },
     {
-      "Name": "ELLERocaLL2",
-      "Flags": "UseAll",
-      "Entries": [
+      "name": "ELLERocaLL2",
+      "flags": "UseAll",
+      "entries": [
         "00EL_ARocaShoes2",
         "00EL_ARocaTop2",
         "00EL_ARocaGloves2",
@@ -26,9 +26,9 @@
       ]
     },
     {
-      "Name": "ELLERocaLL3",
-      "Flags": "UseAll",
-      "Entries": [
+      "name": "ELLERocaLL3",
+      "flags": "UseAll",
+      "entries": [
         "00EL_ARocaShoes3",
         "00EL_ARocaTop3",
         "00EL_ARocaGloves3",
@@ -37,9 +37,9 @@
       ]
     },
     {
-      "Name": "ELLERocaLL4",
-      "Flags": "UseAll",
-      "Entries": [
+      "name": "ELLERocaLL4",
+      "flags": "UseAll",
+      "entries": [
         "00EL_ARocaShoes4",
         "00EL_ARocaTop4",
         "00EL_ARocaGloves4",
@@ -48,9 +48,9 @@
       ]
     },
     {
-      "Name": "ELLERocaLL5",
-      "Flags": "UseAll",
-      "Entries": [
+      "name": "ELLERocaLL5",
+      "flags": "UseAll",
+      "entries": [
         "00EL_ARocaShoes5",
         "00EL_ARocaTop5",
         "00EL_ARocaGloves5",
@@ -59,9 +59,9 @@
       ]
     },
     {
-      "Name": "ELLERocaLLAll",
-      "Flags": "CalculateFromAllLevelsLessThanOrEqualPlayer, CalculateForEachItemInCount",
-      "Entries": [
+      "name": "ELLERocaLLAll",
+      "flags": "CalculateFromAllLevelsLessThanOrEqualPlayer, CalculateForEachItemInCount",
+      "entries": [
         "ELLERocaLL1",
         "ELLERocaLL2",
         "ELLERocaLL3",
@@ -70,42 +70,42 @@
       ]
     }
   ],
-  "Outfits": [
+  "outfits": [
     {
-      "Name": "ELLERocaOutfit1",
-      "Items": [ "ELLERocaLL1" ],
-      "DefaultOutfit": [],
-      "SPID": []
+      "name": "ELLERocaOutfit1",
+      "items": [ "ELLERocaLL1" ],
+      "defaultOutfit": [],
+      "spid": []
     },
     {
-      "Name": "ELLERocaOutfit2",
-      "Items": [ "ELLERocaLL2" ],
-      "DefaultOutfit": [],
-      "SPID": []
+      "name": "ELLERocaOutfit2",
+      "items": [ "ELLERocaLL2" ],
+      "defaultOutfit": [],
+      "spid": []
     },
     {
-      "Name": "ELLERocaOutfit3",
-      "Items": [ "ELLERocaLL3" ],
-      "DefaultOutfit": [],
-      "SPID": []
+      "name": "ELLERocaOutfit3",
+      "items": [ "ELLERocaLL3" ],
+      "defaultOutfit": [],
+      "spid": []
     },
     {
-      "Name": "ELLERocaOutfit4",
-      "Items": [ "ELLERocaLL4" ],
-      "DefaultOutfit": [],
-      "SPID": []
+      "name": "ELLERocaOutfit4",
+      "items": [ "ELLERocaLL4" ],
+      "defaultOutfit": [],
+      "spid": []
     },
     {
-      "Name": "ELLERocaOutfit5",
-      "Items": [ "ELLERocaLL5" ],
-      "DefaultOutfit": [],
-      "SPID": []
+      "name": "ELLERocaOutfit5",
+      "items": [ "ELLERocaLL5" ],
+      "defaultOutfit": [],
+      "spid": []
     },
     {
-      "Name": "ELLERocaAllOutfits",
-      "Items": [ "ELLERocaLLAll" ],
-      "DefaultOutfit": [],
-      "SPID": [
+      "name": "ELLERocaAllOutfits",
+      "items": [ "ELLERocaLLAll" ],
+      "defaultOutfit": [],
+      "spid": [
         "*Forsworn|||F/-C/-U||15" // Any Female Forsworn 15%
       ]
     }

@@ -1,44 +1,44 @@
-// SynthCALIO version of "ELLE's Armor Mods - SPID Addons" by SauteedPanda
+// SynthCALIO version of "ELLE's Armor Mods - spid Addons" by SauteedPanda
 // https://www.nexusmods.com/skyrimspecialedition/mods/139703
 
 {
-  "LeveledItems": [
+  "leveledItems": [
     {
-      "Name": "ELLEGinnungagapLLAll",
-      "Flags": "CalculateFromAllLevelsLessThanOrEqualPlayer, CalculateForEachItemInCount",
-      "Entries": [
+      "name": "ELLEGinnungagapLLAll",
+      "flags": "CalculateFromAllLevelsLessThanOrEqualPlayer, CalculateForEachItemInCount",
+      "entries": [
         "00EL_GinnungagapMain",
         "00EL_GinnungagapMainBlu",
         "00EL_GinnungagapMainSilver"
       ]
     }
   ],
-  "Outfits": [
+  "outfits": [
     {
-      "Name": "ELLEGinnungagapOutfitBronze",
-      "Items": [ "00EL_GinnungagapMain" ],
-      "DefaultOutfit": [
+      "name": "ELLEGinnungagapOutfitBronze",
+      "items": [ "00EL_GinnungagapMain" ],
+      "defaultOutfit": [
         "336b:Dawnguard.esm" // Sorine Jurard
       ],
-      "SPID": []
+      "spid": []
     },
     {
-      "Name": "ELLEGinnungagapOutfitGlass",
-      "Items": [ "00EL_GinnungagapMainBlu" ],
-      "DefaultOutfit": [],
-      "SPID": []
+      "name": "ELLEGinnungagapOutfitGlass",
+      "items": [ "00EL_GinnungagapMainBlu" ],
+      "defaultOutfit": [],
+      "spid": []
     },
     {
-      "Name": "ELLEGinnungagapOutfitSilver",
-      "Items": [ "00EL_GinnungagapMainSilver" ],
-      "DefaultOutfit": [],
-      "SPID": []
+      "name": "ELLEGinnungagapOutfitSilver",
+      "items": [ "00EL_GinnungagapMainSilver" ],
+      "defaultOutfit": [],
+      "spid": []
     },
     {
-      "Name": "ELLEGinnungagapAllOutfits",
-      "Items": [ "ELLEGinnungagapLLAll" ],
-      "DefaultOutfit": [],
-      "SPID": []
+      "name": "ELLEGinnungagapAllOutfits",
+      "items": [ "ELLEGinnungagapLLAll" ],
+      "defaultOutfit": [],
+      "spid": []
     }
   ]
 }

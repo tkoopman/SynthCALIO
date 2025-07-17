@@ -1,48 +1,48 @@
-// SynthCALIO version of "ELLE's Armor Mods - SPID Addons" by SauteedPanda
+// SynthCALIO version of "ELLE's Armor Mods - spid Addons" by SauteedPanda
 // https://www.nexusmods.com/skyrimspecialedition/mods/139703
 
 {
-  "LeveledItems": [
+  "leveledItems": [
     {
-      "Name": "ELLESherwoodHuntressLLDefault",
-      "Flags": "UseAll",
-      "Entries": [
+      "name": "ELLESherwoodHuntressLLDefault",
+      "flags": "UseAll",
+      "entries": [
         "000_SherwoodBootsG",
         "000_SherwoodDressG",
         "000_SherwoodGlovesG"
       ]
     },
     {
-      "Name": "ELLESherwoodHuntressLLBrown",
-      "Flags": "UseAll",
-      "Entries": [
+      "name": "ELLESherwoodHuntressLLBrown",
+      "flags": "UseAll",
+      "entries": [
         "000_SherwoodBoots2",
         "000_SherwoodDress2",
         "000_SherwoodGloves2"
       ]
     },
     {
-      "Name": "ELLESherwoodHuntressLLRed",
-      "Flags": "UseAll",
-      "Entries": [
+      "name": "ELLESherwoodHuntressLLRed",
+      "flags": "UseAll",
+      "entries": [
         "000_SherwoodBoots4",
         "000_SherwoodDress4",
         "000_SherwoodGloves4"
       ]
     },
     {
-      "Name": "ELLESherwoodHuntressLLWhite",
-      "Flags": "UseAll",
-      "Entries": [
+      "name": "ELLESherwoodHuntressLLWhite",
+      "flags": "UseAll",
+      "entries": [
         "000_SherwoodBoots1",
         "000_SherwoodDress1",
         "000_SherwoodGloves1"
       ]
     },
     {
-      "Name": "ELLESherwoodHuntressLLAll",
-      "Flags": "CalculateFromAllLevelsLessThanOrEqualPlayer, CalculateForEachItemInCount",
-      "Entries": [
+      "name": "ELLESherwoodHuntressLLAll",
+      "flags": "CalculateFromAllLevelsLessThanOrEqualPlayer, CalculateForEachItemInCount",
+      "entries": [
         "ELLESherwoodHuntressLLDefault",
         "ELLESherwoodHuntressLLBrown",
         "ELLESherwoodHuntressLLRed",
@@ -50,36 +50,36 @@
       ]
     }
   ],
-  "Outfits": [
+  "outfits": [
     {
-      "Name": "ELLESherwoodHuntressOutfitDefault",
-      "Items": [ "ELLESherwoodHuntressLLDefault" ],
-      "DefaultOutfit": [],
-      "SPID": []
+      "name": "ELLESherwoodHuntressOutfitDefault",
+      "items": [ "ELLESherwoodHuntressLLDefault" ],
+      "defaultOutfit": [],
+      "spid": []
     },
     {
-      "Name": "ELLESherwoodHuntressOutfitBrown",
-      "Items": [ "ELLESherwoodHuntressLLBrown" ],
-      "DefaultOutfit": [],
-      "SPID": []
+      "name": "ELLESherwoodHuntressOutfitBrown",
+      "items": [ "ELLESherwoodHuntressLLBrown" ],
+      "defaultOutfit": [],
+      "spid": []
     },
     {
-      "Name": "ELLESherwoodHuntressOutfitRed",
-      "Items": [ "ELLESherwoodHuntressLLRed" ],
-      "DefaultOutfit": [],
-      "SPID": []
+      "name": "ELLESherwoodHuntressOutfitRed",
+      "items": [ "ELLESherwoodHuntressLLRed" ],
+      "defaultOutfit": [],
+      "spid": []
     },
     {
-      "Name": "ELLESherwoodHuntressOutfitWhite",
-      "Items": [ "ELLESherwoodHuntressLLWhite" ],
-      "DefaultOutfit": [],
-      "SPID": []
+      "name": "ELLESherwoodHuntressOutfitWhite",
+      "items": [ "ELLESherwoodHuntressLLWhite" ],
+      "defaultOutfit": [],
+      "spid": []
     },
     {
-      "Name": "ELLESherwoodHuntressAllOutfits",
-      "Items": [ "ELLESherwoodHuntressLLAll" ],
-      "DefaultOutfit": [],
-      "SPID": [
+      "name": "ELLESherwoodHuntressAllOutfits",
+      "items": [ "ELLESherwoodHuntressLLAll" ],
+      "defaultOutfit": [],
+      "spid": [
         "Hunter|HunterFaction||F/-C/-U||30" // Any Female Hunter 30%
       ]
     }

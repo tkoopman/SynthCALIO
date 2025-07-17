@@ -1,12 +1,12 @@
-// SynthCALIO version of "ELLE's Armor Mods - SPID Addons" by SauteedPanda
+// SynthCALIO version of "ELLE's Armor Mods - spid Addons" by SauteedPanda
 // https://www.nexusmods.com/skyrimspecialedition/mods/139703
 
 {
-  "LeveledItems": [
+  "leveledItems": [
     {
-      "Name": "ELLEChaosrunnerLL1",
-      "Flags": "UseAll",
-      "Entries": [
+      "name": "ELLEChaosrunnerLL1",
+      "flags": "UseAll",
+      "entries": [
         "00EL_CRBoots1",
         "00EL_CRTop1",
         "00EL_CRGloves1",
@@ -19,9 +19,9 @@
       ]
     },
     {
-      "Name": "ELLEChaosrunnerLL2",
-      "Flags": "UseAll",
-      "Entries": [
+      "name": "ELLEChaosrunnerLL2",
+      "flags": "UseAll",
+      "entries": [
         "00EL_CRBoots2",
         "00EL_CRTop2",
         "00EL_CRGloves2",
@@ -34,9 +34,9 @@
       ]
     },
     {
-      "Name": "ELLEChaosrunnerLL3",
-      "Flags": "UseAll",
-      "Entries": [
+      "name": "ELLEChaosrunnerLL3",
+      "flags": "UseAll",
+      "entries": [
         "00EL_CRBoots3",
         "00EL_CRTop3",
         "00EL_CRGloves3",
@@ -49,9 +49,9 @@
       ]
     },
     {
-      "Name": "ELLEChaosrunnerLL4",
-      "Flags": "UseAll",
-      "Entries": [
+      "name": "ELLEChaosrunnerLL4",
+      "flags": "UseAll",
+      "entries": [
         "00EL_CRBoots4",
         "00EL_CRTop4",
         "00EL_CRGloves4",
@@ -64,9 +64,9 @@
       ]
     },
     {
-      "Name": "ELLEChaosrunnerLL5",
-      "Flags": "UseAll",
-      "Entries": [
+      "name": "ELLEChaosrunnerLL5",
+      "flags": "UseAll",
+      "entries": [
         "00EL_CRBoots5",
         "00EL_CRTop5",
         "00EL_CRGloves5",
@@ -79,9 +79,9 @@
       ]
     },
     {
-      "Name": "ELLEChaosrunnerLLAll",
-      "Flags": "CalculateFromAllLevelsLessThanOrEqualPlayer, CalculateForEachItemInCount",
-      "Entries": [
+      "name": "ELLEChaosrunnerLLAll",
+      "flags": "CalculateFromAllLevelsLessThanOrEqualPlayer, CalculateForEachItemInCount",
+      "entries": [
         "ELLEChaosrunnerLL1",
         "ELLEChaosrunnerLL2",
         "ELLEChaosrunnerLL3",
@@ -90,42 +90,42 @@
       ]
     }
   ],
-  "Outfits": [
+  "outfits": [
     {
-      "Name": "ELLEChaosrunnerOutfit1",
-      "Items": [ "ELLEChaosrunnerLL1" ],
-      "DefaultOutfit": [],
-      "SPID": []
+      "name": "ELLEChaosrunnerOutfit1",
+      "items": [ "ELLEChaosrunnerLL1" ],
+      "defaultOutfit": [],
+      "spid": []
     },
     {
-      "Name": "ELLEChaosrunnerOutfit2",
-      "Items": [ "ELLEChaosrunnerLL2" ],
-      "DefaultOutfit": [],
-      "SPID": []
+      "name": "ELLEChaosrunnerOutfit2",
+      "items": [ "ELLEChaosrunnerLL2" ],
+      "defaultOutfit": [],
+      "spid": []
     },
     {
-      "Name": "ELLEChaosrunnerOutfit3",
-      "Items": [ "ELLEChaosrunnerLL3" ],
-      "DefaultOutfit": [],
-      "SPID": []
+      "name": "ELLEChaosrunnerOutfit3",
+      "items": [ "ELLEChaosrunnerLL3" ],
+      "defaultOutfit": [],
+      "spid": []
     },
     {
-      "Name": "ELLEChaosrunnerOutfit4",
-      "Items": [ "ELLEChaosrunnerLL4" ],
-      "DefaultOutfit": [],
-      "SPID": []
+      "name": "ELLEChaosrunnerOutfit4",
+      "items": [ "ELLEChaosrunnerLL4" ],
+      "defaultOutfit": [],
+      "spid": []
     },
     {
-      "Name": "ELLEChaosrunnerOutfit5",
-      "Items": [ "ELLEChaosrunnerLL5" ],
-      "DefaultOutfit": [],
-      "SPID": []
+      "name": "ELLEChaosrunnerOutfit5",
+      "items": [ "ELLEChaosrunnerLL5" ],
+      "defaultOutfit": [],
+      "spid": []
     },
     {
-      "Name": "ELLEChaosrunnerAllOutfits",
-      "Items": [ "ELLEChaosrunnerLLAll" ],
-      "DefaultOutfit": [],
-      "SPID": [
+      "name": "ELLEChaosrunnerAllOutfits",
+      "items": [ "ELLEChaosrunnerLLAll" ],
+      "defaultOutfit": [],
+      "spid": [
         "*Conjurer,*Cryomancer,*Electromancer,*Mage,*Necro,*Pyromancer,*Wizard,*Warlock,*Sorcerer|||F/-C/-U||5" // Any Female Mage 5%
       ]
     }

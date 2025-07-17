@@ -1,12 +1,12 @@
-// SynthCALIO version of "ELLE's Armor Mods - SPID Addons" by SauteedPanda
+// SynthCALIO version of "ELLE's Armor Mods - spid Addons" by SauteedPanda
 // https://www.nexusmods.com/skyrimspecialedition/mods/139703
 
 {
-  "LeveledItems": [
+  "leveledItems": [
     {
-      "Name": "ELLEKnightElaineLL1",
-      "Flags": "UseAll",
-      "Entries": [
+      "name": "ELLEKnightElaineLL1",
+      "flags": "UseAll",
+      "entries": [
         "00EL_KE_Armbands1",
         "00EL_KE_Belt1",
         "00EL_KE_Boots1",
@@ -22,9 +22,9 @@
       ]
     },
     {
-      "Name": "ELLEKnightElaineLLLonger1",
-      "Flags": "UseAll",
-      "Entries": [
+      "name": "ELLEKnightElaineLLLonger1",
+      "flags": "UseAll",
+      "entries": [
         "00EL_KE_Armbands1",
         "00EL_KE_Belt1",
         "00EL_KE_Boots1",
@@ -40,9 +40,9 @@
       ]
     },
     {
-      "Name": "ELLEKnightElaineLL2",
-      "Flags": "UseAll",
-      "Entries": [
+      "name": "ELLEKnightElaineLL2",
+      "flags": "UseAll",
+      "entries": [
         "00EL_KE_Armbands2",
         "00EL_KE_Belt2",
         "00EL_KE_Boots2",
@@ -58,9 +58,9 @@
       ]
     },
     {
-      "Name": "ELLEKnightElaineLLLonger2",
-      "Flags": "UseAll",
-      "Entries": [
+      "name": "ELLEKnightElaineLLLonger2",
+      "flags": "UseAll",
+      "entries": [
         "00EL_KE_Armbands2",
         "00EL_KE_Belt2",
         "00EL_KE_Boots2",
@@ -76,9 +76,9 @@
       ]
     },
     {
-      "Name": "ELLEKnightElaineLL3",
-      "Flags": "UseAll",
-      "Entries": [
+      "name": "ELLEKnightElaineLL3",
+      "flags": "UseAll",
+      "entries": [
         "00EL_KE_Armbands3",
         "00EL_KE_Belt3",
         "00EL_KE_Boots3",
@@ -94,9 +94,9 @@
       ]
     },
     {
-      "Name": "ELLEKnightElaineLLLonger3",
-      "Flags": "UseAll",
-      "Entries": [
+      "name": "ELLEKnightElaineLLLonger3",
+      "flags": "UseAll",
+      "entries": [
         "00EL_KE_Armbands3",
         "00EL_KE_Belt3",
         "00EL_KE_Boots3",
@@ -112,9 +112,9 @@
       ]
     },
     {
-      "Name": "ELLEKnightElaineLL4",
-      "Flags": "UseAll",
-      "Entries": [
+      "name": "ELLEKnightElaineLL4",
+      "flags": "UseAll",
+      "entries": [
         "00EL_KE_Armbands4",
         "00EL_KE_Belt4",
         "00EL_KE_Boots4",
@@ -130,9 +130,9 @@
       ]
     },
     {
-      "Name": "ELLEKnightElaineLLLonger4",
-      "Flags": "UseAll",
-      "Entries": [
+      "name": "ELLEKnightElaineLLLonger4",
+      "flags": "UseAll",
+      "entries": [
         "00EL_KE_Armbands4",
         "00EL_KE_Belt4",
         "00EL_KE_Boots4",
@@ -148,9 +148,9 @@
       ]
     },
     {
-      "Name": "ELLEKnightElaineLL5",
-      "Flags": "UseAll",
-      "Entries": [
+      "name": "ELLEKnightElaineLL5",
+      "flags": "UseAll",
+      "entries": [
         "00EL_KE_Armbands5",
         "00EL_KE_Belt5",
         "00EL_KE_Boots5",
@@ -166,9 +166,9 @@
       ]
     },
     {
-      "Name": "ELLEKnightElaineLLLonger5",
-      "Flags": "UseAll",
-      "Entries": [
+      "name": "ELLEKnightElaineLLLonger5",
+      "flags": "UseAll",
+      "entries": [
         "00EL_KE_Armbands5",
         "00EL_KE_Belt5",
         "00EL_KE_Boots5",
@@ -184,9 +184,9 @@
       ]
     },
     {
-      "Name": "ELLEKnightElaineLLAllDefault",
-      "Flags": "CalculateFromAllLevelsLessThanOrEqualPlayer, CalculateForEachItemInCount",
-      "Entries": [
+      "name": "ELLEKnightElaineLLAllDefault",
+      "flags": "CalculateFromAllLevelsLessThanOrEqualPlayer, CalculateForEachItemInCount",
+      "entries": [
         "ELLEKnightElaineLL1",
         "ELLEKnightElaineLL2",
         "ELLEKnightElaineLL3",
@@ -195,9 +195,9 @@
       ]
     },
     {
-      "Name": "ELLEKnightElaineLLAllLonger",
-      "Flags": "CalculateFromAllLevelsLessThanOrEqualPlayer, CalculateForEachItemInCount",
-      "Entries": [
+      "name": "ELLEKnightElaineLLAllLonger",
+      "flags": "CalculateFromAllLevelsLessThanOrEqualPlayer, CalculateForEachItemInCount",
+      "entries": [
         "ELLEKnightElaineLLLonger1",
         "ELLEKnightElaineLLLonger2",
         "ELLEKnightElaineLLLonger3",
@@ -206,92 +206,92 @@
       ]
     },
     {
-      "Name": "ELLEKnightElaineLLAll",
-      "Flags": "CalculateFromAllLevelsLessThanOrEqualPlayer, CalculateForEachItemInCount",
-      "Entries": [
+      "name": "ELLEKnightElaineLLAll",
+      "flags": "CalculateFromAllLevelsLessThanOrEqualPlayer, CalculateForEachItemInCount",
+      "entries": [
         "ELLEKnightElaineLLAllDefault",
         "ELLEKnightElaineLLAllLonger"
       ]
     }
   ],
-  "Outfits": [
+  "outfits": [
     {
-      "Name": "ELLEKnightElaineOutfit1",
-      "Items": [ "ELLEKnightElaineLL1" ],
-      "DefaultOutfit": [],
-      "SPID": []
+      "name": "ELLEKnightElaineOutfit1",
+      "items": [ "ELLEKnightElaineLL1" ],
+      "defaultOutfit": [],
+      "spid": []
     },
     {
-      "Name": "ELLEKnightElaineOutfitLonger1",
-      "Items": [ "ELLEKnightElaineLLLonger1" ],
-      "DefaultOutfit": [],
-      "SPID": []
+      "name": "ELLEKnightElaineOutfitLonger1",
+      "items": [ "ELLEKnightElaineLLLonger1" ],
+      "defaultOutfit": [],
+      "spid": []
     },
     {
-      "Name": "ELLEKnightElaineOutfit2",
-      "Items": [ "ELLEKnightElaineLL2" ],
-      "DefaultOutfit": [],
-      "SPID": []
+      "name": "ELLEKnightElaineOutfit2",
+      "items": [ "ELLEKnightElaineLL2" ],
+      "defaultOutfit": [],
+      "spid": []
     },
     {
-      "Name": "ELLEKnightElaineOutfitLonger2",
-      "Items": [ "ELLEKnightElaineLLLonger2" ],
-      "DefaultOutfit": [],
-      "SPID": []
+      "name": "ELLEKnightElaineOutfitLonger2",
+      "items": [ "ELLEKnightElaineLLLonger2" ],
+      "defaultOutfit": [],
+      "spid": []
     },
     {
-      "Name": "ELLEKnightElaineOutfit3",
-      "Items": [ "ELLEKnightElaineLL3" ],
-      "DefaultOutfit": [],
-      "SPID": []
+      "name": "ELLEKnightElaineOutfit3",
+      "items": [ "ELLEKnightElaineLL3" ],
+      "defaultOutfit": [],
+      "spid": []
     },
     {
-      "Name": "ELLEKnightElaineOutfitLonger3",
-      "Items": [ "ELLEKnightElaineLLLonger3" ],
-      "DefaultOutfit": [],
-      "SPID": []
+      "name": "ELLEKnightElaineOutfitLonger3",
+      "items": [ "ELLEKnightElaineLLLonger3" ],
+      "defaultOutfit": [],
+      "spid": []
     },
     {
-      "Name": "ELLEKnightElaineOutfit4",
-      "Items": [ "ELLEKnightElaineLL4" ],
-      "DefaultOutfit": [],
-      "SPID": []
+      "name": "ELLEKnightElaineOutfit4",
+      "items": [ "ELLEKnightElaineLL4" ],
+      "defaultOutfit": [],
+      "spid": []
     },
     {
-      "Name": "ELLEKnightElaineOutfitLonger4",
-      "Items": [ "ELLEKnightElaineLLLonger4" ],
-      "DefaultOutfit": [],
-      "SPID": []
+      "name": "ELLEKnightElaineOutfitLonger4",
+      "items": [ "ELLEKnightElaineLLLonger4" ],
+      "defaultOutfit": [],
+      "spid": []
     },
     {
-      "Name": "ELLEKnightElaineOutfit5",
-      "Items": [ "ELLEKnightElaineLL5" ],
-      "DefaultOutfit": [],
-      "SPID": []
+      "name": "ELLEKnightElaineOutfit5",
+      "items": [ "ELLEKnightElaineLL5" ],
+      "defaultOutfit": [],
+      "spid": []
     },
     {
-      "Name": "ELLEKnightElaineOutfitLonger5",
-      "Items": [ "ELLEKnightElaineLLLonger5" ],
-      "DefaultOutfit": [],
-      "SPID": []
+      "name": "ELLEKnightElaineOutfitLonger5",
+      "items": [ "ELLEKnightElaineLLLonger5" ],
+      "defaultOutfit": [],
+      "spid": []
     },
     {
-      "Name": "ELLEKnightElaineAllDefaultOutfits",
-      "Items": [ "ELLEKnightElaineLLAllDefault" ],
-      "DefaultOutfit": [],
-      "SPID": []
+      "name": "ELLEKnightElaineAllDefaultOutfits",
+      "items": [ "ELLEKnightElaineLLAllDefault" ],
+      "defaultOutfit": [],
+      "spid": []
     },
     {
-      "Name": "ELLEKnightElaineAllLongerOutfits",
-      "Items": [ "ELLEKnightElaineLLAllLonger" ],
-      "DefaultOutfit": [],
-      "SPID": []
+      "name": "ELLEKnightElaineAllLongerOutfits",
+      "items": [ "ELLEKnightElaineLLAllLonger" ],
+      "defaultOutfit": [],
+      "spid": []
     },
     {
-      "Name": "ELLEKnightElaineAllOutfits",
-      "Items": [ "ELLEKnightElaineLLAll" ],
-      "DefaultOutfit": [],
-      "SPID": [
+      "name": "ELLEKnightElaineAllOutfits",
+      "items": [ "ELLEKnightElaineLLAll" ],
+      "defaultOutfit": [],
+      "spid": [
         "*Bandit|BanditFaction||F/-C/-U||5" // Any Female Bandit 5%
       ]
     }

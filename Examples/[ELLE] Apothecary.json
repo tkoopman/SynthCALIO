@@ -1,12 +1,12 @@
-// SynthCALIO version of "ELLE's Armor Mods - SPID Addons" by SauteedPanda
+// SynthCALIO version of "ELLE's Armor Mods - spid Addons" by SauteedPanda
 // https://www.nexusmods.com/skyrimspecialedition/mods/139703
 
 {
-  "LeveledItems": [
+  "leveledItems": [
     {
-      "Name": "ELLEApothecaryLLDefault",
-      "Flags": "UseAll",
-      "Entries": [
+      "name": "ELLEApothecaryLLDefault",
+      "flags": "UseAll",
+      "entries": [
         "00EL_AApothecaryShorts1",
         "00EL_AApothecaryTop1",
         "00EL_AApothecaryBelt1",
@@ -14,9 +14,9 @@
       ]
     },
     {
-      "Name": "ELLEApothecaryLLWhite",
-      "Flags": "UseAll",
-      "Entries": [
+      "name": "ELLEApothecaryLLWhite",
+      "flags": "UseAll",
+      "entries": [
         "00EL_AApothecaryShorts2",
         "00EL_AApothecaryTop2",
         "00EL_AApothecaryBelt2",
@@ -24,37 +24,37 @@
       ]
     },
     {
-      "Name": "ELLEApothecaryLLAll",
-      "Flags": "CalculateFromAllLevelsLessThanOrEqualPlayer, CalculateForEachItemInCount",
-      "Entries": [
+      "name": "ELLEApothecaryLLAll",
+      "flags": "CalculateFromAllLevelsLessThanOrEqualPlayer, CalculateForEachItemInCount",
+      "entries": [
         "ELLEApothecaryLLDefault",
         "ELLEApothecaryLLWhite"
       ]
     }
   ],
-  "Outfits": [
+  "outfits": [
     {
-      "Name": "ELLEApothecaryOutfitDefault",
-      "Items": [ "ELLEApothecaryLLDefault" ],
-      "DefaultOutfit": [
+      "name": "ELLEApothecaryOutfitDefault",
+      "items": [ "ELLEApothecaryLLDefault" ],
+      "defaultOutfit": [
         "17778:Dragonborn.esm", // Elynea Mothren
         "13B7A:Skyrim.esm" // Murbul
       ],
-      "SPID": []
+      "spid": []
     },
     {
-      "Name": "ELLEApothecaryOutfitWhite",
-      "Items": [ "ELLEApothecaryLLWhite" ],
-      "DefaultOutfit": [
+      "name": "ELLEApothecaryOutfitWhite",
+      "items": [ "ELLEApothecaryLLWhite" ],
+      "defaultOutfit": [
         "13364:Skyrim.esm" // Ingun Black-Briar
       ],
-      "SPID": []
+      "spid": []
     },
     {
-      "Name": "ELLEApothecaryAllOutfits",
-      "Items": [ "ELLEApothecaryLLAll" ],
-      "DefaultOutfit": [],
-      "SPID": []
+      "name": "ELLEApothecaryAllOutfits",
+      "items": [ "ELLEApothecaryLLAll" ],
+      "defaultOutfit": [],
+      "spid": []
     }
   ]
 }

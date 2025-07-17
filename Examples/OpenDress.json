@@ -7,69 +7,69 @@
 
 {
   "$schema": "https://raw.githubusercontent.com/tkoopman/SynthCALIO/refs/heads/master/SynthCALIO/SynthCALIO.schema.json",
-  "LeveledItems": [
+  "leveledItems": [
     {
-      "Name": "contentcatOpenDressLPAll",
-      "Flags": "UseAll",
-      "Entries": [
+      "name": "contentcatOpenDressLPAll",
+      "flags": "UseAll",
+      "entries": [
         "?CT77LeatherPanty",
         "contentcatOpenDressLP"
       ]
     },
     {
-      "Name": "contentcatOpenDressNPAll",
-      "Flags": "UseAll",
-      "Entries": [
+      "name": "contentcatOpenDressNPAll",
+      "flags": "UseAll",
+      "entries": [
         "?CT77NativePanty",
         "contentcatOpenDressNP"
       ]
     },
     {
-      "Name": "contentcatOpenDressDPPAll",
-      "Flags": "UseAll",
-      "Entries": [
+      "name": "contentcatOpenDressDPPAll",
+      "flags": "UseAll",
+      "entries": [
         "?CT77DragonbonePanty",
         "80D:OpenDress.esp"
       ]
     },
     {
-      "Name": "contentcatOpenDressLP",
-      "Flags": "CalculateFromAllLevelsLessThanOrEqualPlayer, CalculateForEachItemInCount",
-      "Entries": [
+      "name": "contentcatOpenDressLP",
+      "flags": "CalculateFromAllLevelsLessThanOrEqualPlayer, CalculateForEachItemInCount",
+      "entries": [
         "DEMOpenDressChainmail",
         "DEMOpenDressLeather",
         "DEMOpenDressLinen"
       ]
     },
     {
-      "Name": "contentcatOpenDressNP",
-      "Flags": "CalculateFromAllLevelsLessThanOrEqualPlayer, CalculateForEachItemInCount",
-      "Entries": [
+      "name": "contentcatOpenDressNP",
+      "flags": "CalculateFromAllLevelsLessThanOrEqualPlayer, CalculateForEachItemInCount",
+      "entries": [
         "DEMOpenDressDragon",
         "DEMOpenDressWolf"
       ]
     },
     {
-      "Name": "contentcatOpenDressAll",
-      "Flags": "CalculateFromAllLevelsLessThanOrEqualPlayer, CalculateForEachItemInCount",
-      "Entries": [
+      "name": "contentcatOpenDressAll",
+      "flags": "CalculateFromAllLevelsLessThanOrEqualPlayer, CalculateForEachItemInCount",
+      "entries": [
         "contentcatOpenDressLPAll",
         "contentcatOpenDressNPAll",
         "contentcatOpenDressDPPAll"
       ]
     }
   ],
-  "Outfits": [
+  "outfits": [
     {
-      "Name": "contentcatOpenDressOutfitRandom",
-      "Items": [ "contentcatOpenDressAll" ],
-      "DefaultOutfit": [
+      "name": "contentcatOpenDressOutfitRandom",
+      "items": [ "contentcatOpenDressAll" ],
+      "defaultOutfit": [
         "Anwen",
         "Orla",
         "Senna",
         "Hamal"
       ],
-      "SPID": []
+      "spid": []
     }
   ]
 }

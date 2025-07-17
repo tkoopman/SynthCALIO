@@ -1,12 +1,12 @@
-// SynthCALIO version of "ELLE's Armor Mods - SPID Addons" by SauteedPanda
+// SynthCALIO version of "ELLE's Armor Mods - spid Addons" by SauteedPanda
 // https://www.nexusmods.com/skyrimspecialedition/mods/139703
 
 {
-  "LeveledItems": [
+  "leveledItems": [
     {
-      "Name": "ELLEElvenAssassinLL1",
-      "Flags": "UseAll",
-      "Entries": [
+      "name": "ELLEElvenAssassinLL1",
+      "flags": "UseAll",
+      "entries": [
         "00EL_AEABelt1",
         "00EL_AEABoots1",
         "00EL_AEADress1",
@@ -15,9 +15,9 @@
       ]
     },
     {
-      "Name": "ELLEElvenAssassinLL2",
-      "Flags": "UseAll",
-      "Entries": [
+      "name": "ELLEElvenAssassinLL2",
+      "flags": "UseAll",
+      "entries": [
         "00EL_AEABelt2",
         "00EL_AEABoots2",
         "00EL_AEADress2",
@@ -26,9 +26,9 @@
       ]
     },
     {
-      "Name": "ELLEElvenAssassinLL3",
-      "Flags": "UseAll",
-      "Entries": [
+      "name": "ELLEElvenAssassinLL3",
+      "flags": "UseAll",
+      "entries": [
         "00EL_AEABelt3",
         "00EL_AEABoots3",
         "00EL_AEADress3",
@@ -37,9 +37,9 @@
       ]
     },
     {
-      "Name": "ELLEElvenAssassinLL4",
-      "Flags": "UseAll",
-      "Entries": [
+      "name": "ELLEElvenAssassinLL4",
+      "flags": "UseAll",
+      "entries": [
         "00EL_AEABelt4",
         "00EL_AEABoots4",
         "00EL_AEADress4",
@@ -48,9 +48,9 @@
       ]
     },
     {
-      "Name": "ELLEElvenAssassinLL5",
-      "Flags": "UseAll",
-      "Entries": [
+      "name": "ELLEElvenAssassinLL5",
+      "flags": "UseAll",
+      "entries": [
         "00EL_AEABelt5",
         "00EL_AEABoots5",
         "00EL_AEADress5",
@@ -59,9 +59,9 @@
       ]
     },
     {
-      "Name": "ELLEElvenAssassinLL6",
-      "Flags": "UseAll",
-      "Entries": [
+      "name": "ELLEElvenAssassinLL6",
+      "flags": "UseAll",
+      "entries": [
         "00EL_AEABelt6",
         "00EL_AEABoots6",
         "00EL_AEADress6",
@@ -70,9 +70,9 @@
       ]
     },
     {
-      "Name": "ELLEElvenAssassinLLAll",
-      "Flags": "CalculateFromAllLevelsLessThanOrEqualPlayer, CalculateForEachItemInCount",
-      "Entries": [
+      "name": "ELLEElvenAssassinLLAll",
+      "flags": "CalculateFromAllLevelsLessThanOrEqualPlayer, CalculateForEachItemInCount",
+      "entries": [
         "ELLEElvenAssassinLL1",
         "ELLEElvenAssassinLL2",
         "ELLEElvenAssassinLL3",
@@ -82,50 +82,50 @@
       ]
     }
   ],
-  "Outfits": [
+  "outfits": [
     {
-      "Name": "ELLEElvenAssassinOutfit1",
-      "Items": [ "ELLEElvenAssassinLL1" ],
-      "DefaultOutfit": [],
-      "SPID": []
+      "name": "ELLEElvenAssassinOutfit1",
+      "items": [ "ELLEElvenAssassinLL1" ],
+      "defaultOutfit": [],
+      "spid": []
     },
     {
-      "Name": "ELLEElvenAssassinOutfit2",
-      "Items": [ "ELLEElvenAssassinLL2" ],
-      "DefaultOutfit": [],
-      "SPID": []
+      "name": "ELLEElvenAssassinOutfit2",
+      "items": [ "ELLEElvenAssassinLL2" ],
+      "defaultOutfit": [],
+      "spid": []
     },
     {
-      "Name": "ELLEElvenAssassinOutfit3",
-      "Items": [ "ELLEElvenAssassinLL3" ],
-      "DefaultOutfit": [],
-      "SPID": [
+      "name": "ELLEElvenAssassinOutfit3",
+      "items": [ "ELLEElvenAssassinLL3" ],
+      "defaultOutfit": [],
+      "spid": [
         "1BDB4:Skyrim.esm" // Astrid
       ]
     },
     {
-      "Name": "ELLEElvenAssassinOutfit4",
-      "Items": [ "ELLEElvenAssassinLL4" ],
-      "DefaultOutfit": [],
-      "SPID": []
+      "name": "ELLEElvenAssassinOutfit4",
+      "items": [ "ELLEElvenAssassinLL4" ],
+      "defaultOutfit": [],
+      "spid": []
     },
     {
-      "Name": "ELLEElvenAssassinOutfit5",
-      "Items": [ "ELLEElvenAssassinLL5" ],
-      "DefaultOutfit": [],
-      "SPID": []
+      "name": "ELLEElvenAssassinOutfit5",
+      "items": [ "ELLEElvenAssassinLL5" ],
+      "defaultOutfit": [],
+      "spid": []
     },
     {
-      "Name": "ELLEElvenAssassinOutfit6",
-      "Items": [ "ELLEElvenAssassinLL6" ],
-      "DefaultOutfit": [],
-      "SPID": []
+      "name": "ELLEElvenAssassinOutfit6",
+      "items": [ "ELLEElvenAssassinLL6" ],
+      "defaultOutfit": [],
+      "spid": []
     },
     {
-      "Name": "ELLEElvenAssassinAllOutfits",
-      "Items": [ "ELLEElvenAssassinLLAll" ],
-      "DefaultOutfit": [],
-      "SPID": [
+      "name": "ELLEElvenAssassinAllOutfits",
+      "items": [ "ELLEElvenAssassinLLAll" ],
+      "defaultOutfit": [],
+      "spid": [
         "Assassin|CombatThief||F/-C/-U||30" // Any Female Assassin 30%
       ]
     }

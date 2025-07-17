@@ -1,12 +1,12 @@
-// SynthCALIO version of "ELLE's Armor Mods - SPID Addons" by SauteedPanda
+// SynthCALIO version of "ELLE's Armor Mods - spid Addons" by SauteedPanda
 // https://www.nexusmods.com/skyrimspecialedition/mods/139703
 
 {
-  "LeveledItems": [
+  "leveledItems": [
     {
-      "Name": "ELLEKnightWindsLLBlack",
-      "Flags": "UseAll",
-      "Entries": [
+      "name": "ELLEKnightWindsLLBlack",
+      "flags": "UseAll",
+      "entries": [
         "00EL_KnightPants",
         "00EL_KnightBoots",
         "00EL_KnightGloves",
@@ -14,9 +14,9 @@
       ]
     },
     {
-      "Name": "ELLEKnightWindsLLBrown",
-      "Flags": "UseAll",
-      "Entries": [
+      "name": "ELLEKnightWindsLLBrown",
+      "flags": "UseAll",
+      "entries": [
         "00EL_KnightBootsC",
         "00EL_KnightGlovesC",
         "00EL_KnightPantsC",
@@ -24,9 +24,9 @@
       ]
     },
     {
-      "Name": "ELLEKnightWindsLLRed",
-      "Flags": "UseAll",
-      "Entries": [
+      "name": "ELLEKnightWindsLLRed",
+      "flags": "UseAll",
+      "entries": [
         "00EL_KnightBootsR",
         "00EL_KnightGlovesR",
         "00EL_KnightPantsR",
@@ -34,39 +34,39 @@
       ]
     },
     {
-      "Name": "ELLEKnightWindsLLAll",
-      "Flags": "CalculateFromAllLevelsLessThanOrEqualPlayer, CalculateForEachItemInCount",
-      "Entries": [
+      "name": "ELLEKnightWindsLLAll",
+      "flags": "CalculateFromAllLevelsLessThanOrEqualPlayer, CalculateForEachItemInCount",
+      "entries": [
         "ELLEKnightWindsLLBlack",
         "ELLEKnightWindsLLBrown",
         "ELLEKnightWindsLLRed"
       ]
     }
   ],
-  "Outfits": [
+  "outfits": [
     {
-      "Name": "ELLEKnightWindsOutfitBlack",
-      "Items": [ "ELLEKnightWindsLLBlack" ],
-      "DefaultOutfit": [],
-      "SPID": []
+      "name": "ELLEKnightWindsOutfitBlack",
+      "items": [ "ELLEKnightWindsLLBlack" ],
+      "defaultOutfit": [],
+      "spid": []
     },
     {
-      "Name": "ELLEKnightWindsOutfitBrown",
-      "Items": [ "ELLEKnightWindsLLBrown" ],
-      "DefaultOutfit": [],
-      "SPID": []
+      "name": "ELLEKnightWindsOutfitBrown",
+      "items": [ "ELLEKnightWindsLLBrown" ],
+      "defaultOutfit": [],
+      "spid": []
     },
     {
-      "Name": "ELLEKnightWindsOutfitRed",
-      "Items": [ "ELLEKnightWindsLLRed" ],
-      "DefaultOutfit": [],
-      "SPID": []
+      "name": "ELLEKnightWindsOutfitRed",
+      "items": [ "ELLEKnightWindsLLRed" ],
+      "defaultOutfit": [],
+      "spid": []
     },
     {
-      "Name": "ELLEKnightWindsAllOutfits",
-      "Items": [ "ELLEKnightWindsLLAll" ],
-      "DefaultOutfit": [],
-      "SPID": [
+      "name": "ELLEKnightWindsAllOutfits",
+      "items": [ "ELLEKnightWindsLLAll" ],
+      "defaultOutfit": [],
+      "spid": [
         "*Necromancer|NecromancerFaction||F/-C/-U||20" // Any Female Necromancer 20%
       ]
     }

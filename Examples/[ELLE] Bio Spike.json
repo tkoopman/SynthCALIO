@@ -1,12 +1,12 @@
-// SynthCALIO version of "ELLE's Armor Mods - SPID Addons" by SauteedPanda
+// SynthCALIO version of "ELLE's Armor Mods - spid Addons" by SauteedPanda
 // https://www.nexusmods.com/skyrimspecialedition/mods/139703
 
 {
-  "LeveledItems": [
+  "leveledItems": [
     {
-      "Name": "ELLEBioSpikeLL1",
-      "Flags": "UseAll",
-      "Entries": [
+      "name": "ELLEBioSpikeLL1",
+      "flags": "UseAll",
+      "entries": [
         "00EL_BS_Blindfold1",
         "00EL_BS_Bodice1",
         "00EL_BS_Gloves1",
@@ -16,9 +16,9 @@
       ]
     },
     {
-      "Name": "ELLEBioSpikeLL2",
-      "Flags": "UseAll",
-      "Entries": [
+      "name": "ELLEBioSpikeLL2",
+      "flags": "UseAll",
+      "entries": [
         "00EL_BS_Blindfold2",
         "00EL_BS_Bodice2",
         "00EL_BS_Gloves2",
@@ -28,9 +28,9 @@
       ]
     },
     {
-      "Name": "ELLEBioSpikeLL3",
-      "Flags": "UseAll",
-      "Entries": [
+      "name": "ELLEBioSpikeLL3",
+      "flags": "UseAll",
+      "entries": [
         "00EL_BS_Blindfold3",
         "00EL_BS_Bodice3",
         "00EL_BS_Gloves3",
@@ -40,39 +40,39 @@
       ]
     },
     {
-      "Name": "ELLEBioSpikeLLAll",
-      "Flags": "CalculateFromAllLevelsLessThanOrEqualPlayer, CalculateForEachItemInCount",
-      "Entries": [
+      "name": "ELLEBioSpikeLLAll",
+      "flags": "CalculateFromAllLevelsLessThanOrEqualPlayer, CalculateForEachItemInCount",
+      "entries": [
         "ELLEBioSpikeLL1",
         "ELLEBioSpikeLL2",
         "ELLEBioSpikeLL3"
       ]
     }
   ],
-  "Outfits": [
+  "outfits": [
     {
-      "Name": "ELLEBioSpikeOutfit1",
-      "Items": [ "ELLEBioSpikeLL1" ],
-      "DefaultOutfit": [],
-      "SPID": []
+      "name": "ELLEBioSpikeOutfit1",
+      "items": [ "ELLEBioSpikeLL1" ],
+      "defaultOutfit": [],
+      "spid": []
     },
     {
-      "Name": "ELLEBioSpikeOutfit2",
-      "Items": [ "ELLEBioSpikeLL2" ],
-      "DefaultOutfit": [],
-      "SPID": []
+      "name": "ELLEBioSpikeOutfit2",
+      "items": [ "ELLEBioSpikeLL2" ],
+      "defaultOutfit": [],
+      "spid": []
     },
     {
-      "Name": "ELLEBioSpikeOutfit3",
-      "Items": [ "ELLEBioSpikeLL3" ],
-      "DefaultOutfit": [],
-      "SPID": []
+      "name": "ELLEBioSpikeOutfit3",
+      "items": [ "ELLEBioSpikeLL3" ],
+      "defaultOutfit": [],
+      "spid": []
     },
     {
-      "Name": "ELLEBioSpikeAllOutfits",
-      "Items": [ "ELLEBioSpikeLLAll" ],
-      "DefaultOutfit": [],
-      "SPID": [
+      "name": "ELLEBioSpikeAllOutfits",
+      "items": [ "ELLEBioSpikeLLAll" ],
+      "defaultOutfit": [],
+      "spid": [
         "*Afflicted|DA13AfflictedFaction||F/-C/-U||35", // Any Female Afflicted 35%
         "Falmer Servant|dunBlackreachFalmerServantFaction||F/-C/-U||35" // Any Female Falmer Servant 35%
       ]

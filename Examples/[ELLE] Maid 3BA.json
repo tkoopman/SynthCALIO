@@ -1,140 +1,140 @@
-// SynthCALIO version of "ELLE's Armor Mods - SPID Addons" by SauteedPanda
+// SynthCALIO version of "ELLE's Armor Mods - spid Addons" by SauteedPanda
 // https://www.nexusmods.com/skyrimspecialedition/mods/139703
 
 {
-  "LeveledItems": [
+  "leveledItems": [
     {
-      "Name": "ELLEMaidLLMatteBlack",
-      "Flags": "UseAll",
-      "Entries": [
+      "name": "ELLEMaidLLMatteBlack",
+      "flags": "UseAll",
+      "entries": [
         "ClothesBoots01",
         "00EL_DressMatteBlk"
       ]
     },
     {
-      "Name": "ELLEMaidLLMatteBlue",
-      "Flags": "UseAll",
-      "Entries": [
+      "name": "ELLEMaidLLMatteBlue",
+      "flags": "UseAll",
+      "entries": [
         "ClothesBoots01",
         "00EL_DressMatteBlue"
       ]
     },
     {
-      "Name": "ELLEMaidLLMatteGreen",
-      "Flags": "UseAll",
-      "Entries": [
+      "name": "ELLEMaidLLMatteGreen",
+      "flags": "UseAll",
+      "entries": [
         "ClothesBoots01",
         "00EL_DressMattegrn"
       ]
     },
     {
-      "Name": "ELLEMaidLLMattePink",
-      "Flags": "UseAll",
-      "Entries": [
+      "name": "ELLEMaidLLMattePink",
+      "flags": "UseAll",
+      "entries": [
         "ClothesBoots01",
         "00EL_DressMattePnk"
       ]
     },
     {
-      "Name": "ELLEMaidLLMattePurple",
-      "Flags": "UseAll",
-      "Entries": [
+      "name": "ELLEMaidLLMattePurple",
+      "flags": "UseAll",
+      "entries": [
         "ClothesBoots01",
         "00EL_DressMattePurp"
       ]
     },
     {
-      "Name": "ELLEMaidLLMatteRed",
-      "Flags": "UseAll",
-      "Entries": [
+      "name": "ELLEMaidLLMatteRed",
+      "flags": "UseAll",
+      "entries": [
         "ClothesBoots01",
         "00EL_DressMattered"
       ]
     },
     {
-      "Name": "ELLEMaidLLMatteWhite",
-      "Flags": "UseAll",
-      "Entries": [
+      "name": "ELLEMaidLLMatteWhite",
+      "flags": "UseAll",
+      "entries": [
         "ClothesBoots01",
         "00EL_DressMatteWhite"
       ]
     },
     {
-      "Name": "ELLEMaidLLMatteYellow",
-      "Flags": "UseAll",
-      "Entries": [
+      "name": "ELLEMaidLLMatteYellow",
+      "flags": "UseAll",
+      "entries": [
         "ClothesBoots01",
         "00EL_DressMatteYLW"
       ]
     },
     {
-      "Name": "ELLEMaidLLShinyBlack",
-      "Flags": "UseAll",
-      "Entries": [
+      "name": "ELLEMaidLLShinyBlack",
+      "flags": "UseAll",
+      "entries": [
         "ClothesBoots01",
         "00EL_DressShinyBlk"
       ]
     },
     {
-      "Name": "ELLEMaidLLShinyBlue",
-      "Flags": "UseAll",
-      "Entries": [
+      "name": "ELLEMaidLLShinyBlue",
+      "flags": "UseAll",
+      "entries": [
         "ClothesBoots01",
         "00EL_DressShinyBlue"
       ]
     },
     {
-      "Name": "ELLEMaidLLShinyGreen",
-      "Flags": "UseAll",
-      "Entries": [
+      "name": "ELLEMaidLLShinyGreen",
+      "flags": "UseAll",
+      "entries": [
         "ClothesBoots01",
         "00EL_DressShinyGRN"
       ]
     },
     {
-      "Name": "ELLEMaidLLShinyPink",
-      "Flags": "UseAll",
-      "Entries": [
+      "name": "ELLEMaidLLShinyPink",
+      "flags": "UseAll",
+      "entries": [
         "ClothesBoots01",
         "00EL_DressShinyPNK"
       ]
     },
     {
-      "Name": "ELLEMaidLLShinyPurple",
-      "Flags": "UseAll",
-      "Entries": [
+      "name": "ELLEMaidLLShinyPurple",
+      "flags": "UseAll",
+      "entries": [
         "ClothesBoots01",
         "00EL_DressShinyPURP"
       ]
     },
     {
-      "Name": "ELLEMaidLLShinyRed",
-      "Flags": "UseAll",
-      "Entries": [
+      "name": "ELLEMaidLLShinyRed",
+      "flags": "UseAll",
+      "entries": [
         "ClothesBoots01",
         "00EL_DressShinyRed"
       ]
     },
     {
-      "Name": "ELLEMaidLLShinyWhite",
-      "Flags": "UseAll",
-      "Entries": [
+      "name": "ELLEMaidLLShinyWhite",
+      "flags": "UseAll",
+      "entries": [
         "ClothesBoots01",
         "00EL_DressShinyWhite"
       ]
     },
     {
-      "Name": "ELLEMaidLLShinyYellow",
-      "Flags": "UseAll",
-      "Entries": [
+      "name": "ELLEMaidLLShinyYellow",
+      "flags": "UseAll",
+      "entries": [
         "ClothesBoots01",
         "00EL_DressShinyYLW"
       ]
     },
     {
-      "Name": "ELLEMaidLLImmersive",
-      "Flags": "CalculateFromAllLevelsLessThanOrEqualPlayer, CalculateForEachItemInCount",
-      "Entries": [
+      "name": "ELLEMaidLLImmersive",
+      "flags": "CalculateFromAllLevelsLessThanOrEqualPlayer, CalculateForEachItemInCount",
+      "entries": [
         "ELLEMaidLLMatteBlack",
         "ELLEMaidLLMatteBlue",
         "ELLEMaidLLMattePurple",
@@ -143,9 +143,9 @@
       ]
     },
     {
-      "Name": "ELLEMaidLLAllMatte",
-      "Flags": "CalculateFromAllLevelsLessThanOrEqualPlayer, CalculateForEachItemInCount",
-      "Entries": [
+      "name": "ELLEMaidLLAllMatte",
+      "flags": "CalculateFromAllLevelsLessThanOrEqualPlayer, CalculateForEachItemInCount",
+      "entries": [
         "ELLEMaidLLMatteBlack",
         "ELLEMaidLLMatteBlue",
         "ELLEMaidLLMatteGreen",
@@ -157,9 +157,9 @@
       ]
     },
     {
-      "Name": "ELLEMaidLLAllShiny",
-      "Flags": "CalculateFromAllLevelsLessThanOrEqualPlayer, CalculateForEachItemInCount",
-      "Entries": [
+      "name": "ELLEMaidLLAllShiny",
+      "flags": "CalculateFromAllLevelsLessThanOrEqualPlayer, CalculateForEachItemInCount",
+      "entries": [
         "ELLEMaidLLShinyBlack",
         "ELLEMaidLLShinyBlue",
         "ELLEMaidLLShinyGreen",
@@ -171,136 +171,136 @@
       ]
     },
     {
-      "Name": "ELLEMaidLLAll",
-      "Flags": "CalculateFromAllLevelsLessThanOrEqualPlayer, CalculateForEachItemInCount",
-      "Entries": [
+      "name": "ELLEMaidLLAll",
+      "flags": "CalculateFromAllLevelsLessThanOrEqualPlayer, CalculateForEachItemInCount",
+      "entries": [
         "ELLEMaidLLAllMatte",
         "ELLEMaidLLAllShiny"
       ]
     }
   ],
-  "Outfits": [
+  "outfits": [
     {
-      "Name": "ELLEMaidOutfitMatteBlack",
-      "Items": [ "ELLEMaidLLMatteBlack" ],
-      "DefaultOutfit": [],
-      "SPID": []
+      "name": "ELLEMaidOutfitMatteBlack",
+      "items": [ "ELLEMaidLLMatteBlack" ],
+      "defaultOutfit": [],
+      "spid": []
     },
     {
-      "Name": "ELLEMaidOutfitMatteBlue",
-      "Items": [ "ELLEMaidLLMatteBlue" ],
-      "DefaultOutfit": [],
-      "SPID": []
+      "name": "ELLEMaidOutfitMatteBlue",
+      "items": [ "ELLEMaidLLMatteBlue" ],
+      "defaultOutfit": [],
+      "spid": []
     },
     {
-      "Name": "ELLEMaidOutfitMatteGreen",
-      "Items": [ "ELLEMaidLLMatteGreen" ],
-      "DefaultOutfit": [],
-      "SPID": []
+      "name": "ELLEMaidOutfitMatteGreen",
+      "items": [ "ELLEMaidLLMatteGreen" ],
+      "defaultOutfit": [],
+      "spid": []
     },
     {
-      "Name": "ELLEMaidOutfitMattePink",
-      "Items": [ "ELLEMaidLLMattePink" ],
-      "DefaultOutfit": [],
-      "SPID": []
+      "name": "ELLEMaidOutfitMattePink",
+      "items": [ "ELLEMaidLLMattePink" ],
+      "defaultOutfit": [],
+      "spid": []
     },
     {
-      "Name": "ELLEMaidOutfitMattePurple",
-      "Items": [ "ELLEMaidLLMattePurple" ],
-      "DefaultOutfit": [],
-      "SPID": []
+      "name": "ELLEMaidOutfitMattePurple",
+      "items": [ "ELLEMaidLLMattePurple" ],
+      "defaultOutfit": [],
+      "spid": []
     },
     {
-      "Name": "ELLEMaidOutfitMatteRed",
-      "Items": [ "ELLEMaidLLMatteRed" ],
-      "DefaultOutfit": [],
-      "SPID": []
+      "name": "ELLEMaidOutfitMatteRed",
+      "items": [ "ELLEMaidLLMatteRed" ],
+      "defaultOutfit": [],
+      "spid": []
     },
     {
-      "Name": "ELLEMaidOutfitMatteWhite",
-      "Items": [ "ELLEMaidLLMatteWhite" ],
-      "DefaultOutfit": [],
-      "SPID": []
+      "name": "ELLEMaidOutfitMatteWhite",
+      "items": [ "ELLEMaidLLMatteWhite" ],
+      "defaultOutfit": [],
+      "spid": []
     },
     {
-      "Name": "ELLEMaidOutfitMatteYellow",
-      "Items": [ "ELLEMaidLLMatteYellow" ],
-      "DefaultOutfit": [],
-      "SPID": []
+      "name": "ELLEMaidOutfitMatteYellow",
+      "items": [ "ELLEMaidLLMatteYellow" ],
+      "defaultOutfit": [],
+      "spid": []
     },
     {
-      "Name": "ELLEMaidOutfitShinyBlack",
-      "Items": [ "ELLEMaidLLShinyBlack" ],
-      "DefaultOutfit": [],
-      "SPID": []
+      "name": "ELLEMaidOutfitShinyBlack",
+      "items": [ "ELLEMaidLLShinyBlack" ],
+      "defaultOutfit": [],
+      "spid": []
     },
     {
-      "Name": "ELLEMaidOutfitShinyBlue",
-      "Items": [ "ELLEMaidLLShinyBlue" ],
-      "DefaultOutfit": [],
-      "SPID": []
+      "name": "ELLEMaidOutfitShinyBlue",
+      "items": [ "ELLEMaidLLShinyBlue" ],
+      "defaultOutfit": [],
+      "spid": []
     },
     {
-      "Name": "ELLEMaidOutfitShinyGreen",
-      "Items": [ "ELLEMaidLLShinyGreen" ],
-      "DefaultOutfit": [],
-      "SPID": []
+      "name": "ELLEMaidOutfitShinyGreen",
+      "items": [ "ELLEMaidLLShinyGreen" ],
+      "defaultOutfit": [],
+      "spid": []
     },
     {
-      "Name": "ELLEMaidOutfitShinyPink",
-      "Items": [ "ELLEMaidLLShinyPink" ],
-      "DefaultOutfit": [],
-      "SPID": []
+      "name": "ELLEMaidOutfitShinyPink",
+      "items": [ "ELLEMaidLLShinyPink" ],
+      "defaultOutfit": [],
+      "spid": []
     },
     {
-      "Name": "ELLEMaidOutfitShinyPurple",
-      "Items": [ "ELLEMaidLLShinyPurple" ],
-      "DefaultOutfit": [],
-      "SPID": []
+      "name": "ELLEMaidOutfitShinyPurple",
+      "items": [ "ELLEMaidLLShinyPurple" ],
+      "defaultOutfit": [],
+      "spid": []
     },
     {
-      "Name": "ELLEMaidOutfitShinyRed",
-      "Items": [ "ELLEMaidLLShinyRed" ],
-      "DefaultOutfit": [],
-      "SPID": []
+      "name": "ELLEMaidOutfitShinyRed",
+      "items": [ "ELLEMaidLLShinyRed" ],
+      "defaultOutfit": [],
+      "spid": []
     },
     {
-      "Name": "ELLEMaidOutfitShinyWhite",
-      "Items": [ "ELLEMaidLLShinyWhite" ],
-      "DefaultOutfit": [],
-      "SPID": []
+      "name": "ELLEMaidOutfitShinyWhite",
+      "items": [ "ELLEMaidLLShinyWhite" ],
+      "defaultOutfit": [],
+      "spid": []
     },
     {
-      "Name": "ELLEMaidOutfitShinyYellow",
-      "Items": [ "ELLEMaidLLShinyYellow" ],
-      "DefaultOutfit": [],
-      "SPID": []
+      "name": "ELLEMaidOutfitShinyYellow",
+      "items": [ "ELLEMaidLLShinyYellow" ],
+      "defaultOutfit": [],
+      "spid": []
     },
     {
-      "Name": "ELLEMaidImmersiveOutfits",
-      "Items": [ "ELLEMaidLLImmersive" ],
-      "DefaultOutfit": [],
-      "SPID": [
+      "name": "ELLEMaidImmersiveOutfits",
+      "items": [ "ELLEMaidLLImmersive" ],
+      "defaultOutfit": [],
+      "spid": [
         "ActorTypeNPC|ClothesTavernWenchOutfit||F/-C||35" // Replaces ClothesTavernWenchOutfit 35%
       ]
     },
     {
-      "Name": "ELLEMaidAllOutfits",
-      "Items": [ "ELLEMaidLLAll" ],
-      "DefaultOutfit": [],
-      "SPID": []
+      "name": "ELLEMaidAllOutfits",
+      "items": [ "ELLEMaidLLAll" ],
+      "defaultOutfit": [],
+      "spid": []
     },
     {
-      "Name": "ELLEMaidAllMatteOutfits",
-      "Items": [ "ELLEMaidLLAllMatte" ],
-      "DefaultOutfit": [],
-      "SPID": []
+      "name": "ELLEMaidAllMatteOutfits",
+      "items": [ "ELLEMaidLLAllMatte" ],
+      "defaultOutfit": [],
+      "spid": []
     },
     {
-      "Name": "ELLEMaidAllShinyOutfits",
-      "Items": [ "ELLEMaidLLAllShiny" ],
-      "DefaultOutfit": [],
-      "SPID": []
+      "name": "ELLEMaidAllShinyOutfits",
+      "items": [ "ELLEMaidLLAllShiny" ],
+      "defaultOutfit": [],
+      "spid": []
     }
   ]
 }

@@ -1,57 +1,57 @@
-// SynthCALIO version of "ELLE's Armor Mods - SPID Addons" by SauteedPanda
+// SynthCALIO version of "ELLE's Armor Mods - spid Addons" by SauteedPanda
 // https://www.nexusmods.com/skyrimspecialedition/mods/139703
 
 {
-  "LeveledItems": [
+  "leveledItems": [
     {
-      "Name": "ELLETribalScoutLLDefault",
-      "Flags": "UseAll",
-      "Entries": [
+      "name": "ELLETribalScoutLLDefault",
+      "flags": "UseAll",
+      "entries": [
         "ForswornBoots",
         "00EL_TribalScoutUpper",
         "00EL_TribalScoutLower"
       ]
     },
     {
-      "Name": "ELLETribalScoutLLGlowingBlue",
-      "Flags": "UseAll",
-      "Entries": [
+      "name": "ELLETribalScoutLLGlowingBlue",
+      "flags": "UseAll",
+      "entries": [
         "ForswornBoots",
         "00EL_TribalScoutLowerBlueGlow",
         "00EL_TribalScoutUpperBlueGlow"
       ]
     },
     {
-      "Name": "ELLETribalScoutLLGlowingRed",
-      "Flags": "UseAll",
-      "Entries": [
+      "name": "ELLETribalScoutLLGlowingRed",
+      "flags": "UseAll",
+      "entries": [
         "ForswornBoots",
         "00EL_TribalScoutLowerRedGlow",
         "00EL_TribalScoutUpperRedGlow"
       ]
     },
     {
-      "Name": "ELLETribalScoutLLRed",
-      "Flags": "UseAll",
-      "Entries": [
+      "name": "ELLETribalScoutLLRed",
+      "flags": "UseAll",
+      "entries": [
         "ForswornBoots",
         "00EL_TribalScoutLowerRed",
         "00EL_TribalScoutUpperRed"
       ]
     },
     {
-      "Name": "ELLETribalScoutLLViking",
-      "Flags": "UseAll",
-      "Entries": [
+      "name": "ELLETribalScoutLLViking",
+      "flags": "UseAll",
+      "entries": [
         "ForswornBoots",
         "00EL_TribalScoutLowerViking",
         "00EL_TribalScoutUpperViking"
       ]
     },
     {
-      "Name": "ELLETribalScoutLLAll",
-      "Flags": "CalculateFromAllLevelsLessThanOrEqualPlayer, CalculateForEachItemInCount",
-      "Entries": [
+      "name": "ELLETribalScoutLLAll",
+      "flags": "CalculateFromAllLevelsLessThanOrEqualPlayer, CalculateForEachItemInCount",
+      "entries": [
         "ELLETribalScoutLLDefault",
         "ELLETribalScoutLLGlowingBlue",
         "ELLETribalScoutLLGlowingRed",
@@ -60,42 +60,42 @@
       ]
     }
   ],
-  "Outfits": [
+  "outfits": [
     {
-      "Name": "ELLETribalScoutOutfitDefault",
-      "Items": [ "ELLETribalScoutLLDefault" ],
-      "DefaultOutfit": [],
-      "SPID": []
+      "name": "ELLETribalScoutOutfitDefault",
+      "items": [ "ELLETribalScoutLLDefault" ],
+      "defaultOutfit": [],
+      "spid": []
     },
     {
-      "Name": "ELLETribalScoutOutfitGlowingBlue",
-      "Items": [ "ELLETribalScoutLLGlowingBlue" ],
-      "DefaultOutfit": [],
-      "SPID": []
+      "name": "ELLETribalScoutOutfitGlowingBlue",
+      "items": [ "ELLETribalScoutLLGlowingBlue" ],
+      "defaultOutfit": [],
+      "spid": []
     },
     {
-      "Name": "ELLETribalScoutOutfitGlowingRed",
-      "Items": [ "ELLETribalScoutLLGlowingRed" ],
-      "DefaultOutfit": [],
-      "SPID": []
+      "name": "ELLETribalScoutOutfitGlowingRed",
+      "items": [ "ELLETribalScoutLLGlowingRed" ],
+      "defaultOutfit": [],
+      "spid": []
     },
     {
-      "Name": "ELLETribalScoutOutfitRed",
-      "Items": [ "ELLETribalScoutLLRed" ],
-      "DefaultOutfit": [],
-      "SPID": []
+      "name": "ELLETribalScoutOutfitRed",
+      "items": [ "ELLETribalScoutLLRed" ],
+      "defaultOutfit": [],
+      "spid": []
     },
     {
-      "Name": "ELLETribalScoutOutfitViking",
-      "Items": [ "ELLETribalScoutLLViking" ],
-      "DefaultOutfit": [],
-      "SPID": []
+      "name": "ELLETribalScoutOutfitViking",
+      "items": [ "ELLETribalScoutLLViking" ],
+      "defaultOutfit": [],
+      "spid": []
     },
     {
-      "Name": "ELLETribalScoutAllOutfits",
-      "Items": [ "ELLETribalScoutLLAll" ],
-      "DefaultOutfit": [],
-      "SPID": [
+      "name": "ELLETribalScoutAllOutfits",
+      "items": [ "ELLETribalScoutLLAll" ],
+      "defaultOutfit": [],
+      "spid": [
         "*Forsworn|||F/-C/-U||15" // Any Female Forsworn 15%
       ]
     }

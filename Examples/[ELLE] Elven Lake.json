@@ -1,12 +1,12 @@
-// SynthCALIO version of "ELLE's Armor Mods - SPID Addons" by SauteedPanda
+// SynthCALIO version of "ELLE's Armor Mods - spid Addons" by SauteedPanda
 // https://www.nexusmods.com/skyrimspecialedition/mods/139703
 
 {
-  "LeveledItems": [
+  "leveledItems": [
     {
-      "Name": "ELLEElvenLakeLLDefault",
-      "Flags": "UseAll",
-      "Entries": [
+      "name": "ELLEElvenLakeLLDefault",
+      "flags": "UseAll",
+      "entries": [
         "00EL_ElvenLakeArmbands",
         "00EL_ElvenLakeBracelet",
         "00EL_ElvenLakeFootWraps",
@@ -15,9 +15,9 @@
       ]
     },
     {
-      "Name": "ELLEElvenLakeLLBlack",
-      "Flags": "UseAll",
-      "Entries": [
+      "name": "ELLEElvenLakeLLBlack",
+      "flags": "UseAll",
+      "entries": [
         "00EL_ElvenLakeArmbandsBlack",
         "00EL_ElvenLakeBraceletBlack",
         "00EL_ElvenLakeFootWrapsBlack",
@@ -26,9 +26,9 @@
       ]
     },
     {
-      "Name": "ELLEElvenLakeLLDefaultRipped",
-      "Flags": "UseAll",
-      "Entries": [
+      "name": "ELLEElvenLakeLLDefaultRipped",
+      "flags": "UseAll",
+      "entries": [
         "00EL_ElvenLakeArmbands",
         "00EL_ElvenLakeBracelet",
         "00EL_ElvenLakeFootWraps",
@@ -37,9 +37,9 @@
       ]
     },
     {
-      "Name": "ELLEElvenLakeLLBlackRipped",
-      "Flags": "UseAll",
-      "Entries": [
+      "name": "ELLEElvenLakeLLBlackRipped",
+      "flags": "UseAll",
+      "entries": [
         "00EL_ElvenLakeArmbandsBlack",
         "00EL_ElvenLakeBraceletBlack",
         "00EL_ElvenLakeFootWrapsBlack",
@@ -48,9 +48,9 @@
       ]
     },
     {
-      "Name": "ELLEElvenLakeLLAll",
-      "Flags": "CalculateFromAllLevelsLessThanOrEqualPlayer, CalculateForEachItemInCount",
-      "Entries": [
+      "name": "ELLEElvenLakeLLAll",
+      "flags": "CalculateFromAllLevelsLessThanOrEqualPlayer, CalculateForEachItemInCount",
+      "entries": [
         "ELLEElvenLakeLLDefault",
         "ELLEElvenLakeLLBlack",
         "ELLEElvenLakeLLDefaultRipped",
@@ -58,36 +58,36 @@
       ]
     }
   ],
-  "Outfits": [
+  "outfits": [
     {
-      "Name": "ELLEElvenLakeOutfitDefault",
-      "Items": [ "ELLEElvenLakeLLDefault" ],
-      "DefaultOutfit": [],
-      "SPID": []
+      "name": "ELLEElvenLakeOutfitDefault",
+      "items": [ "ELLEElvenLakeLLDefault" ],
+      "defaultOutfit": [],
+      "spid": []
     },
     {
-      "Name": "ELLEElvenLakeOutfitBlack",
-      "Items": [ "ELLEElvenLakeLLBlack" ],
-      "DefaultOutfit": [],
-      "SPID": []
+      "name": "ELLEElvenLakeOutfitBlack",
+      "items": [ "ELLEElvenLakeLLBlack" ],
+      "defaultOutfit": [],
+      "spid": []
     },
     {
-      "Name": "ELLEElvenLakeOutfitDefaultRipped",
-      "Items": [ "ELLEElvenLakeLLDefaultRipped" ],
-      "DefaultOutfit": [],
-      "SPID": []
+      "name": "ELLEElvenLakeOutfitDefaultRipped",
+      "items": [ "ELLEElvenLakeLLDefaultRipped" ],
+      "defaultOutfit": [],
+      "spid": []
     },
     {
-      "Name": "ELLEElvenLakeOutfitBlackRipped",
-      "Items": [ "ELLEElvenLakeLLBlackRipped" ],
-      "DefaultOutfit": [],
-      "SPID": []
+      "name": "ELLEElvenLakeOutfitBlackRipped",
+      "items": [ "ELLEElvenLakeLLBlackRipped" ],
+      "defaultOutfit": [],
+      "spid": []
     },
     {
-      "Name": "ELLEElvenLakeAllOutfits",
-      "Items": [ "ELLEElvenLakeLLAll" ],
-      "DefaultOutfit": [],
-      "SPID": [
+      "name": "ELLEElvenLakeAllOutfits",
+      "items": [ "ELLEElvenLakeLLAll" ],
+      "defaultOutfit": [],
+      "spid": [
         "*Forsworn|||F/-C/-U||15" // Any Female Forsworn 15%
       ]
     }

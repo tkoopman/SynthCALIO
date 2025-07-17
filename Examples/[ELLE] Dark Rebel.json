@@ -1,12 +1,12 @@
-// SynthCALIO version of "ELLE's Armor Mods - SPID Addons" by SauteedPanda
+// SynthCALIO version of "ELLE's Armor Mods - spid Addons" by SauteedPanda
 // https://www.nexusmods.com/skyrimspecialedition/mods/139703
 
 {
-  "LeveledItems": [
+  "leveledItems": [
     {
-      "Name": "ELLEDarkRebelLLBodysuitBlack",
-      "Flags": "UseAll",
-      "Entries": [
+      "name": "ELLEDarkRebelLLBodysuitBlack",
+      "flags": "UseAll",
+      "entries": [
         "00EL_DarkRebelBootsBlack",
         "00EL_DarkRebelBodysuitBlack",
         "00EL_DarkRebelGloveLBlack",
@@ -18,9 +18,9 @@
       ]
     },
     {
-      "Name": "ELLEDarkRebelLLBodysuitBlackMaroon",
-      "Flags": "UseAll",
-      "Entries": [
+      "name": "ELLEDarkRebelLLBodysuitBlackMaroon",
+      "flags": "UseAll",
+      "entries": [
         "00EL_DarkRebelBootsBlack",
         "00EL_DarkRebelBodysuitBlackMaroon",
         "00EL_DarkRebelGloveLBlack",
@@ -32,9 +32,9 @@
       ]
     },
     {
-      "Name": "ELLEDarkRebelLLBodysuitBlackNets",
-      "Flags": "UseAll",
-      "Entries": [
+      "name": "ELLEDarkRebelLLBodysuitBlackNets",
+      "flags": "UseAll",
+      "entries": [
         "00EL_DarkRebelBootsBlack",
         "00EL_DarkRebelBodysuitBlackNets",
         "00EL_DarkRebelGloveLBlack",
@@ -46,9 +46,9 @@
       ]
     },
     {
-      "Name": "ELLEDarkRebelLLBodysuitBrown",
-      "Flags": "UseAll",
-      "Entries": [
+      "name": "ELLEDarkRebelLLBodysuitBrown",
+      "flags": "UseAll",
+      "entries": [
         "00EL_DarkRebelBootsBrown",
         "00EL_DarkRebelBodysuitBrown",
         "00EL_DarkRebelGloveLBrown",
@@ -60,9 +60,9 @@
       ]
     },
     {
-      "Name": "ELLEDarkRebelLLBodysuitBrownBlack",
-      "Flags": "UseAll",
-      "Entries": [
+      "name": "ELLEDarkRebelLLBodysuitBrownBlack",
+      "flags": "UseAll",
+      "entries": [
         "00EL_DarkRebelBootsBrown",
         "00EL_DarkRebelBodysuitBrownBlack",
         "00EL_DarkRebelGloveLBrown",
@@ -74,9 +74,9 @@
       ]
     },
     {
-      "Name": "ELLEDarkRebelLLBodysuitDeepRed",
-      "Flags": "UseAll",
-      "Entries": [
+      "name": "ELLEDarkRebelLLBodysuitDeepRed",
+      "flags": "UseAll",
+      "entries": [
         "00EL_DarkRebelBodysuitDeepRed",
         "00EL_DarkRebelJacketRed",
         "00EL_DarkRebelBeltRed",
@@ -88,9 +88,9 @@
       ]
     },
     {
-      "Name": "ELLEDarkRebelLLBodysuitGreen",
-      "Flags": "UseAll",
-      "Entries": [
+      "name": "ELLEDarkRebelLLBodysuitGreen",
+      "flags": "UseAll",
+      "entries": [
         "00EL_DarkRebelBootsGreen",
         "00EL_DarkRebelBodysuitGreen",
         "00EL_DarkRebelGloveLGreen",
@@ -102,9 +102,9 @@
       ]
     },
     {
-      "Name": "ELLEDarkRebelLLBodysuitLace",
-      "Flags": "UseAll",
-      "Entries": [
+      "name": "ELLEDarkRebelLLBodysuitLace",
+      "flags": "UseAll",
+      "entries": [
         "00EL_DarkRebelBootsGrey",
         "00EL_DarkRebelBodysuitLace",
         "00EL_DarkRebelGloveLBlack",
@@ -116,9 +116,9 @@
       ]
     },
     {
-      "Name": "ELLEDarkRebelLLBodysuitLaceLatex",
-      "Flags": "UseAll",
-      "Entries": [
+      "name": "ELLEDarkRebelLLBodysuitLaceLatex",
+      "flags": "UseAll",
+      "entries": [
         "00EL_DarkRebelBootsGrey",
         "00EL_DarkRebelBodysuitLaceLatex",
         "00EL_DarkRebelGloveLBlack",
@@ -130,9 +130,9 @@
       ]
     },
     {
-      "Name": "ELLEDarkRebelLLBodysuitLatex",
-      "Flags": "UseAll",
-      "Entries": [
+      "name": "ELLEDarkRebelLLBodysuitLatex",
+      "flags": "UseAll",
+      "entries": [
         "00EL_DarkRebelBootsGrey",
         "00EL_DarkRebelBodysuitLatex",
         "00EL_DarkRebelGloveLBlack",
@@ -144,9 +144,9 @@
       ]
     },
     {
-      "Name": "ELLEDarkRebelLLBodysuitMaroon",
-      "Flags": "UseAll",
-      "Entries": [
+      "name": "ELLEDarkRebelLLBodysuitMaroon",
+      "flags": "UseAll",
+      "entries": [
         "00EL_DarkRebelBootsBlack",
         "00EL_DarkRebelBodysuitMaroon",
         "00EL_DarkRebelGloveLBlack",
@@ -158,9 +158,9 @@
       ]
     },
     {
-      "Name": "ELLEDarkRebelLLBodysuitOrange",
-      "Flags": "UseAll",
-      "Entries": [
+      "name": "ELLEDarkRebelLLBodysuitOrange",
+      "flags": "UseAll",
+      "entries": [
         "00EL_DarkRebelBootsOrange",
         "00EL_DarkRebelBodysuitOrange",
         "00EL_DarkRebelGloveLOrange",
@@ -172,9 +172,9 @@
       ]
     },
     {
-      "Name": "ELLEDarkRebelLLDressBlack",
-      "Flags": "UseAll",
-      "Entries": [
+      "name": "ELLEDarkRebelLLDressBlack",
+      "flags": "UseAll",
+      "entries": [
         "00EL_DarkRebelDressBlack",
         "00EL_DarkRebelGloveLBlack",
         "00EL_DarkRebelGloveRBlack",
@@ -184,9 +184,9 @@
       ]
     },
     {
-      "Name": "ELLEDarkRebelLLDressGreen",
-      "Flags": "UseAll",
-      "Entries": [
+      "name": "ELLEDarkRebelLLDressGreen",
+      "flags": "UseAll",
+      "entries": [
         "00EL_DarkRebelDressGreen",
         "00EL_DarkRebelGloveLGreen",
         "00EL_DarkRebelGloveRGreen",
@@ -196,9 +196,9 @@
       ]
     },
     {
-      "Name": "ELLEDarkRebelLLDressGrey",
-      "Flags": "UseAll",
-      "Entries": [
+      "name": "ELLEDarkRebelLLDressGrey",
+      "flags": "UseAll",
+      "entries": [
         "00EL_DarkRebelDressGrey",
         "00EL_DarkRebelGloveLBlack",
         "00EL_DarkRebelGloveRBlack",
@@ -208,9 +208,9 @@
       ]
     },
     {
-      "Name": "ELLEDarkRebelLLDressMaroon",
-      "Flags": "UseAll",
-      "Entries": [
+      "name": "ELLEDarkRebelLLDressMaroon",
+      "flags": "UseAll",
+      "entries": [
         "00EL_DarkRebelDressMaroon",
         "00EL_DarkRebelGloveLBlack",
         "00EL_DarkRebelGloveRBlack",
@@ -220,9 +220,9 @@
       ]
     },
     {
-      "Name": "ELLEDarkRebelLLDressOrange",
-      "Flags": "UseAll",
-      "Entries": [
+      "name": "ELLEDarkRebelLLDressOrange",
+      "flags": "UseAll",
+      "entries": [
         "00EL_DarkRebelDressOrange",
         "00EL_DarkRebelGloveLOrange",
         "00EL_DarkRebelGloveROrange",
@@ -232,9 +232,9 @@
       ]
     },
     {
-      "Name": "ELLEDarkRebelLLDressRed",
-      "Flags": "UseAll",
-      "Entries": [
+      "name": "ELLEDarkRebelLLDressRed",
+      "flags": "UseAll",
+      "entries": [
         "00EL_DarkRebelDressRedOverlay",
         "00EL_DarkRebelDressRed",
         "00EL_DarkRebelGloveLRed",
@@ -244,9 +244,9 @@
       ]
     },
     {
-      "Name": "ELLEDarkRebelLLAllBodySuits",
-      "Flags": "CalculateFromAllLevelsLessThanOrEqualPlayer, CalculateForEachItemInCount",
-      "Entries": [
+      "name": "ELLEDarkRebelLLAllBodySuits",
+      "flags": "CalculateFromAllLevelsLessThanOrEqualPlayer, CalculateForEachItemInCount",
+      "entries": [
         "ELLEDarkRebelLLBodysuitBlack",
         "ELLEDarkRebelLLBodysuitBlackMaroon",
         "ELLEDarkRebelLLBodysuitBlackNets",
@@ -262,9 +262,9 @@
       ]
     },
     {
-      "Name": "ELLEDarkRebelLLAllDresses",
-      "Flags": "CalculateFromAllLevelsLessThanOrEqualPlayer, CalculateForEachItemInCount",
-      "Entries": [
+      "name": "ELLEDarkRebelLLAllDresses",
+      "flags": "CalculateFromAllLevelsLessThanOrEqualPlayer, CalculateForEachItemInCount",
+      "entries": [
         "ELLEDarkRebelLLDressBlack",
         "ELLEDarkRebelLLDressGreen",
         "ELLEDarkRebelLLDressGrey",
@@ -274,142 +274,142 @@
       ]
     },
     {
-      "Name": "ELLEDarkRebelLLAll",
-      "Flags": "CalculateFromAllLevelsLessThanOrEqualPlayer, CalculateForEachItemInCount",
-      "Entries": [
+      "name": "ELLEDarkRebelLLAll",
+      "flags": "CalculateFromAllLevelsLessThanOrEqualPlayer, CalculateForEachItemInCount",
+      "entries": [
         "ELLEDarkRebelLLAllBodySuits",
         "ELLEDarkRebelLLAllDresses"
       ]
     }
   ],
-  "Outfits": [
+  "outfits": [
     {
-      "Name": "ELLEDarkRebelBodysuitBlack",
-      "Items": [ "ELLEDarkRebelLLBodysuitBlack" ],
-      "DefaultOutfit": [],
-      "SPID": []
+      "name": "ELLEDarkRebelBodysuitBlack",
+      "items": [ "ELLEDarkRebelLLBodysuitBlack" ],
+      "defaultOutfit": [],
+      "spid": []
     },
     {
-      "Name": "ELLEDarkRebelBodysuitBlackMaroon",
-      "Items": [ "ELLEDarkRebelLLBodysuitBlackMaroon" ],
-      "DefaultOutfit": [],
-      "SPID": []
+      "name": "ELLEDarkRebelBodysuitBlackMaroon",
+      "items": [ "ELLEDarkRebelLLBodysuitBlackMaroon" ],
+      "defaultOutfit": [],
+      "spid": []
     },
     {
-      "Name": "ELLEDarkRebelBodysuitBlackNets",
-      "Items": [ "ELLEDarkRebelLLBodysuitBlackNets" ],
-      "DefaultOutfit": [],
-      "SPID": []
+      "name": "ELLEDarkRebelBodysuitBlackNets",
+      "items": [ "ELLEDarkRebelLLBodysuitBlackNets" ],
+      "defaultOutfit": [],
+      "spid": []
     },
     {
-      "Name": "ELLEDarkRebelBodysuitBrown",
-      "Items": [ "ELLEDarkRebelLLBodysuitBrown" ],
-      "DefaultOutfit": [],
-      "SPID": []
+      "name": "ELLEDarkRebelBodysuitBrown",
+      "items": [ "ELLEDarkRebelLLBodysuitBrown" ],
+      "defaultOutfit": [],
+      "spid": []
     },
     {
-      "Name": "ELLEDarkRebelBodysuitBrownBlack",
-      "Items": [ "ELLEDarkRebelLLBodysuitBrownBlack" ],
-      "DefaultOutfit": [],
-      "SPID": []
+      "name": "ELLEDarkRebelBodysuitBrownBlack",
+      "items": [ "ELLEDarkRebelLLBodysuitBrownBlack" ],
+      "defaultOutfit": [],
+      "spid": []
     },
     {
-      "Name": "ELLEDarkRebelBodysuitDeepRed",
-      "Items": [ "ELLEDarkRebelLLBodysuitDeepRed" ],
-      "DefaultOutfit": [],
-      "SPID": []
+      "name": "ELLEDarkRebelBodysuitDeepRed",
+      "items": [ "ELLEDarkRebelLLBodysuitDeepRed" ],
+      "defaultOutfit": [],
+      "spid": []
     },
     {
-      "Name": "ELLEDarkRebelBodysuitGreen",
-      "Items": [ "ELLEDarkRebelLLBodysuitGreen" ],
-      "DefaultOutfit": [],
-      "SPID": []
+      "name": "ELLEDarkRebelBodysuitGreen",
+      "items": [ "ELLEDarkRebelLLBodysuitGreen" ],
+      "defaultOutfit": [],
+      "spid": []
     },
     {
-      "Name": "ELLEDarkRebelBodysuitLace",
-      "Items": [ "ELLEDarkRebelLLBodysuitLace" ],
-      "DefaultOutfit": [],
-      "SPID": []
+      "name": "ELLEDarkRebelBodysuitLace",
+      "items": [ "ELLEDarkRebelLLBodysuitLace" ],
+      "defaultOutfit": [],
+      "spid": []
     },
     {
-      "Name": "ELLEDarkRebelBodysuitLaceLatex",
-      "Items": [ "ELLEDarkRebelLLBodysuitLaceLatex" ],
-      "DefaultOutfit": [],
-      "SPID": []
+      "name": "ELLEDarkRebelBodysuitLaceLatex",
+      "items": [ "ELLEDarkRebelLLBodysuitLaceLatex" ],
+      "defaultOutfit": [],
+      "spid": []
     },
     {
-      "Name": "ELLEDarkRebelBodysuitLatex",
-      "Items": [ "ELLEDarkRebelLLBodysuitLatex" ],
-      "DefaultOutfit": [],
-      "SPID": []
+      "name": "ELLEDarkRebelBodysuitLatex",
+      "items": [ "ELLEDarkRebelLLBodysuitLatex" ],
+      "defaultOutfit": [],
+      "spid": []
     },
     {
-      "Name": "ELLEDarkRebelBodysuitMaroon",
-      "Items": [ "ELLEDarkRebelLLBodysuitMaroon" ],
-      "DefaultOutfit": [],
-      "SPID": []
+      "name": "ELLEDarkRebelBodysuitMaroon",
+      "items": [ "ELLEDarkRebelLLBodysuitMaroon" ],
+      "defaultOutfit": [],
+      "spid": []
     },
     {
-      "Name": "ELLEDarkRebelBodysuitOrange",
-      "Items": [ "ELLEDarkRebelLLBodysuitOrange" ],
-      "DefaultOutfit": [],
-      "SPID": []
+      "name": "ELLEDarkRebelBodysuitOrange",
+      "items": [ "ELLEDarkRebelLLBodysuitOrange" ],
+      "defaultOutfit": [],
+      "spid": []
     },
     {
-      "Name": "ELLEDarkRebelDressBlack",
-      "Items": [ "ELLEDarkRebelLLDressBlack" ],
-      "DefaultOutfit": [],
-      "SPID": []
+      "name": "ELLEDarkRebelDressBlack",
+      "items": [ "ELLEDarkRebelLLDressBlack" ],
+      "defaultOutfit": [],
+      "spid": []
     },
     {
-      "Name": "ELLEDarkRebelDressGreen",
-      "Items": [ "ELLEDarkRebelLLDressGreen" ],
-      "DefaultOutfit": [],
-      "SPID": []
+      "name": "ELLEDarkRebelDressGreen",
+      "items": [ "ELLEDarkRebelLLDressGreen" ],
+      "defaultOutfit": [],
+      "spid": []
     },
     {
-      "Name": "ELLEDarkRebelDressGrey",
-      "Items": [ "ELLEDarkRebelLLDressGrey" ],
-      "DefaultOutfit": [],
-      "SPID": []
+      "name": "ELLEDarkRebelDressGrey",
+      "items": [ "ELLEDarkRebelLLDressGrey" ],
+      "defaultOutfit": [],
+      "spid": []
     },
     {
-      "Name": "ELLEDarkRebelDressMaroon",
-      "Items": [ "ELLEDarkRebelLLDressMaroon" ],
-      "DefaultOutfit": [],
-      "SPID": []
+      "name": "ELLEDarkRebelDressMaroon",
+      "items": [ "ELLEDarkRebelLLDressMaroon" ],
+      "defaultOutfit": [],
+      "spid": []
     },
     {
-      "Name": "ELLEDarkRebelDressOrange",
-      "Items": [ "ELLEDarkRebelLLDressOrange" ],
-      "DefaultOutfit": [],
-      "SPID": []
+      "name": "ELLEDarkRebelDressOrange",
+      "items": [ "ELLEDarkRebelLLDressOrange" ],
+      "defaultOutfit": [],
+      "spid": []
     },
     {
-      "Name": "ELLEDarkRebelDressRed",
-      "Items": [ "ELLEDarkRebelLLDressRed" ],
-      "DefaultOutfit": [],
-      "SPID": []
+      "name": "ELLEDarkRebelDressRed",
+      "items": [ "ELLEDarkRebelLLDressRed" ],
+      "defaultOutfit": [],
+      "spid": []
     },
     {
-      "Name": "ELLEDarkRebelAllOutfits",
-      "Items": [ "ELLEDarkRebelLLAll" ],
-      "DefaultOutfit": [],
-      "SPID": [
+      "name": "ELLEDarkRebelAllOutfits",
+      "items": [ "ELLEDarkRebelLLAll" ],
+      "defaultOutfit": [],
+      "spid": [
         "*Bandit|BanditFaction||F/-C/-U||5" // Any Female Bandit 5%
       ]
     },
     {
-      "Name": "ELLEDarkRebelAllBodysuitOutfits",
-      "Items": [ "ELLEDarkRebelLLAllBodySuits" ],
-      "DefaultOutfit": [],
-      "SPID": []
+      "name": "ELLEDarkRebelAllBodysuitOutfits",
+      "items": [ "ELLEDarkRebelLLAllBodySuits" ],
+      "defaultOutfit": [],
+      "spid": []
     },
     {
-      "Name": "ELLEDarkRebelAllDressOutfits",
-      "Items": [ "ELLEDarkRebelLLAllDresses" ],
-      "DefaultOutfit": [],
-      "SPID": []
+      "name": "ELLEDarkRebelAllDressOutfits",
+      "items": [ "ELLEDarkRebelLLAllDresses" ],
+      "defaultOutfit": [],
+      "spid": []
     }
   ]
 }

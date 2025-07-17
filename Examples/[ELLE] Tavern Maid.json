@@ -1,12 +1,12 @@
-// SynthCALIO version of "ELLE's Armor Mods - SPID Addons" by SauteedPanda
+// SynthCALIO version of "ELLE's Armor Mods - spid Addons" by SauteedPanda
 // https://www.nexusmods.com/skyrimspecialedition/mods/139703
 
 {
-  "LeveledItems": [
+  "leveledItems": [
     {
-      "Name": "ELLETavernMaidLL1",
-      "Flags": "UseAll",
-      "Entries": [
+      "name": "ELLETavernMaidLL1",
+      "flags": "UseAll",
+      "entries": [
         "00EL_TavernMaidBoots1",
         "00EL_TavernMaidCorset1",
         "00EL_TavernMaidEarrings",
@@ -18,9 +18,9 @@
       ]
     },
     {
-      "Name": "ELLETavernMaidLL2",
-      "Flags": "UseAll",
-      "Entries": [
+      "name": "ELLETavernMaidLL2",
+      "flags": "UseAll",
+      "entries": [
         "00EL_TavernMaidBoots2",
         "00EL_TavernMaidCorset2",
         "00EL_TavernMaidEarrings",
@@ -32,9 +32,9 @@
       ]
     },
     {
-      "Name": "ELLETavernMaidLL3",
-      "Flags": "UseAll",
-      "Entries": [
+      "name": "ELLETavernMaidLL3",
+      "flags": "UseAll",
+      "entries": [
         "00EL_TavernMaidBoots3",
         "00EL_TavernMaidCorset3",
         "00EL_TavernMaidEarrings",
@@ -46,9 +46,9 @@
       ]
     },
     {
-      "Name": "ELLETavernMaidLL4",
-      "Flags": "UseAll",
-      "Entries": [
+      "name": "ELLETavernMaidLL4",
+      "flags": "UseAll",
+      "entries": [
         "00EL_TavernMaidBoots4",
         "00EL_TavernMaidCorset4",
         "00EL_TavernMaidEarrings",
@@ -60,9 +60,9 @@
       ]
     },
     {
-      "Name": "ELLETavernMaidLL5",
-      "Flags": "UseAll",
-      "Entries": [
+      "name": "ELLETavernMaidLL5",
+      "flags": "UseAll",
+      "entries": [
         "00EL_TavernMaidBoots5",
         "00EL_TavernMaidCorset5",
         "00EL_TavernMaidEarrings",
@@ -74,9 +74,9 @@
       ]
     },
     {
-      "Name": "ELLETavernMaidLLAll",
-      "Flags": "CalculateFromAllLevelsLessThanOrEqualPlayer, CalculateForEachItemInCount",
-      "Entries": [
+      "name": "ELLETavernMaidLLAll",
+      "flags": "CalculateFromAllLevelsLessThanOrEqualPlayer, CalculateForEachItemInCount",
+      "entries": [
         "ELLETavernMaidLL1",
         "ELLETavernMaidLL2",
         "ELLETavernMaidLL3",
@@ -85,44 +85,44 @@
       ]
     }
   ],
-  "Outfits": [
+  "outfits": [
     {
-      "Name": "ELLETavernMaidAllOutfits",
-      "Items": [ "ELLETavernMaidLLAll" ],
-      "DefaultOutfit": [],
-      "SPID": [
+      "name": "ELLETavernMaidAllOutfits",
+      "items": [ "ELLETavernMaidLLAll" ],
+      "defaultOutfit": [],
+      "spid": [
         "ActorTypeNPC|BarkeepClothes01,BarkeepClothes02||F/-C||35" // Replaces BarkeepClothes01 and BarkeepClothes02 35%
       ]
     },
     {
-      "Name": "ELLETavernMaidOutfit1",
-      "Items": [ "ELLETavernMaidLL1" ],
-      "DefaultOutfit": [],
-      "SPID": []
+      "name": "ELLETavernMaidOutfit1",
+      "items": [ "ELLETavernMaidLL1" ],
+      "defaultOutfit": [],
+      "spid": []
     },
     {
-      "Name": "ELLETavernMaidOutfit2",
-      "Items": [ "ELLETavernMaidLL2" ],
-      "DefaultOutfit": [],
-      "SPID": []
+      "name": "ELLETavernMaidOutfit2",
+      "items": [ "ELLETavernMaidLL2" ],
+      "defaultOutfit": [],
+      "spid": []
     },
     {
-      "Name": "ELLETavernMaidOutfit3",
-      "Items": [ "ELLETavernMaidLL3" ],
-      "DefaultOutfit": [],
-      "SPID": []
+      "name": "ELLETavernMaidOutfit3",
+      "items": [ "ELLETavernMaidLL3" ],
+      "defaultOutfit": [],
+      "spid": []
     },
     {
-      "Name": "ELLETavernMaidOutfit4",
-      "Items": [ "ELLETavernMaidLL4" ],
-      "DefaultOutfit": [],
-      "SPID": []
+      "name": "ELLETavernMaidOutfit4",
+      "items": [ "ELLETavernMaidLL4" ],
+      "defaultOutfit": [],
+      "spid": []
     },
     {
-      "Name": "ELLETavernMaidOutfit5",
-      "Items": [ "ELLETavernMaidLL5" ],
-      "DefaultOutfit": [],
-      "SPID": []
+      "name": "ELLETavernMaidOutfit5",
+      "items": [ "ELLETavernMaidLL5" ],
+      "defaultOutfit": [],
+      "spid": []
     }
   ]
 }

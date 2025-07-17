@@ -1,12 +1,12 @@
-// SynthCALIO version of "ELLE's Armor Mods - SPID Addons" by SauteedPanda
+// SynthCALIO version of "ELLE's Armor Mods - spid Addons" by SauteedPanda
 // https://www.nexusmods.com/skyrimspecialedition/mods/139703
 
 {
-  "LeveledItems": [
+  "leveledItems": [
     {
-      "Name": "ELLEXmasSpecialLLRed",
-      "Flags": "UseAll",
-      "Entries": [
+      "name": "ELLEXmasSpecialLLRed",
+      "flags": "UseAll",
+      "entries": [
         "ClothesWeddingSandals",
         "00EL_XmasSpecialStockingsRed",
         "00EL_XmasSpecialNecklaceBlack",
@@ -17,9 +17,9 @@
       ]
     },
     {
-      "Name": "ELLEXmasSpecialLLRedGold",
-      "Flags": "UseAll",
-      "Entries": [
+      "name": "ELLEXmasSpecialLLRedGold",
+      "flags": "UseAll",
+      "entries": [
         "ClothesWeddingSandals",
         "00EL_XmasSpecialStockingsRedGold",
         "00EL_XmasSpecialNecklaceBlackGold",
@@ -30,9 +30,9 @@
       ]
     },
     {
-      "Name": "ELLEXmasSpecialLLWhite",
-      "Flags": "UseAll",
-      "Entries": [
+      "name": "ELLEXmasSpecialLLWhite",
+      "flags": "UseAll",
+      "entries": [
         "ClothesWeddingSandals",
         "00EL_XmasSpecialStockingsWhite",
         "00EL_XmasSpecialNecklaceWhite",
@@ -43,9 +43,9 @@
       ]
     },
     {
-      "Name": "ELLEXmasSpecialLLWhiteGold",
-      "Flags": "UseAll",
-      "Entries": [
+      "name": "ELLEXmasSpecialLLWhiteGold",
+      "flags": "UseAll",
+      "entries": [
         "ClothesWeddingSandals",
         "00EL_XmasSpecialStockingsWhiteGold",
         "00EL_XmasSpecialNecklaceWhiteGold",
@@ -56,9 +56,9 @@
       ]
     },
     {
-      "Name": "ELLEXmasSpecialLLAll",
-      "Flags": "CalculateFromAllLevelsLessThanOrEqualPlayer, CalculateForEachItemInCount",
-      "Entries": [
+      "name": "ELLEXmasSpecialLLAll",
+      "flags": "CalculateFromAllLevelsLessThanOrEqualPlayer, CalculateForEachItemInCount",
+      "entries": [
         "ELLEXmasSpecialLLRed",
         "ELLEXmasSpecialLLRedGold",
         "ELLEXmasSpecialLLWhite",
@@ -66,38 +66,38 @@
       ]
     }
   ],
-  "Outfits": [
+  "outfits": [
     {
-      "Name": "ELLEXmasSpecialOutfitRed",
-      "Items": [ "ELLEXmasSpecialLLRed" ],
-      "DefaultOutfit": [],
-      "SPID": []
+      "name": "ELLEXmasSpecialOutfitRed",
+      "items": [ "ELLEXmasSpecialLLRed" ],
+      "defaultOutfit": [],
+      "spid": []
     },
     {
-      "Name": "ELLEXmasSpecialOutfitRedGold",
-      "Items": [ "ELLEXmasSpecialLLRedGold" ],
-      "DefaultOutfit": [],
-      "SPID": []
+      "name": "ELLEXmasSpecialOutfitRedGold",
+      "items": [ "ELLEXmasSpecialLLRedGold" ],
+      "defaultOutfit": [],
+      "spid": []
     },
     {
-      "Name": "ELLEXmasSpecialOutfitWhite",
-      "Items": [ "ELLEXmasSpecialLLWhite" ],
-      "DefaultOutfit": [],
-      "SPID": []
+      "name": "ELLEXmasSpecialOutfitWhite",
+      "items": [ "ELLEXmasSpecialLLWhite" ],
+      "defaultOutfit": [],
+      "spid": []
     },
     {
-      "Name": "ELLEXmasSpecialOutfitWhiteGold",
-      "Items": [ "ELLEXmasSpecialLLWhiteGold" ],
-      "DefaultOutfit": [
+      "name": "ELLEXmasSpecialOutfitWhiteGold",
+      "items": [ "ELLEXmasSpecialLLWhiteGold" ],
+      "defaultOutfit": [
         "938:ccmtysse002-ve.esl" // Irine (CC)
       ],
-      "SPID": []
+      "spid": []
     },
     {
-      "Name": "ELLEXmasSpecialAllOutfits",
-      "Items": [ "ELLEXmasSpecialLLAll" ],
-      "DefaultOutfit": [],
-      "SPID": []
+      "name": "ELLEXmasSpecialAllOutfits",
+      "items": [ "ELLEXmasSpecialLLAll" ],
+      "defaultOutfit": [],
+      "spid": []
     }
   ]
 }

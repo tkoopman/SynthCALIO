@@ -1,12 +1,12 @@
-// SynthCALIO version of "ELLE's Armor Mods - SPID Addons" by SauteedPanda
+// SynthCALIO version of "ELLE's Armor Mods - spid Addons" by SauteedPanda
 // https://www.nexusmods.com/skyrimspecialedition/mods/139703
 
 {
-  "LeveledItems": [
+  "leveledItems": [
     {
-      "Name": "ELLEZKRogueLLDefault",
-      "Flags": "UseAll",
-      "Entries": [
+      "name": "ELLEZKRogueLLDefault",
+      "flags": "UseAll",
+      "entries": [
         "ZKRogue_Cape",
         "ZKRogue_Armlets",
         "ZKRogue_Gloves",
@@ -17,9 +17,9 @@
       ]
     },
     {
-      "Name": "ELLEZKRogueLLCream",
-      "Flags": "UseAll",
-      "Entries": [
+      "name": "ELLEZKRogueLLCream",
+      "flags": "UseAll",
+      "entries": [
         "ZKRogue_Cape2",
         "ZKRogue_Armlets2",
         "ZKRogue_Gloves2",
@@ -30,32 +30,32 @@
       ]
     },
     {
-      "Name": "ELLEZKRogueLLAll",
-      "Flags": "CalculateFromAllLevelsLessThanOrEqualPlayer, CalculateForEachItemInCount",
-      "Entries": [
+      "name": "ELLEZKRogueLLAll",
+      "flags": "CalculateFromAllLevelsLessThanOrEqualPlayer, CalculateForEachItemInCount",
+      "entries": [
         "ELLEZKRogueLLDefault",
         "ELLEZKRogueLLCream"
       ]
     }
   ],
-  "Outfits": [
+  "outfits": [
     {
-      "Name": "ELLEZKRogueOutfitDefault",
-      "Items": [ "ELLEZKRogueLLDefault" ],
-      "DefaultOutfit": [],
-      "SPID": []
+      "name": "ELLEZKRogueOutfitDefault",
+      "items": [ "ELLEZKRogueLLDefault" ],
+      "defaultOutfit": [],
+      "spid": []
     },
     {
-      "Name": "ELLEZKRogueOutfitCream",
-      "Items": [ "ELLEZKRogueLLCream" ],
-      "DefaultOutfit": [],
-      "SPID": []
+      "name": "ELLEZKRogueOutfitCream",
+      "items": [ "ELLEZKRogueLLCream" ],
+      "defaultOutfit": [],
+      "spid": []
     },
     {
-      "Name": "ELLEZKRogueAllOutfits",
-      "Items": [ "ELLEZKRogueLLAll" ],
-      "DefaultOutfit": [],
-      "SPID": [
+      "name": "ELLEZKRogueAllOutfits",
+      "items": [ "ELLEZKRogueLLAll" ],
+      "defaultOutfit": [],
+      "spid": [
         "*Bandit|BanditFaction||F/-C/-U||5" // Any Female Bandit 5%
       ]
     }

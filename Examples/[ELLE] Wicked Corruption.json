@@ -1,66 +1,66 @@
-// SynthCALIO version of "ELLE's Armor Mods - SPID Addons" by SauteedPanda
+// SynthCALIO version of "ELLE's Armor Mods - spid Addons" by SauteedPanda
 // https://www.nexusmods.com/skyrimspecialedition/mods/139703
 
 {
-  "LeveledItems": [
+  "leveledItems": [
     {
-      "Name": "ELLEWickedCorruptionLL1",
-      "Flags": "UseAll",
-      "Entries": [
+      "name": "ELLEWickedCorruptionLL1",
+      "flags": "UseAll",
+      "entries": [
         "00EL_AWickedCorruptionSuit1",
         "00EL_AWickedCorruptionSleeve1",
         "00EL_AWickedCorruptionBoots1"
       ]
     },
     {
-      "Name": "ELLEWickedCorruptionLL2",
-      "Flags": "UseAll",
-      "Entries": [
+      "name": "ELLEWickedCorruptionLL2",
+      "flags": "UseAll",
+      "entries": [
         "00EL_AWickedCorruptionSuit2",
         "00EL_AWickedCorruptionSleeve2",
         "00EL_AWickedCorruptionBoots2"
       ]
     },
     {
-      "Name": "ELLEWickedCorruptionLL3",
-      "Flags": "UseAll",
-      "Entries": [
+      "name": "ELLEWickedCorruptionLL3",
+      "flags": "UseAll",
+      "entries": [
         "00EL_AWickedCorruptionSuit3",
         "00EL_AWickedCorruptionSleeve3",
         "00EL_AWickedCorruptionBoots3"
       ]
     },
     {
-      "Name": "ELLEWickedCorruptionLL4",
-      "Flags": "UseAll",
-      "Entries": [
+      "name": "ELLEWickedCorruptionLL4",
+      "flags": "UseAll",
+      "entries": [
         "00EL_AWickedCorruptionSuit4",
         "00EL_AWickedCorruptionSleeve4",
         "00EL_AWickedCorruptionBoots4"
       ]
     },
     {
-      "Name": "ELLEWickedCorruptionLL5",
-      "Flags": "UseAll",
-      "Entries": [
+      "name": "ELLEWickedCorruptionLL5",
+      "flags": "UseAll",
+      "entries": [
         "00EL_AWickedCorruptionSuit5",
         "00EL_AWickedCorruptionSleeve5",
         "00EL_AWickedCorruptionBoots5"
       ]
     },
     {
-      "Name": "ELLEWickedCorruptionLL6",
-      "Flags": "UseAll",
-      "Entries": [
+      "name": "ELLEWickedCorruptionLL6",
+      "flags": "UseAll",
+      "entries": [
         "00EL_AWickedCorruptionSuit6",
         "00EL_AWickedCorruptionSleeve6",
         "00EL_AWickedCorruptionBoots6"
       ]
     },
     {
-      "Name": "ELLEWickedCorruptionLLAll",
-      "Flags": "CalculateFromAllLevelsLessThanOrEqualPlayer, CalculateForEachItemInCount",
-      "Entries": [
+      "name": "ELLEWickedCorruptionLLAll",
+      "flags": "CalculateFromAllLevelsLessThanOrEqualPlayer, CalculateForEachItemInCount",
+      "entries": [
         "ELLEWickedCorruptionLL1",
         "ELLEWickedCorruptionLL2",
         "ELLEWickedCorruptionLL3",
@@ -70,48 +70,48 @@
       ]
     }
   ],
-  "Outfits": [
+  "outfits": [
     {
-      "Name": "ELLEWickedCorruptionOutfit1",
-      "Items": [ "ELLEWickedCorruptionLL1" ],
-      "DefaultOutfit": [],
-      "SPID": []
+      "name": "ELLEWickedCorruptionOutfit1",
+      "items": [ "ELLEWickedCorruptionLL1" ],
+      "defaultOutfit": [],
+      "spid": []
     },
     {
-      "Name": "ELLEWickedCorruptionOutfit2",
-      "Items": [ "ELLEWickedCorruptionLL2" ],
-      "DefaultOutfit": [],
-      "SPID": []
+      "name": "ELLEWickedCorruptionOutfit2",
+      "items": [ "ELLEWickedCorruptionLL2" ],
+      "defaultOutfit": [],
+      "spid": []
     },
     {
-      "Name": "ELLEWickedCorruptionOutfit3",
-      "Items": [ "ELLEWickedCorruptionLL3" ],
-      "DefaultOutfit": [],
-      "SPID": []
+      "name": "ELLEWickedCorruptionOutfit3",
+      "items": [ "ELLEWickedCorruptionLL3" ],
+      "defaultOutfit": [],
+      "spid": []
     },
     {
-      "Name": "ELLEWickedCorruptionOutfit4",
-      "Items": [ "ELLEWickedCorruptionLL4" ],
-      "DefaultOutfit": [],
-      "SPID": []
+      "name": "ELLEWickedCorruptionOutfit4",
+      "items": [ "ELLEWickedCorruptionLL4" ],
+      "defaultOutfit": [],
+      "spid": []
     },
     {
-      "Name": "ELLEWickedCorruptionOutfit5",
-      "Items": [ "ELLEWickedCorruptionLL5" ],
-      "DefaultOutfit": [],
-      "SPID": []
+      "name": "ELLEWickedCorruptionOutfit5",
+      "items": [ "ELLEWickedCorruptionLL5" ],
+      "defaultOutfit": [],
+      "spid": []
     },
     {
-      "Name": "ELLEWickedCorruptionOutfit6",
-      "Items": [ "ELLEWickedCorruptionLL6" ],
-      "DefaultOutfit": [],
-      "SPID": []
+      "name": "ELLEWickedCorruptionOutfit6",
+      "items": [ "ELLEWickedCorruptionLL6" ],
+      "defaultOutfit": [],
+      "spid": []
     },
     {
-      "Name": "ELLEWickedCorruptionAllOutfits",
-      "Items": [ "ELLEWickedCorruptionLLAll" ],
-      "DefaultOutfit": [],
-      "SPID": [
+      "name": "ELLEWickedCorruptionAllOutfits",
+      "items": [ "ELLEWickedCorruptionLLAll" ],
+      "defaultOutfit": [],
+      "spid": [
         "*Vampire|||F/-C/-U||15" // Any Female Vampire 15%
       ]
     }

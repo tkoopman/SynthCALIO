@@ -1,12 +1,12 @@
-// SynthCALIO version of "ELLE's Armor Mods - SPID Addons" by SauteedPanda
+// SynthCALIO version of "ELLE's Armor Mods - spid Addons" by SauteedPanda
 // https://www.nexusmods.com/skyrimspecialedition/mods/139703
 
 {
-  "LeveledItems": [
+  "leveledItems": [
     {
-      "Name": "ELLEWarriorLL1",
-      "Flags": "UseAll",
-      "Entries": [
+      "name": "ELLEWarriorLL1",
+      "flags": "UseAll",
+      "entries": [
         "00EL_WarriorBandages1",
         "00EL_WarriorBelt1",
         "00EL_WarriorBoots1",
@@ -22,9 +22,9 @@
       ]
     },
     {
-      "Name": "ELLEWarriorLL2",
-      "Flags": "UseAll",
-      "Entries": [
+      "name": "ELLEWarriorLL2",
+      "flags": "UseAll",
+      "entries": [
         "00EL_WarriorBandages2",
         "00EL_WarriorBelt2",
         "00EL_WarriorBoots2",
@@ -40,9 +40,9 @@
       ]
     },
     {
-      "Name": "ELLEWarriorLL3",
-      "Flags": "UseAll",
-      "Entries": [
+      "name": "ELLEWarriorLL3",
+      "flags": "UseAll",
+      "entries": [
         "00EL_WarriorBandages3",
         "00EL_WarriorBelt3",
         "00EL_WarriorBoots3",
@@ -58,9 +58,9 @@
       ]
     },
     {
-      "Name": "ELLEWarriorLL4",
-      "Flags": "UseAll",
-      "Entries": [
+      "name": "ELLEWarriorLL4",
+      "flags": "UseAll",
+      "entries": [
         "00EL_WarriorBandages4",
         "00EL_WarriorBelt4",
         "00EL_WarriorBoots4",
@@ -76,9 +76,9 @@
       ]
     },
     {
-      "Name": "ELLEWarriorLL5",
-      "Flags": "UseAll",
-      "Entries": [
+      "name": "ELLEWarriorLL5",
+      "flags": "UseAll",
+      "entries": [
         "00EL_WarriorBandages5",
         "00EL_WarriorBelt5",
         "00EL_WarriorBoots5",
@@ -94,9 +94,9 @@
       ]
     },
     {
-      "Name": "ELLEWarriorLLAll",
-      "Flags": "CalculateFromAllLevelsLessThanOrEqualPlayer, CalculateForEachItemInCount",
-      "Entries": [
+      "name": "ELLEWarriorLLAll",
+      "flags": "CalculateFromAllLevelsLessThanOrEqualPlayer, CalculateForEachItemInCount",
+      "entries": [
         "ELLEWarriorLL1",
         "ELLEWarriorLL2",
         "ELLEWarriorLL3",
@@ -105,42 +105,42 @@
       ]
     }
   ],
-  "Outfits": [
+  "outfits": [
     {
-      "Name": "ELLEWarriorOutfit1",
-      "Items": [ "ELLEWarriorLL1" ],
-      "DefaultOutfit": [],
-      "SPID": []
+      "name": "ELLEWarriorOutfit1",
+      "items": [ "ELLEWarriorLL1" ],
+      "defaultOutfit": [],
+      "spid": []
     },
     {
-      "Name": "ELLEWarriorOutfit2",
-      "Items": [ "ELLEWarriorLL2" ],
-      "DefaultOutfit": [],
-      "SPID": []
+      "name": "ELLEWarriorOutfit2",
+      "items": [ "ELLEWarriorLL2" ],
+      "defaultOutfit": [],
+      "spid": []
     },
     {
-      "Name": "ELLEWarriorOutfit3",
-      "Items": [ "ELLEWarriorLL3" ],
-      "DefaultOutfit": [],
-      "SPID": []
+      "name": "ELLEWarriorOutfit3",
+      "items": [ "ELLEWarriorLL3" ],
+      "defaultOutfit": [],
+      "spid": []
     },
     {
-      "Name": "ELLEWarriorOutfit4",
-      "Items": [ "ELLEWarriorLL4" ],
-      "DefaultOutfit": [],
-      "SPID": []
+      "name": "ELLEWarriorOutfit4",
+      "items": [ "ELLEWarriorLL4" ],
+      "defaultOutfit": [],
+      "spid": []
     },
     {
-      "Name": "ELLEWarriorOutfit5",
-      "Items": [ "ELLEWarriorLL5" ],
-      "DefaultOutfit": [],
-      "SPID": []
+      "name": "ELLEWarriorOutfit5",
+      "items": [ "ELLEWarriorLL5" ],
+      "defaultOutfit": [],
+      "spid": []
     },
     {
-      "Name": "ELLEWarriorAllOutfits",
-      "Items": [ "ELLEWarriorLLAll" ],
-      "DefaultOutfit": [],
-      "SPID": [
+      "name": "ELLEWarriorAllOutfits",
+      "items": [ "ELLEWarriorLLAll" ],
+      "defaultOutfit": [],
+      "spid": [
         "*Bandit|BanditFaction||F/-C/-U||5" // Any Female Bandit 5%
       ]
     }

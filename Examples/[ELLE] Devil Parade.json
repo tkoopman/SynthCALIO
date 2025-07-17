@@ -1,12 +1,12 @@
-// SynthCALIO version of "ELLE's Armor Mods - SPID Addons" by SauteedPanda
+// SynthCALIO version of "ELLE's Armor Mods - spid Addons" by SauteedPanda
 // https://www.nexusmods.com/skyrimspecialedition/mods/139703
 
 {
-  "LeveledItems": [
+  "leveledItems": [
     {
-      "Name": "ELLEDevilParadeLLGold",
-      "Flags": "UseAll",
-      "Entries": [
+      "name": "ELLEDevilParadeLLGold",
+      "flags": "UseAll",
+      "entries": [
         "00EL_DevilParadeBootsGold",
         "00EL_DevilParadeWings",
         "00EL_DevilParadeSuitGold",
@@ -14,9 +14,9 @@
       ]
     },
     {
-      "Name": "ELLEDevilParadeLLSilver",
-      "Flags": "UseAll",
-      "Entries": [
+      "name": "ELLEDevilParadeLLSilver",
+      "flags": "UseAll",
+      "entries": [
         "00EL_DevilParadeBootsSilver",
         "00EL_DevilParadeWings",
         "00EL_DevilParadeSuitSilver",
@@ -24,32 +24,32 @@
       ]
     },
     {
-      "Name": "ELLEDevilParadeLLAll",
-      "Flags": "CalculateFromAllLevelsLessThanOrEqualPlayer, CalculateForEachItemInCount",
-      "Entries": [
+      "name": "ELLEDevilParadeLLAll",
+      "flags": "CalculateFromAllLevelsLessThanOrEqualPlayer, CalculateForEachItemInCount",
+      "entries": [
         "ELLEDevilParadeLLGold",
         "ELLEDevilParadeLLSilver"
       ]
     }
   ],
-  "Outfits": [
+  "outfits": [
     {
-      "Name": "ELLEDevilParadeOutfitGold",
-      "Items": [ "ELLEDevilParadeLLGold" ],
-      "DefaultOutfit": [],
-      "SPID": []
+      "name": "ELLEDevilParadeOutfitGold",
+      "items": [ "ELLEDevilParadeLLGold" ],
+      "defaultOutfit": [],
+      "spid": []
     },
     {
-      "Name": "ELLEDevilParadeOutfitSilver",
-      "Items": [ "ELLEDevilParadeLLSilver" ],
-      "DefaultOutfit": [],
-      "SPID": []
+      "name": "ELLEDevilParadeOutfitSilver",
+      "items": [ "ELLEDevilParadeLLSilver" ],
+      "defaultOutfit": [],
+      "spid": []
     },
     {
-      "Name": "ELLEDevilParadeAllOutfits",
-      "Items": [ "ELLEDevilParadeLLAll" ],
-      "DefaultOutfit": [],
-      "SPID": [
+      "name": "ELLEDevilParadeAllOutfits",
+      "items": [ "ELLEDevilParadeLLAll" ],
+      "defaultOutfit": [],
+      "spid": [
         "*Vampire|||F/-C/-U||15" // Any Female Vampire 15%
       ]
     }

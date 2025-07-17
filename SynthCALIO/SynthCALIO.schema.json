@@ -3,6 +3,7 @@
   "$id": "https://raw.githubusercontent.com/tkoopman/SynthCALIO/refs/heads/master/SynthCALIO/SynthCALIO.schema.json",
   "type": "object",
   "properties": {
+    "$comment": true,
     "$schema": {
       "const": "https://raw.githubusercontent.com/tkoopman/SynthCALIO/refs/heads/master/SynthCALIO/SynthCALIO.schema.json"
     },
@@ -16,6 +17,7 @@
           "entries"
         ],
         "properties": {
+          "$comment": true,
           "name": {
             "$ref": "#/definitions/name"
           },
@@ -51,6 +53,7 @@
           "items"
         ],
         "properties": {
+          "$comment": true,
           "name": {
             "$ref": "#/definitions/name"
           },
