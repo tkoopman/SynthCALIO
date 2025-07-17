@@ -3,83 +3,86 @@
   "$id": "https://raw.githubusercontent.com/tkoopman/SynthCALIO/refs/heads/master/SynthCALIO/SynthCALIO.schema.json",
   "type": "object",
   "properties": {
-    "LeveledItems": {
+    "leveledItems": {
       "description": "List of Leveled Item Lists SynthCALIO should attempt to create.",
       "type": "array",
       "items": {
         "type": "object",
         "required": [
-          "Name",
-          "Entries"
+          "name",
+          "entries"
         ],
         "properties": {
-          "Name": {
-            "$ref": "#/definitions/Name"
+          "name": {
+            "$ref": "#/definitions/name"
           },
-          "Flags": {
-            "$ref": "#/definitions/Flags"
+          "flags": {
+            "$ref": "#/definitions/flags"
           },
-          "ChanceNone": {
-            "$ref": "#/definitions/ChanceNone"
+          "chanceNone": {
+            "$ref": "#/definitions/chanceNone"
           },
-          "SkipIfMissing": {
-            "$ref": "#/definitions/SkipIfMissing"
+          "skipIfMissing": {
+            "$ref": "#/definitions/skipIfMissing"
           },
-          "SPID": {
-            "$ref": "#/definitions/SPID"
+          "spid": {
+            "$ref": "#/definitions/spid"
           },
-          "Entries": {
+          "entries": {
             "type": "array",
             "items": {
-              "$ref": "#/definitions/LeveledItemEntry"
+              "$ref": "#/definitions/leveledItemEntry"
             }
           }
-        }
+        },
+        "additionalProperties": false
       }
     },
-    "Outfits": {
+    "outfits": {
       "description": "List of Outfit records SynthCALIO should attempt to create.",
       "type": "array",
       "items": {
         "type": "object",
         "required": [
-          "Name",
-          "Items"
+          "name",
+          "items"
         ],
         "properties": {
-          "Name": {
-            "$ref": "#/definitions/Name"
+          "name": {
+            "$ref": "#/definitions/name"
           },
-          "SkipIfMissing": {
-            "$ref": "#/definitions/SkipIfMissing"
+          "skipIfMissing": {
+            "$ref": "#/definitions/skipIfMissing"
           },
-          "SPID": {
-            "$ref": "#/definitions/SPID"
+          "spid": {
+            "$ref": "#/definitions/spid"
           },
-          "DefaultOutfit": {
+          "defaultOutfit": {
             "type": "array",
             "items": {
-              "$ref": "#/definitions/FormOrEditorID"
+              "$ref": "#/definitions/formOrEditorID"
             }
           },
-          "SleepingOutfit": {
+          "sleepingOutfit": {
             "type": "array",
             "items": {
-              "$ref": "#/definitions/FormOrEditorID"
+              "$ref": "#/definitions/formOrEditorID"
             }
           },
-          "Items": {
+          "items": {
             "type": "array",
             "items": {
-              "$ref": "#/definitions/FormOrEditorID"
+              "$ref": "#/definitions/formOrEditorID"
             }
           }
-        }
+        },
+        "additionalProperties": false
       }
     }
   },
+  "additionalProperties": false,
   "definitions": {
-    "ChanceNone": {
+    "chanceNone": {
       "type": [
         "number",
         "string"
@@ -89,9 +92,12 @@
       "maximum": 1,
       "pattern": "^[0-9]{1,3}%$"
     },
-    "Flags": {
+    "flags": {
       "title": "Flags to set on the Leveled Item List",
-      "type": [ "array", "string" ],
+      "type": [
+        "array",
+        "string"
+      ],
       "anyOf": [
         {
           "type": "array",
@@ -110,30 +116,30 @@
         }
       ]
     },
-    "FormOrEditorID": {
+    "formOrEditorID": {
       "description": "FormID or EditorID.",
       "type": "string",
       "pattern": "^([0-9A-Fa-f]{1,6}:[^<>:;,?\"*|\\/\\\\]+|[a-zA-Z0-9_ ]+)$"
     },
-    "LeveledItemEntry": {
+    "leveledItemEntry": {
       "type": "string",
       "pattern": "^\\??(\\[([Ll][vV])?\\d+\\]\\s?)?((\\d+)x\\s?)?([0-9A-Fa-f]{1,6}:[^<>:;,?\"*|\\/\\\\]+|[a-zA-Z0-9_ ]+)$"
     },
-    "Name": {
+    "name": {
       "description": "This name will be used for the EditorID of this object, so needs to be unique.",
       "type": "string",
       "pattern": "^[a-zA-Z0-9]+$"
     },
-    "OptionalFormOrEditorID": {
+    "optionalFormOrEditorID": {
       "description": "FormID or EditorID. Can add ? prefix to make the entry optional. This will not count towards the SkipIfMissing count. No spaces between ? and FormID or EditorID.",
       "type": "string"
     },
-    "SkipIfMissing": {
+    "skipIfMissing": {
       "description": "Will cause this to be skipped if this number or greater of listed non-optional items/entries cannot be found. -1 = All must be missing to skip. 0 = Never skip.",
       "type": "integer",
       "minimum": -1
     },
-    "SPID": {
+    "spid": {
       "description": "If successfully created, add this SPID entries. Must exclude FormOrEditorID as this will be populated based on FormID SynthCALIO assigned for this record.",
       "type": "array",
       "items": {
